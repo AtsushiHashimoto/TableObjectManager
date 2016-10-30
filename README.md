@@ -41,6 +41,7 @@ The algorithm of this program consists of following papers. Please refer any of 
 
 1. /src/OpenCV{,GPU}/{include,src}/TexCut{.h,.cpp}
 
+    ```
     @article{橋本敦史2011texcut,
       title={TexCut: GraphCut を用いたテクスチャの比較による背景差分},
       author={橋本敦史 and 舩冨卓哉 and 中村和晃 and 椋木雅之 and 美濃導彦},
@@ -51,10 +52,12 @@ The algorithm of this program consists of following papers. Please refer any of 
       year={2011},
       publisher={The Institute of Electronics, Information and Communication Engineers}
     }
+    ```
 
 2. /src/OpenCV/{include,src}PatchModel{.h,.cpp}
 3. /src/OpenCV{,GPU}/{include,src}/TableObjectManger\*{.h,.cpp}
 
+    ```
     @article{橋本敦史2012机上物体検出を対象とした接触理由付けによる誤検出棄却,
       title={机上物体検出を対象とした接触理由付けによる誤検出棄却},
       author={橋本敦史 and 舩冨卓哉 and 中村和晃 and 美濃導彦},
@@ -65,6 +68,7 @@ The algorithm of this program consists of following papers. Please refer any of 
       year={2012},
       publisher={The Institute of Electronics, Information and Communication Engineers}
     }
+    ```
     
 English explanation is provided in my doctor thesis.
 
