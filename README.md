@@ -11,12 +11,27 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
  1. For use with GPU, compile on local computer (otherwise you can use precompiled opencv). Recommended setting is 'x64'. ('Win32' is not carefully maintained.) 
 - CUDA (>=6)
 - Vradimir's graph cut implementation (MaxFlow >3.04) http://pub.ist.ac.at/~vnk/software.html
- 1. put block.h, graph.h, instances.inc into src/module/Core/include
- 2. put graph.cpp maxflow.cpp into src/module/Core/src
+ 1. put block.h, graph.h, instances.inc into src/modules/Core/include
+ 2. put graph.cpp maxflow.cpp into src/modules/Core/src
  3. add #include "instances.inc" in the last line of graph.cpp
 
-# Installation
-- 
+# Compile Library
+## on Windows
+- open /src/modules/VisualStudioBuild/skl_modules_vs2012.sln
+- edit property sheet
+ 1. open property manager > SKLCore2012 > Debug > skl2_meta
+ 2. open 'user macro'.
+ 3. modify paths along with your computer's setting.
+  - SKLRoot: the location of /src
+  - OpenCVVersion / OpenCVDir: version and location of opencv2.X
+  - BoostDir: location of boost
+- compile it, then open skl_modules_with_cuda_vs2012.sln WITH TEXT EDITOR!
+ 1. replace CUDA7.5 to your version (e.g. CUDA8.0)
+ 2. save and close the editor.
+- open skl_modules_with_cuda_vs2012.sln and compile
+
+# Compile Examples
+- open /examples/path/to/target/*.sln and compile.
 
 # Settings
 
