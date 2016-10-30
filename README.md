@@ -1,8 +1,25 @@
 # TableObjectManager
 This program detects put/taken objects on a workspace while detecting human regions.
 
-# Papers
-The algorithm of this program consists of following papers.
+# License
+
+https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
+
+# Prerequisites
+- boost(>=1.54)
+- opencv2 (>=2.4.9)
+- CUDA (>=6)
+
+# Installation
+- 
+
+# Settings
+
+# How to use
+
+
+# Citing Table Object Manager
+The algorithm of this program consists of following papers. Please refer any of them when you use this algorithm.
 
     @article{橋本敦史2011texcut,
       title={TexCut: GraphCut を用いたテクスチャの比較による背景差分},
@@ -30,8 +47,3 @@ English explanation is provided in my doctor thesis.
 
     http://www.mm.media.kyoto-u.ac.jp/old/research/thesis/2012/d/a_hasimoto/a_hasimoto.pdf
 
-# Installation
-
-# Settings
-
-# How to use
