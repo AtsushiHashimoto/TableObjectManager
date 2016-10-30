@@ -9,6 +9,9 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 - boost(>=1.54)
 - opencv2 (>=2.4.9)
 - CUDA (>=6)
+- Vradimir's graph cut implementation (MaxFlow >3.04) http://pub.ist.ac.at/~vnk/software.html
+  (put block.h, graph.h, instances.inc into /module/Core/include)
+
 
 # Installation
 - 
