@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\BackgroundSubtractAlgorithm.h" />
+    <ClInclude Include="..\include\CountMovingPixels.h" />
+    <ClInclude Include="..\include\CvMouseEventHandler.h" />
+    <ClInclude Include="..\include\cvtypes.h" />
+    <ClInclude Include="..\include\FilterMat2Mat.h" />
+    <ClInclude Include="..\include\Flow.h" />
+    <ClInclude Include="..\include\Graphcut.h" />
+    <ClInclude Include="..\include\HumanDetectorWorkspaceEnd.h" />
+    <ClInclude Include="..\include\Labeling.h" />
+    <ClInclude Include="..\include\MatReader.h" />
+    <ClInclude Include="..\include\MotionHistory.h" />
+    <ClInclude Include="..\include\ObjectState.h" />
+    <ClInclude Include="..\include\ParticleFilter.hpp" />
+    <ClInclude Include="..\include\PatchModel.h" />
+    <ClInclude Include="..\include\PatchModelBiBackground.h" />
+    <ClInclude Include="..\include\RegionLabelingEfficientGraph.h" />
+    <ClInclude Include="..\include\RegionLabelingSimple.h" />
+    <ClInclude Include="..\include\SampleSetReader.h" />
+    <ClInclude Include="..\include\SampleSetWriter.h" />
+    <ClInclude Include="..\include\SensorDataVisualizer.h" />
+    <ClInclude Include="..\include\sklcvutils.h" />
+    <ClInclude Include="..\include\sklcvutils_bayer_conversion.h" />
+    <ClInclude Include="..\include\sklcvutils_blending.h" />
+    <ClInclude Include="..\include\sklVideoCapture.h" />
+    <ClInclude Include="..\include\StaticRegionDetector.h" />
+    <ClInclude Include="..\include\TableObjectManager.h" />
+    <ClInclude Include="..\include\TableObjectManagerBiBackground.h" />
+    <ClInclude Include="..\include\TableObjectManagerWithTouchReasoning.h" />
+    <ClInclude Include="..\include\TexCut.h" />
+    <ClInclude Include="..\include\TouchedRegionDetector.h" />
+    <ClInclude Include="..\include\VideoCaptureDefault.h" />
+    <ClInclude Include="..\include\VideoCaptureImageList.h" />
+    <ClInclude Include="..\include\VideoCaptureInterface.h" />
+    <ClInclude Include="..\include\VideoCaptureOptFlowImageList.h" />
+    <ClInclude Include="..\include\VideoCaptureOptParser.h" />
+    <ClInclude Include="..\include\VideoCaptureParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BackgroundSubtractAlgorithm.cpp" />
+    <ClCompile Include="..\src\CountMovingPixels.cpp" />
+    <ClCompile Include="..\src\CvMouseEventHandler.cpp" />
+    <ClCompile Include="..\src\Flow.cpp" />
+    <ClCompile Include="..\src\Graphcut.cpp" />
+    <ClCompile Include="..\src\HumanDetectorWorkspaceEnd.cpp" />
+    <ClCompile Include="..\src\MotionHistory.cpp" />
+    <ClCompile Include="..\src\ObjectState.cpp" />
+    <ClCompile Include="..\src\Patch.cpp" />
+    <ClCompile Include="..\src\PatchLayer.cpp" />
+    <ClCompile Include="..\src\PatchModel.cpp" />
+    <ClCompile Include="..\src\PatchModelBiBackground.cpp" />
+    <ClCompile Include="..\src\RegionLabelingSimple.cpp" />
+    <ClCompile Include="..\src\SampleSetReader.cpp" />
+    <ClCompile Include="..\src\SampleSetWriter.cpp" />
+    <ClCompile Include="..\src\sklcvutils.cpp" />
+    <ClCompile Include="..\src\sklcvutils_arrow.cpp" />
+    <ClCompile Include="..\src\sklcvutils_bayer_conversion.cpp" />
+    <ClCompile Include="..\src\sklcvutils_colorpalette.cpp" />
+    <ClCompile Include="..\src\sklcvutils_rect_operation.cpp" />
+    <ClCompile Include="..\src\sklVideoCapture.cpp" />
+    <ClCompile Include="..\src\StaticRegionDetector.cpp" />
+    <ClCompile Include="..\src\TableObjectManager.cpp" />
+    <ClCompile Include="..\src\TableObjectManagerBiBackground.cpp" />
+    <ClCompile Include="..\src\TableObjectManagerWithTouchReasoning.cpp" />
+    <ClCompile Include="..\src\TexCut.cpp" />
+    <ClCompile Include="..\src\TouchedRegionDetector.cpp" />
+    <ClCompile Include="..\src\VideoCaptureDefault.cpp" />
+    <ClCompile Include="..\src\VideoCaptureImageList.cpp" />
+    <ClCompile Include="..\src\VideoCaptureInterface.cpp" />
+    <ClCompile Include="..\src\VideoCaptureOptFlowImageList.cpp" />
+    <ClCompile Include="..\src\VideoCaptureParams.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93061371-0230-41AA-80AE-7E213765361D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SKLOpenCV</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="..\sklcv_d.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="..\sklcv_d.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="..\sklcv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="..\sklcv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\opencv\opencv\include;C:\opencv\opencv2\include\opencv;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\..\..\..\lib\$(Platform)\$(Configuration)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>SKLOpenCV</TargetName>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\opencv\opencv\include;C:\opencv\opencv2\include\opencv;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\..\..\..\lib\$(Platform)\$(Configuration)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>SKLOpenCV</TargetName>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)\..\..\..\lib\$(Platform)\$(Configuration)\$(PlatformToolset)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>SKLOpenCV</TargetName>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)\..\..\..\lib\$(Platform)\$(Configuration)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>SKLOpenCV</TargetName>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

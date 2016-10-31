@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="sklcv_common.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(OpenCVDir)\lib\bin\$(Configuration);$(SKLRoot)\3rd_party\$(Platform);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(OpenCVDir)\prebuild\include\opencv;$(OpenCVDir)\prebuild\include;$(SKLRoot)\include;C:\tbb\include;C:\Program Files\OpenNI\Include;$(IncludePath);$(OpenCVDir)\build\include</IncludePath>
+    <LibraryPath>$(OpenCVDir)\build\lib\$(Configuration);$(SKLRoot)\lib\$(Platform)\$(Configuration)\$(PlatformToolset);$(LibraryPath)</LibraryPath>
+    <LibraryWPath>$(WindowsSDK_MetadataPath);</LibraryWPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>SKLOpenCV.lib;opencv_core$(OpenCVVersion).lib;opencv_highgui$(OpenCVVersion).lib;opencv_video$(OpenCVVersion).lib;opencv_imgproc$(OpenCVVersion).lib;opencv_objdetect$(OpenCVVersion).lib;opencv_gpu$(OpenCVVersion).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
