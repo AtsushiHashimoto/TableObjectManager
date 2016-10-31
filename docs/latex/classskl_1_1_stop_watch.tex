@@ -1,0 +1,65 @@
+\hypertarget{classskl_1_1_stop_watch}{}\section{skl\+:\+:Stop\+Watch Class Reference}
+\label{classskl_1_1_stop_watch}\index{skl\+::\+Stop\+Watch@{skl\+::\+Stop\+Watch}}
+
+
+実行時間を計測するクラス(D\+E\+B\+UG or S\+T\+O\+P\+\_\+\+W\+A\+T\+C\+Hが定義されている時のみ動作)  
+
+
+
+
+{\ttfamily \#include $<$Stop\+Watch.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_stop_watch_ad715945060eeb23baa3c036ad19b1edb}{}\label{classskl_1_1_stop_watch_ad715945060eeb23baa3c036ad19b1edb} 
+\hyperlink{classskl_1_1_stop_watch_ad715945060eeb23baa3c036ad19b1edb}{Stop\+Watch} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_stop_watch_a223ec0da71dd0bc4f2b14d1af44bf20a}{}\label{classskl_1_1_stop_watch_a223ec0da71dd0bc4f2b14d1af44bf20a} 
+virtual \hyperlink{classskl_1_1_stop_watch_a223ec0da71dd0bc4f2b14d1af44bf20a}{$\sim$\+Stop\+Watch} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_stop_watch_a09a3c8f9ab03d7b28e4f8b90a833974e}{}\label{classskl_1_1_stop_watch_a09a3c8f9ab03d7b28e4f8b90a833974e} 
+void \hyperlink{classskl_1_1_stop_watch_a09a3c8f9ab03d7b28e4f8b90a833974e}{start} ()
+\begin{DoxyCompactList}\small\item\em start measure \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_stop_watch_a9f944c617ed495f2d77e3edee204e29b}{}\label{classskl_1_1_stop_watch_a9f944c617ed495f2d77e3edee204e29b} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \hyperlink{classskl_1_1_stop_watch_a9f944c617ed495f2d77e3edee204e29b}{stop} ()
+\begin{DoxyCompactList}\small\item\em stop measure \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_stop_watch_a1c0dcc57c615559f24bc9f8759271a9d}{}\label{classskl_1_1_stop_watch_a1c0dcc57c615559f24bc9f8759271a9d} 
+void {\bfseries reset} ()
+\item 
+\hypertarget{classskl_1_1_stop_watch_aef15961ff53acf72b87811599fac1e20}{}\label{classskl_1_1_stop_watch_aef15961ff53acf72b87811599fac1e20} 
+const std\+::vector$<$ \hyperlink{classskl_1_1_time_interval}{Time\+Interval} $>$ \& {\bfseries lap\+\_\+time} () const
+\item 
+\hypertarget{classskl_1_1_stop_watch_a534efc1c95686b88f97f3712b6441f9c}{}\label{classskl_1_1_stop_watch_a534efc1c95686b88f97f3712b6441f9c} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} {\bfseries lap\+\_\+time} (size\+\_\+t i) const
+\item 
+\hypertarget{classskl_1_1_stop_watch_a88365867fd14c9da7ae53201370a9b02}{}\label{classskl_1_1_stop_watch_a88365867fd14c9da7ae53201370a9b02} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} {\bfseries lap} ()
+\item 
+\hypertarget{classskl_1_1_stop_watch_aafb3337fe4778a94ee4a669338b8cd72}{}\label{classskl_1_1_stop_watch_aafb3337fe4778a94ee4a669338b8cd72} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} {\bfseries elapsed\+Time} () const
+\item 
+\hypertarget{classskl_1_1_stop_watch_ab2a25335e19110c6deb98ea12af02f1a}{}\label{classskl_1_1_stop_watch_ab2a25335e19110c6deb98ea12af02f1a} 
+size\+\_\+t {\bfseries record\+\_\+num} () const
+\item 
+\hypertarget{classskl_1_1_stop_watch_aea3486e95f37ed932be6d2ced2d116d2}{}\label{classskl_1_1_stop_watch_aea3486e95f37ed932be6d2ced2d116d2} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_stop_watch_a73c3969e2539b2a7321fd52bb8f62143}{}\label{classskl_1_1_stop_watch_a73c3969e2539b2a7321fd52bb8f62143} 
+\hyperlink{classskl_1_1_time}{Time} {\bfseries base\+\_\+time}
+\item 
+\hypertarget{classskl_1_1_stop_watch_a888a4bdf053fac5ea7d2dd0b1c076920}{}\label{classskl_1_1_stop_watch_a888a4bdf053fac5ea7d2dd0b1c076920} 
+std\+::vector$<$ \hyperlink{classskl_1_1_time_interval}{Time\+Interval} $>$ {\bfseries lap\+\_\+times}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+実行時間を計測するクラス(D\+E\+B\+UG or S\+T\+O\+P\+\_\+\+W\+A\+T\+C\+Hが定義されている時のみ動作) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_stop_watch_8h}{Stop\+Watch.\+h}\item 
+Core/src/\hyperlink{_stop_watch_8cpp}{Stop\+Watch.\+cpp}\end{DoxyCompactItemize}

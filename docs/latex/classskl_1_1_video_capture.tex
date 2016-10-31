@@ -1,0 +1,104 @@
+\hypertarget{classskl_1_1_video_capture}{}\section{skl\+:\+:Video\+Capture Class Reference}
+\label{classskl_1_1_video_capture}\index{skl\+::\+Video\+Capture@{skl\+::\+Video\+Capture}}
+
+
+パラメタの読み込み機能などを強化した\+Video\+Capture  
+
+
+
+
+{\ttfamily \#include $<$skl\+Video\+Capture.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Video\+Capture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1_video_capture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_a6a80b08bcec34f70cb88c5d0a2673203}{}\label{classskl_1_1_video_capture_a6a80b08bcec34f70cb88c5d0a2673203} 
+\hyperlink{classskl_1_1_video_capture_a6a80b08bcec34f70cb88c5d0a2673203}{Video\+Capture} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_a7acc372d7e02d7c33de77c3fc0d2b3ef}{}\label{classskl_1_1_video_capture_a7acc372d7e02d7c33de77c3fc0d2b3ef} 
+virtual \hyperlink{classskl_1_1_video_capture_a7acc372d7e02d7c33de77c3fc0d2b3ef}{$\sim$\+Video\+Capture} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_aed05a9295d8a04e208d79036f93aad64}{}\label{classskl_1_1_video_capture_aed05a9295d8a04e208d79036f93aad64} 
+bool {\bfseries open} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1_video_capture_af1f5af87dc823381e91e9bf117186896}{}\label{classskl_1_1_video_capture_af1f5af87dc823381e91e9bf117186896} 
+bool {\bfseries open} (const std\+::string \&filename, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ cam)
+\item 
+\hypertarget{classskl_1_1_video_capture_a0cf51b1a893f88b68a5fe9b0a68c5002}{}\label{classskl_1_1_video_capture_a0cf51b1a893f88b68a5fe9b0a68c5002} 
+bool {\bfseries open} (int device)
+\item 
+\hypertarget{classskl_1_1_video_capture_ab17630e9ffd76d49873ce5e60f4080f3}{}\label{classskl_1_1_video_capture_ab17630e9ffd76d49873ce5e60f4080f3} 
+bool {\bfseries open} (int device, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ cam)
+\item 
+\hypertarget{classskl_1_1_video_capture_aa664b583d72ab38614a28644e7cd39fa}{}\label{classskl_1_1_video_capture_aa664b583d72ab38614a28644e7cd39fa} 
+{\footnotesize template$<$class Iter $>$ }\\bool {\bfseries open} (Iter first, Iter last)
+\item 
+\hypertarget{classskl_1_1_video_capture_a773c26b4a2c6170493aabdb868759a0a}{}\label{classskl_1_1_video_capture_a773c26b4a2c6170493aabdb868759a0a} 
+{\footnotesize template$<$class Iter , class cam\+Iter $>$ }\\bool {\bfseries open} (Iter first, Iter last)
+\item 
+\hypertarget{classskl_1_1_video_capture_a790296dad60b4f543c602980af45089f}{}\label{classskl_1_1_video_capture_a790296dad60b4f543c602980af45089f} 
+bool {\bfseries is\+Opened} () const
+\item 
+\hypertarget{classskl_1_1_video_capture_ada3c7e5bb255553692092501df51e132}{}\label{classskl_1_1_video_capture_ada3c7e5bb255553692092501df51e132} 
+void \hyperlink{classskl_1_1_video_capture_ada3c7e5bb255553692092501df51e132}{release} ()
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_a7bb64b1a7e620908841b5fbaea3179e4}{}\label{classskl_1_1_video_capture_a7bb64b1a7e620908841b5fbaea3179e4} 
+bool {\bfseries grab} ()
+\item 
+\hypertarget{classskl_1_1_video_capture_a6dedcb929497a8368c6865cda807e437}{}\label{classskl_1_1_video_capture_a6dedcb929497a8368c6865cda807e437} 
+virtual bool {\bfseries retrieve} (cv\+::\+Mat \&image, int channel=0)
+\item 
+\hypertarget{classskl_1_1_video_capture_a705b31fcb25b91f8c4d4fdcc1e7c43a0}{}\label{classskl_1_1_video_capture_a705b31fcb25b91f8c4d4fdcc1e7c43a0} 
+bool \hyperlink{classskl_1_1_video_capture_a705b31fcb25b91f8c4d4fdcc1e7c43a0}{set} (capture\+\_\+property\+\_\+t prop\+\_\+id, double val)
+\begin{DoxyCompactList}\small\item\em カメラに値やモード(camera\+\_\+mode\+\_\+tがset($\ast$,camera\+\_\+mode\+\_\+t mode)を通してvalに与えられる(modeは-\/4から-\/1までの整数)をセットする純粋仮想関数 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_a3185737070044f7b729ae2c03dcb8fee}{}\label{classskl_1_1_video_capture_a3185737070044f7b729ae2c03dcb8fee} 
+double \hyperlink{classskl_1_1_video_capture_a3185737070044f7b729ae2c03dcb8fee}{get} (capture\+\_\+property\+\_\+t prop\+\_\+id)
+\begin{DoxyCompactList}\small\item\em カメラから値をgetする純粋仮想関数(modeはインターフェイス簡素化のためサポートしない) \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_a1c650a65c8072ea844ab9e247e5eae96}{}\label{classskl_1_1_video_capture_a1c650a65c8072ea844ab9e247e5eae96} 
+\hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int device)
+\item 
+\hypertarget{classskl_1_1_video_capture_a4ba435f10c75843873e92dc08b2ac918}{}\label{classskl_1_1_video_capture_a4ba435f10c75843873e92dc08b2ac918} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\hypertarget{classskl_1_1_video_capture_a928fdf909a9f7afaecc2bce578bb0702}{}\label{classskl_1_1_video_capture_a928fdf909a9f7afaecc2bce578bb0702} 
+virtual bool {\bfseries push\+\_\+back} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1_video_capture_abc326dce402d6bab7daacfcc953eaf7f}{}\label{classskl_1_1_video_capture_abc326dce402d6bab7daacfcc953eaf7f} 
+virtual bool {\bfseries push\+\_\+back} (int device)
+\item 
+\hypertarget{classskl_1_1_video_capture_aa10a352ee8e1e795607f6df8917f3c35}{}\label{classskl_1_1_video_capture_aa10a352ee8e1e795607f6df8917f3c35} 
+virtual bool {\bfseries push\+\_\+back} (const std\+::string \&filename, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ cam)
+\item 
+\hypertarget{classskl_1_1_video_capture_ac5d9f95727f61e5a619bcb5becb41f6c}{}\label{classskl_1_1_video_capture_ac5d9f95727f61e5a619bcb5becb41f6c} 
+virtual bool {\bfseries push\+\_\+back} (int device, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ cam)
+\item 
+\hypertarget{classskl_1_1_video_capture_a59c8002f5400c9701b14b0f8230e9d05}{}\label{classskl_1_1_video_capture_a59c8002f5400c9701b14b0f8230e9d05} 
+\hyperlink{classskl_1_1_video_capture}{Video\+Capture} \& {\bfseries operator$>$$>$} (std\+::vector$<$ cv\+::\+Mat $>$ \&mat\+\_\+vec)
+\item 
+\hypertarget{classskl_1_1_video_capture_acb223f8f69501dfe3127a1769e251db1}{}\label{classskl_1_1_video_capture_acb223f8f69501dfe3127a1769e251db1} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)
+\item 
+\hypertarget{classskl_1_1_video_capture_ae1ab532c19ac61856952c81de149d594}{}\label{classskl_1_1_video_capture_ae1ab532c19ac61856952c81de149d594} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_a6b399c2cd88317a93d306e6db3b5c47e}{}\label{classskl_1_1_video_capture_a6b399c2cd88317a93d306e6db3b5c47e} 
+std\+::vector$<$ cv\+::\+Ptr$<$ \hyperlink{classskl_1_1___video_capture_interface}{\+\_\+\+Video\+Capture\+Interface} $>$ $>$ {\bfseries cam\+\_\+interface}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+パラメタの読み込み機能などを強化した\+Video\+Capture 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/skl\+Video\+Capture.\+h\item 
+Open\+C\+V/src/skl\+Video\+Capture.\+cpp\end{DoxyCompactItemize}

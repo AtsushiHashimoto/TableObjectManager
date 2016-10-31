@@ -1,0 +1,119 @@
+\hypertarget{classskl_1_1_tex_cut}{}\section{skl\+:\+:Tex\+Cut Class Reference}
+\label{classskl_1_1_tex_cut}\index{skl\+::\+Tex\+Cut@{skl\+::\+Tex\+Cut}}
+Inheritance diagram for skl\+:\+:Tex\+Cut\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1_tex_cut}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ab6e8259e8a77259adbc83a34a00f8a61}{}\label{classskl_1_1_tex_cut_ab6e8259e8a77259adbc83a34a00f8a61} 
+typedef Graph$<$ int, int, int $>$ {\bfseries Tex\+Cut\+Graph}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ab730801cda6ac254bf925fea10844e69}{}\label{classskl_1_1_tex_cut_ab730801cda6ac254bf925fea10844e69} 
+{\bfseries Tex\+Cut} (float alpha=1.\+5, float smoothing\+\_\+term\+\_\+weight=1.\+0, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8, bool do\+Smoothing=true)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a0aab9407bd5cf2a5d185ce3c42ccdf23}{}\label{classskl_1_1_tex_cut_a0aab9407bd5cf2a5d185ce3c42ccdf23} 
+{\bfseries Tex\+Cut} (const cv\+::\+Mat \&bg1, const cv\+::\+Mat \&bg2, float alpha=1.\+0, float smoothing\+\_\+term\+\_\+weight=1.\+0, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8)
+\item 
+\hypertarget{classskl_1_1_tex_cut_afb6fbae7b1c1da054ab43107d8097263}{}\label{classskl_1_1_tex_cut_afb6fbae7b1c1da054ab43107d8097263} 
+virtual void {\bfseries set\+Background} (const cv\+::\+Mat \&bg, bool no\+Smoothing=false)
+\item 
+\hypertarget{classskl_1_1_tex_cut_afbeb0cf8c109b9dd062a354b848ed86c}{}\label{classskl_1_1_tex_cut_afbeb0cf8c109b9dd062a354b848ed86c} 
+void {\bfseries set\+Params} (float alpha=1.\+5, float smoothing\+\_\+term\+\_\+weight=1.\+5, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a1ad3f55b9aaede0b857a1c3f07397235}{}\label{classskl_1_1_tex_cut_a1ad3f55b9aaede0b857a1c3f07397235} 
+void {\bfseries learn\+Image\+Noise\+Model} (const cv\+::\+Mat \&bg2)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a13d0d07100c358dc72a44c3ed1cb41c0}{}\label{classskl_1_1_tex_cut_a13d0d07100c358dc72a44c3ed1cb41c0} 
+void {\bfseries update\+Background\+Model} (const cv\+::\+Mat \&img)
+\item 
+\hypertarget{classskl_1_1_tex_cut_ada0f475c006b236325e201fcbb9dbbe4}{}\label{classskl_1_1_tex_cut_ada0f475c006b236325e201fcbb9dbbe4} 
+cv\+::\+Mat {\bfseries background} () const
+\item 
+\hypertarget{classskl_1_1_tex_cut_a114d5710f0b2b6ba04c54f6a4df7f02f}{}\label{classskl_1_1_tex_cut_a114d5710f0b2b6ba04c54f6a4df7f02f} 
+void {\bfseries set\+Noise\+Model} (const std\+::vector$<$ float $>$ \&noise\+\_\+std\+\_\+dev, const std\+::vector$<$ float $>$ \&gh\+\_\+expectation, const std\+::vector$<$ float $>$ \&gh\+\_\+std\+\_\+dev)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a9e61e905d329f9f6333e7a95c249309f}{}\label{classskl_1_1_tex_cut_a9e61e905d329f9f6333e7a95c249309f} 
+bool {\bfseries do\+Smoothing} () const
+\item 
+\hypertarget{classskl_1_1_tex_cut_aa51a66fef188c2570a5c4683087659b1}{}\label{classskl_1_1_tex_cut_aa51a66fef188c2570a5c4683087659b1} 
+void {\bfseries do\+Smoothing} (bool \+\_\+\+\_\+do\+Smoothing)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a152906ca9a37972c1e9a80a9dc79093a}{}\label{classskl_1_1_tex_cut_a152906ca9a37972c1e9a80a9dc79093a} 
+virtual void {\bfseries compute} (const cv\+::\+Mat \&src, const cv\+::\+Mat \&mask, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1_tex_cut_ae5f234d5a13fd3a9bbb24bf498b3ba5b}{}\label{classskl_1_1_tex_cut_ae5f234d5a13fd3a9bbb24bf498b3ba5b} 
+void {\bfseries calc\+Edge\+Capacity} (const std\+::vector$<$ cv\+::\+Mat $>$ \&src, const std\+::vector$<$ cv\+::\+Mat $>$ \&sobel\+\_\+x, const std\+::vector$<$ cv\+::\+Mat $>$ \&sobel\+\_\+y, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+img, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+sobel\+\_\+x, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+sobel\+\_\+y, const std\+::vector$<$ float $>$ \&noise\+\_\+std\+\_\+dev, const std\+::vector$<$ float $>$ \&gh\+\_\+expectation, const std\+::vector$<$ float $>$ \&gh\+\_\+std\+\_\+dev, float alpha, float smoothing\+\_\+term\+\_\+weight, float thresh\+\_\+tex\+\_\+diff, cv\+::\+Mat \&data\+\_\+term, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+x, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+y)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a7bf838818a360db04e0eb97d6e1de769}{}\label{classskl_1_1_tex_cut_a7bf838818a360db04e0eb97d6e1de769} 
+int {\bfseries calc\+Graph\+Cut} (const cv\+::\+Mat \&data\+\_\+term, const cv\+::\+Mat \&smoothing\+\_\+term\+\_\+x, const cv\+::\+Mat \&smoothing\+\_\+y)
+\item 
+\hypertarget{classskl_1_1_tex_cut_a9e2020aee23f54d8e2dcc259415959c4}{}\label{classskl_1_1_tex_cut_a9e2020aee23f54d8e2dcc259415959c4} 
+void {\bfseries set\+Result} (const cv\+::\+Mat \&src, cv\+::\+Mat \&dest) const
+\item 
+\hypertarget{classskl_1_1_tex_cut_a204850a2ef37ed0a86d9b387f68cee40}{}\label{classskl_1_1_tex_cut_a204850a2ef37ed0a86d9b387f68cee40} 
+void {\bfseries get\+Sobel} (const std\+::vector$<$ cv\+::\+Mat $>$ \&img, std\+::vector$<$ cv\+::\+Mat $>$ $\ast$sobel\+\_\+x, std\+::vector$<$ cv\+::\+Mat $>$ $\ast$sobel\+\_\+y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a009d4291f63514a949562a0ce0059a4a}{}\label{classskl_1_1_tex_cut_a009d4291f63514a949562a0ce0059a4a} 
+bool {\bfseries \+\_\+do\+Smoothing}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a3b56d571fda6b2aefa50f2d96b7bd4f3}{}\label{classskl_1_1_tex_cut_a3b56d571fda6b2aefa50f2d96b7bd4f3} 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries bg\+\_\+img}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a9f627c2647c654a98e308b29c8dc7976}{}\label{classskl_1_1_tex_cut_a9f627c2647c654a98e308b29c8dc7976} 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries bg\+\_\+sobel\+\_\+x}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a11d036175b39e40f324d9fdeaf92ab09}{}\label{classskl_1_1_tex_cut_a11d036175b39e40f324d9fdeaf92ab09} 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries bg\+\_\+sobel\+\_\+y}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ae6a696dbb5e396c06924c576d8f00916}{}\label{classskl_1_1_tex_cut_ae6a696dbb5e396c06924c576d8f00916} 
+std\+::vector$<$ float $>$ {\bfseries noise\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a65520dd2b2cc7e6fdcee2df2b0b88544}{}\label{classskl_1_1_tex_cut_a65520dd2b2cc7e6fdcee2df2b0b88544} 
+std\+::vector$<$ float $>$ {\bfseries gh\+\_\+expectation}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a02e4bf3d27947c2b4fa4943deb6c4bdc}{}\label{classskl_1_1_tex_cut_a02e4bf3d27947c2b4fa4943deb6c4bdc} 
+std\+::vector$<$ float $>$ {\bfseries gh\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a3c839d9fbfc31b39ed8746cbd843382c}{}\label{classskl_1_1_tex_cut_a3c839d9fbfc31b39ed8746cbd843382c} 
+float {\bfseries alpha}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ae560cca1682e51ce2a3b710ffc36393d}{}\label{classskl_1_1_tex_cut_ae560cca1682e51ce2a3b710ffc36393d} 
+float {\bfseries smoothing\+\_\+term\+\_\+weight}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a330f506ac8c577542a342882b17ea130}{}\label{classskl_1_1_tex_cut_a330f506ac8c577542a342882b17ea130} 
+float {\bfseries thresh\+\_\+tex\+\_\+diff}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ae224d178a3fd00cd5f1a0aaa13726878}{}\label{classskl_1_1_tex_cut_ae224d178a3fd00cd5f1a0aaa13726878} 
+unsigned char {\bfseries over\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1_tex_cut_ae07cb809d654962b87e56983b7368645}{}\label{classskl_1_1_tex_cut_ae07cb809d654962b87e56983b7368645} 
+unsigned char {\bfseries under\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1_tex_cut_abafc4ac9524a8bc0a1d9ab901890b70a}{}\label{classskl_1_1_tex_cut_abafc4ac9524a8bc0a1d9ab901890b70a} 
+Tex\+Cut\+Graph $\ast$ {\bfseries g}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a9db20e8dc253db61021acd1d1fdcd360}{}\label{classskl_1_1_tex_cut_a9db20e8dc253db61021acd1d1fdcd360} 
+std\+::vector$<$ std\+::vector$<$ Tex\+Cut\+Graph\+::node\+\_\+id $>$ $>$ {\bfseries nodes}
+\item 
+\hypertarget{classskl_1_1_tex_cut_a8a7aa37cd4557825e6de41cf34185e43}{}\label{classskl_1_1_tex_cut_a8a7aa37cd4557825e6de41cf34185e43} 
+cv\+::\+Mat {\bfseries \+\_\+background}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Tex\+Cut.\+h\item 
+Open\+C\+V/src/Tex\+Cut.\+cpp\end{DoxyCompactItemize}

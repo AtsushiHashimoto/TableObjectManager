@@ -1,0 +1,81 @@
+\hypertarget{classskl_1_1_h_t_t_p_client}{}\section{skl\+:\+:H\+T\+T\+P\+Client Class Reference}
+\label{classskl_1_1_h_t_t_p_client}\index{skl\+::\+H\+T\+T\+P\+Client@{skl\+::\+H\+T\+T\+P\+Client}}
+
+
+\hyperlink{classskl_1_1_h_t_t_p_client}{H\+T\+T\+P\+Client} get/post requestを送るクラス(redirectには対応していない簡単なもの)  
+
+
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Client.\+h$>$}
+
+Inheritance diagram for skl\+:\+:H\+T\+T\+P\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_h_t_t_p_client}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classskl_1_1_h_t_t_p_client_1_1tcp__client}{tcp\+\_\+client}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_aa51f43aef6208916f62669de3fed1de0}{}\label{classskl_1_1_h_t_t_p_client_aa51f43aef6208916f62669de3fed1de0} 
+{\bfseries H\+T\+T\+P\+Client} (const std\+::string \&host, int port=80)
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_adea8587355607c4fdde6e6c85d445fc9}{}\label{classskl_1_1_h_t_t_p_client_adea8587355607c4fdde6e6c85d445fc9} 
+bool {\bfseries get} (const std\+::string \&path, const std\+::string \&query=\char`\"{}\char`\"{})
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_af319583a773165209adc257bd7a3cef9}{}\label{classskl_1_1_h_t_t_p_client_af319583a773165209adc257bd7a3cef9} 
+bool {\bfseries post} (const std\+::string \&path, const std\+::string \&query)
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a3727336ba1c411c3d10949f31a987c27}{}\label{classskl_1_1_h_t_t_p_client_a3727336ba1c411c3d10949f31a987c27} 
+unsigned int {\bfseries status\+\_\+code} () const
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a8ce4445d43ff331ed51cce35d66a95c6}{}\label{classskl_1_1_h_t_t_p_client_a8ce4445d43ff331ed51cce35d66a95c6} 
+const std\+::string \& {\bfseries read} () const
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a1679219321139d2306e101d251de73c4}{}\label{classskl_1_1_h_t_t_p_client_a1679219321139d2306e101d251de73c4} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries header} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a7911f896b7d883ac33814684deb03dfa}{}\label{classskl_1_1_h_t_t_p_client_a7911f896b7d883ac33814684deb03dfa} 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classskl_1_1_h_t_t_p_client_1_1tcp__client}{tcp\+\_\+client} $>$ {\bfseries tcp\+\_\+client\+\_\+ptr}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a74c9a575106b741ad6cfd95f3932de18}{}\label{classskl_1_1_h_t_t_p_client_a74c9a575106b741ad6cfd95f3932de18} 
+void {\bfseries make\+Request} (boost\+::asio\+::streambuf \&buf, const std\+::string \&path, const std\+::string \&query=\char`\"{}\char`\"{}) const
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a00b88c67fa4c2c817b32150541901f12}{}\label{classskl_1_1_h_t_t_p_client_a00b88c67fa4c2c817b32150541901f12} 
+bool {\bfseries Url\+Encode} (std\+::string \&str) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a0e44c47f71676bcfc6ff79df3eaa60fb}{}\label{classskl_1_1_h_t_t_p_client_a0e44c47f71676bcfc6ff79df3eaa60fb} 
+std\+::string {\bfseries host\+\_\+}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a8676f73a1afa20928a4c5b9b4a781ddf}{}\label{classskl_1_1_h_t_t_p_client_a8676f73a1afa20928a4c5b9b4a781ddf} 
+int {\bfseries port\+\_\+}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_a05b976dc2f1ca592c87a7a78d5b0d909}{}\label{classskl_1_1_h_t_t_p_client_a05b976dc2f1ca592c87a7a78d5b0d909} 
+boost\+::asio\+::io\+\_\+service {\bfseries io\+\_\+service\+\_\+}
+\item 
+\hypertarget{classskl_1_1_h_t_t_p_client_ae756b586bde61e8fb606bda4d281975c}{}\label{classskl_1_1_h_t_t_p_client_ae756b586bde61e8fb606bda4d281975c} 
+tcp\+\_\+client\+\_\+ptr {\bfseries tcp\+\_\+base\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classskl_1_1_h_t_t_p_client}{H\+T\+T\+P\+Client} get/post requestを送るクラス(redirectには対応していない簡単なもの) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_h_t_t_p_client_8h}{H\+T\+T\+P\+Client.\+h}\end{DoxyCompactItemize}

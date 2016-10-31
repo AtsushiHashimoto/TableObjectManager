@@ -1,0 +1,118 @@
+\hypertarget{classskl_1_1_time_formatter_default}{}\section{skl\+:\+:Time\+Formatter\+Default Class Reference}
+\label{classskl_1_1_time_formatter_default}\index{skl\+::\+Time\+Formatter\+Default@{skl\+::\+Time\+Formatter\+Default}}
+
+
+\hyperlink{classskl_1_1_time_formatter_default}{Time\+Formatter\+Default}.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Formatter\+Default.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Time\+Formatter\+Default\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_time_formatter_default}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_formatter_default_a5cddc15b60b466a86a5f963de1ad8e90}{}\label{classskl_1_1_time_formatter_default_a5cddc15b60b466a86a5f963de1ad8e90} 
+virtual \hyperlink{classskl_1_1_time_formatter_default}{Time\+Formatter\+Default} $\ast$ {\bfseries clone} () const
+\item 
+\hypertarget{classskl_1_1_time_formatter_default_a80774f6fcf15b18e7edb78a5e4d3c01a}{}\label{classskl_1_1_time_formatter_default_a80774f6fcf15b18e7edb78a5e4d3c01a} 
+virtual bool {\bfseries equals} (const \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} \&other) const
+\item 
+void \hyperlink{classskl_1_1_time_formatter_default_a803104c1e78b366dc9f4c6fecb632c11}{parse\+String} (const std\+::string \&str, int $\ast$Year, int $\ast$Mon, int $\ast$Day, int $\ast$Hour, int $\ast$Min, int $\ast$Sec, long $\ast$U\+Sec) const  throw (\+Time\+Format\+Exception)
+\begin{DoxyCompactList}\small\item\em 文字列を解析し，数字を代入する \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_formatter_default_aa0636a112004da1d9646c127d10bf9d8}{to\+String} (int Year, int Mon, int Day, int Hour, int Min, int Sec, long U\+Sec) const
+\begin{DoxyCompactList}\small\item\em 文字列へ変換する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_formatter_default_ac96f3974a6623e1385d7dba188939ff9}{}\label{classskl_1_1_time_formatter_default_ac96f3974a6623e1385d7dba188939ff9} 
+{\bfseries Time\+Formatter\+Default} (const \hyperlink{classskl_1_1_time_formatter_default}{Time\+Formatter\+Default} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classskl_1_1_time_formatter_default}{Time\+Formatter\+Default}. 
+
+Y\+Y\+Y\+Y.\+M\+M.\+D\+D\+\_\+hh.\+mm.\+ss.\+fff 形式を扱う 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_time_formatter_default_a803104c1e78b366dc9f4c6fecb632c11}{}\label{classskl_1_1_time_formatter_default_a803104c1e78b366dc9f4c6fecb632c11} 
+\index{skl\+::\+Time\+Formatter\+Default@{skl\+::\+Time\+Formatter\+Default}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!skl\+::\+Time\+Formatter\+Default@{skl\+::\+Time\+Formatter\+Default}}
+\subsubsection{\texorpdfstring{parse\+String()}{parseString()}}
+{\footnotesize\ttfamily void skl\+::\+Time\+Formatter\+Default\+::parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{int $\ast$}]{Year,  }\item[{int $\ast$}]{Mon,  }\item[{int $\ast$}]{Day,  }\item[{int $\ast$}]{Hour,  }\item[{int $\ast$}]{Min,  }\item[{int $\ast$}]{Sec,  }\item[{long $\ast$}]{U\+Sec }\end{DoxyParamCaption}) const throw  \hyperlink{classskl_1_1_time_format_exception}{Time\+Format\+Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+文字列を解析し，数字を代入する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & 解析する文字列 \\
+\hline
+{\em Year} & 年を入れる変数 \\
+\hline
+{\em Mon} & 月を入れる変数 \\
+\hline
+{\em Day} & 日を入れる変数 \\
+\hline
+{\em Hour} & 時を入れる変数 \\
+\hline
+{\em Min} & 分を入れる変数 \\
+\hline
+{\em Sec} & 秒を入れる変数 \\
+\hline
+{\em U\+Sec} & U\+Sec(micro sec.)を入れる変数 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classskl_1_1_time_formatter}{skl\+::\+Time\+Formatter}.
+
+\hypertarget{classskl_1_1_time_formatter_default_aa0636a112004da1d9646c127d10bf9d8}{}\label{classskl_1_1_time_formatter_default_aa0636a112004da1d9646c127d10bf9d8} 
+\index{skl\+::\+Time\+Formatter\+Default@{skl\+::\+Time\+Formatter\+Default}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!skl\+::\+Time\+Formatter\+Default@{skl\+::\+Time\+Formatter\+Default}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Formatter\+Default\+::to\+String (\begin{DoxyParamCaption}\item[{int}]{Year,  }\item[{int}]{Mon,  }\item[{int}]{Day,  }\item[{int}]{Hour,  }\item[{int}]{Min,  }\item[{int}]{Sec,  }\item[{long}]{U\+Sec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+文字列へ変換する関数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Year} & 年 \\
+\hline
+{\em Mon} & 月 \\
+\hline
+{\em Day} & 日 \\
+\hline
+{\em Hour} & 時 \\
+\hline
+{\em Min} & 分 \\
+\hline
+{\em Sec} & 秒 \\
+\hline
+{\em U\+Sec} & マイクロ秒\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+文字列表現 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classskl_1_1_time_formatter}{skl\+::\+Time\+Formatter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_time_formatter_default_8h}{Time\+Formatter\+Default.\+h}\item 
+Core/src/Time\+Formatter\+Default.\+cpp\end{DoxyCompactItemize}

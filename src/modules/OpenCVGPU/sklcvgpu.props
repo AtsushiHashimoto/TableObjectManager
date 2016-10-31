@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\OpenCV\sklcv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(CudaToolkitIncludeDir);$(OpenCVDir)\prebuild\include\opencv;$(OpenCVDir)\prebuild\include;$(OpenCVDir)\build\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(CudaToolkitBinDir);$(SKLRoot)\lib\$(Platform)\$(Configuration)\$(PlatformToolset);$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(CUDADir)¥lib¥$(Platform);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>cudart.lib;SKLOpenCVGPU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

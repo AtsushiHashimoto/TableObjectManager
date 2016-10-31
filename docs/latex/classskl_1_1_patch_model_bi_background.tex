@@ -1,0 +1,81 @@
+\hypertarget{classskl_1_1_patch_model_bi_background}{}\section{skl\+:\+:Patch\+Model\+Bi\+Background Class Reference}
+\label{classskl_1_1_patch_model_bi_background}\index{skl\+::\+Patch\+Model\+Bi\+Background@{skl\+::\+Patch\+Model\+Bi\+Background}}
+
+
+複数の背景を持つパッチモデル  
+
+
+
+
+{\ttfamily \#include $<$Patch\+Model\+Bi\+Background.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Patch\+Model\+Bi\+Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_patch_model_bi_background}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_ad3813e93a67f1f3921f4dc116ac0f8d4}{}\label{classskl_1_1_patch_model_bi_background_ad3813e93a67f1f3921f4dc116ac0f8d4} 
+\hyperlink{classskl_1_1_patch_model_bi_background_ad3813e93a67f1f3921f4dc116ac0f8d4}{Patch\+Model\+Bi\+Background} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_aeb304f991c2e68c0628b046fa9d8e091}{}\label{classskl_1_1_patch_model_bi_background_aeb304f991c2e68c0628b046fa9d8e091} 
+\hyperlink{classskl_1_1_patch_model_bi_background_aeb304f991c2e68c0628b046fa9d8e091}{Patch\+Model\+Bi\+Background} (const cv\+::\+Mat \&base)
+\begin{DoxyCompactList}\small\item\em 背景画像を引数に取るコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a223018a69ee36da60092cc9e2b9ea6ca}{}\label{classskl_1_1_patch_model_bi_background_a223018a69ee36da60092cc9e2b9ea6ca} 
+virtual \hyperlink{classskl_1_1_patch_model_bi_background_a223018a69ee36da60092cc9e2b9ea6ca}{$\sim$\+Patch\+Model\+Bi\+Background} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_aa720b6806d9742ef75fef2f905ec9396}{}\label{classskl_1_1_patch_model_bi_background_aa720b6806d9742ef75fef2f905ec9396} 
+void {\bfseries set\+Object\+Labels} (const cv\+::\+Mat \&img, const cv\+::\+Mat \&human\+\_\+label, const cv\+::\+Mat \&object\+\_\+cand\+\_\+labels, size\+\_\+t object\+\_\+cand\+\_\+num, std\+::vector$<$ size\+\_\+t $>$ $\ast$put\+\_\+object\+\_\+ids, std\+::vector$<$ size\+\_\+t $>$ $\ast$taken\+\_\+object\+\_\+ids)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a65303d6831841eb507c2b9556e553a43}{}\label{classskl_1_1_patch_model_bi_background_a65303d6831841eb507c2b9556e553a43} 
+void {\bfseries remove\+Patch\+From\+Model} (size\+\_\+t id)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a062a4ddd81d43392be272dabffd891b5}{}\label{classskl_1_1_patch_model_bi_background_a062a4ddd81d43392be272dabffd891b5} 
+void {\bfseries base} (const cv\+::\+Mat \&base\+\_\+bg)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a7076aea8f4cdbf1b841b01e07734e9f6}{}\label{classskl_1_1_patch_model_bi_background_a7076aea8f4cdbf1b841b01e07734e9f6} 
+void {\bfseries latest\+\_\+bg2} (const cv\+::\+Mat \&bg)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a003aba462dc25be800fd6a610015bbf2}{}\label{classskl_1_1_patch_model_bi_background_a003aba462dc25be800fd6a610015bbf2} 
+const cv\+::\+Mat \& {\bfseries latest\+\_\+bg2} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a5d1804b0aa78e775b67ca9df8c0b64a0}{}\label{classskl_1_1_patch_model_bi_background_a5d1804b0aa78e775b67ca9df8c0b64a0} 
+bool {\bfseries erase} (size\+\_\+t ID)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a8cc32d4d6f0ccd12f51c2eb43f56f615}{}\label{classskl_1_1_patch_model_bi_background_a8cc32d4d6f0ccd12f51c2eb43f56f615} 
+virtual size\+\_\+t {\bfseries put\+Patch} (const cv\+::\+Mat \&img, const cv\+::\+Mat \&fg\+\_\+edge, const cv\+::\+Mat \&mask, const cv\+::\+Rect \&roi)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_ad1aefd40d2fb6f7ccd540f9cbd512118}{}\label{classskl_1_1_patch_model_bi_background_ad1aefd40d2fb6f7ccd540f9cbd512118} 
+virtual void {\bfseries take\+Patch} (size\+\_\+t ID, std\+::vector$<$ size\+\_\+t $>$ $\ast$taken\+\_\+patch\+\_\+ids)
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_ac491c5b0cd10591ee0ac7a2e4a3108ea}{}\label{classskl_1_1_patch_model_bi_background_ac491c5b0cd10591ee0ac7a2e4a3108ea} 
+virtual void {\bfseries update} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_acd9abc34b8445307c31e731094f1bf74}{}\label{classskl_1_1_patch_model_bi_background_acd9abc34b8445307c31e731094f1bf74} 
+std\+::map$<$ size\+\_\+t, cv\+::\+Mat $>$ {\bfseries patches\+\_\+underside2}
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_a599460502cd7df137d5c1e14a2798d13}{}\label{classskl_1_1_patch_model_bi_background_a599460502cd7df137d5c1e14a2798d13} 
+cv\+::\+Mat {\bfseries \+\_\+latest\+\_\+bg2}
+\item 
+\hypertarget{classskl_1_1_patch_model_bi_background_abfe3ac42763123a21443d640f9f0cc1d}{}\label{classskl_1_1_patch_model_bi_background_abfe3ac42763123a21443d640f9f0cc1d} 
+cv\+::\+Mat {\bfseries hidden\+\_\+image2}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+複数の背景を持つパッチモデル 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_patch_model_bi_background_8h}{Patch\+Model\+Bi\+Background.\+h}\item 
+Open\+C\+V/src/\hyperlink{_patch_model_bi_background_8cpp}{Patch\+Model\+Bi\+Background.\+cpp}\end{DoxyCompactItemize}

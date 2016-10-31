@@ -1,0 +1,61 @@
+\hypertarget{classskl_1_1_time_formatter}{}\section{skl\+:\+:Time\+Formatter Class Reference}
+\label{classskl_1_1_time_formatter}\index{skl\+::\+Time\+Formatter@{skl\+::\+Time\+Formatter}}
+
+
+\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter}\textquotesingle{}s abstrcut class.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Formatter.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Time\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_time_formatter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_formatter_a33a901eefd78aaadded7254a8005e3b8}{}\label{classskl_1_1_time_formatter_a33a901eefd78aaadded7254a8005e3b8} 
+{\bfseries Time\+Formatter} (const std\+::string \&name=\char`\"{}\char`\"{})
+\item 
+\hypertarget{classskl_1_1_time_formatter_a10c8d84fe0fbe2abdec7962e319ffc40}{}\label{classskl_1_1_time_formatter_a10c8d84fe0fbe2abdec7962e319ffc40} 
+virtual \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$ {\bfseries clone} () const
+\item 
+\hypertarget{classskl_1_1_time_formatter_ac574740a7005255b669a8158729f1b80}{}\label{classskl_1_1_time_formatter_ac574740a7005255b669a8158729f1b80} 
+virtual bool {\bfseries equals} (const \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_formatter_aef33634872a38ff80019413edae56aeb}{}\label{classskl_1_1_time_formatter_aef33634872a38ff80019413edae56aeb} 
+virtual void {\bfseries parse\+String} (const std\+::string \&str, int $\ast$Year, int $\ast$Mon, int $\ast$Day, int $\ast$Hour, int $\ast$Min, int $\ast$Sec, long $\ast$U\+Sec) const =0  throw (\+Time\+Format\+Exception)
+\item 
+\hypertarget{classskl_1_1_time_formatter_aa0028896c2c544917801268e97eb0a57}{}\label{classskl_1_1_time_formatter_aa0028896c2c544917801268e97eb0a57} 
+virtual std\+::string {\bfseries to\+String} (int Year, int Mon, int Day, int Hour, int Min, int Sec, long U\+Sec) const =0
+\item 
+\hypertarget{classskl_1_1_time_formatter_af4f4ed9eef376bd3d920b56822873c0c}{}\label{classskl_1_1_time_formatter_af4f4ed9eef376bd3d920b56822873c0c} 
+std\+::string {\bfseries get\+Name} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_formatter_abe8fae39578eb6b94b4a669d679a7bf1}{}\label{classskl_1_1_time_formatter_abe8fae39578eb6b94b4a669d679a7bf1} 
+{\bfseries Time\+Formatter} (const \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_formatter_a1a26b7ebf9f1a3e47942afecda7d3571}{}\label{classskl_1_1_time_formatter_a1a26b7ebf9f1a3e47942afecda7d3571} 
+std\+::string {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter}\textquotesingle{}s abstrcut class. 
+
+\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} 時間と文字列の相互変換を行う基底クラス(仮想) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_time_formatter_8h}{Time\+Formatter.\+h}\item 
+Core/src/\hyperlink{_time_formatter_8cpp}{Time\+Formatter.\+cpp}\end{DoxyCompactItemize}

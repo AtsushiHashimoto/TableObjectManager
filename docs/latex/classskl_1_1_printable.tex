@@ -1,0 +1,81 @@
+\hypertarget{classskl_1_1_printable}{}\section{skl\+:\+:Printable$<$ T $>$ Class Template Reference}
+\label{classskl_1_1_printable}\index{skl\+::\+Printable$<$ T $>$@{skl\+::\+Printable$<$ T $>$}}
+
+
+文字列として書き出しが可能であることを保証するインターフェイス  
+
+
+
+
+{\ttfamily \#include $<$Printable.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Printable$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_printable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_printable_ab1d9cf680b6431052ca4692aaef1f106}{}\label{classskl_1_1_printable_ab1d9cf680b6431052ca4692aaef1f106} 
+\hyperlink{classskl_1_1_printable_ab1d9cf680b6431052ca4692aaef1f106}{Printable} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_printable_ad299a8e5955a80154aa656d178a9992e}{}\label{classskl_1_1_printable_ad299a8e5955a80154aa656d178a9992e} 
+virtual \hyperlink{classskl_1_1_printable_ad299a8e5955a80154aa656d178a9992e}{$\sim$\+Printable} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_printable_ad27d5ef1bb67b50e89db983d106cc9d1}{}\label{classskl_1_1_printable_ad27d5ef1bb67b50e89db983d106cc9d1} 
+virtual std\+::string {\bfseries print} () const =0
+\item 
+\hypertarget{classskl_1_1_printable_a7f99b93dcf3250ac0861f2660103f8a8}{}\label{classskl_1_1_printable_a7f99b93dcf3250ac0861f2660103f8a8} 
+virtual bool {\bfseries scan} (const std\+::string \&str)=0
+\item 
+\hypertarget{classskl_1_1_printable_a72ab64dc61dbecebef3211b72814f978}{}\label{classskl_1_1_printable_a72ab64dc61dbecebef3211b72814f978} 
+virtual \hyperlink{classskl_1_1_printable}{Printable}$<$ T $>$ \& \hyperlink{classskl_1_1_printable_a72ab64dc61dbecebef3211b72814f978}{operator=} (const \hyperlink{classskl_1_1_printable}{Printable}$<$ T $>$ \&other)
+\begin{DoxyCompactList}\small\item\em 代入演算子 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_printable_a57ee1e53f47772b771f41e1b23ee5b82}{}\label{classskl_1_1_printable_a57ee1e53f47772b771f41e1b23ee5b82} 
+virtual bool \hyperlink{classskl_1_1_printable_a57ee1e53f47772b771f41e1b23ee5b82}{operator$<$} (const T \&other) const
+\begin{DoxyCompactList}\small\item\em 比較演算子(但し、printした文字列の順序を利用するので、意味のある比較をした場合には具象クラス毎に定義すること) \end{DoxyCompactList}\item 
+T $\ast$ \hyperlink{classskl_1_1_printable_a1bc18e234d25c4bdce84ed70a58d2f88}{clone} () const
+\begin{DoxyCompactList}\small\item\em cloneを作る \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_printable_a79a8c40232c97197722b0e50c3bc3ccf}{}\label{classskl_1_1_printable_a79a8c40232c97197722b0e50c3bc3ccf} 
+virtual long \hyperlink{classskl_1_1_printable_a79a8c40232c97197722b0e50c3bc3ccf}{\+\_\+buf\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em \+\_\+serializeで生成される予定のbufの長さを返す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_printable_ab7ee46a0d3fd3536af70929e477eefd4}{}\label{classskl_1_1_printable_ab7ee46a0d3fd3536af70929e477eefd4} 
+virtual void \hyperlink{classskl_1_1_printable_ab7ee46a0d3fd3536af70929e477eefd4}{\+\_\+serialize} ()
+\begin{DoxyCompactList}\small\item\em クラスの中身を直列化してメンバ変数のbufに格納する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_printable_a1f05fcd22b8e76f3e2da7d60f31afb58}{}\label{classskl_1_1_printable_a1f05fcd22b8e76f3e2da7d60f31afb58} 
+virtual void \hyperlink{classskl_1_1_printable_a1f05fcd22b8e76f3e2da7d60f31afb58}{\+\_\+deserialize} (const char $\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}, long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size})
+\begin{DoxyCompactList}\small\item\em 直列化されたクラスの中身を読み込む \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class skl\+::\+Printable$<$ T $>$}
+
+文字列として書き出しが可能であることを保証するインターフェイス 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_printable_a1bc18e234d25c4bdce84ed70a58d2f88}{}\label{classskl_1_1_printable_a1bc18e234d25c4bdce84ed70a58d2f88} 
+\index{skl\+::\+Printable@{skl\+::\+Printable}!clone@{clone}}
+\index{clone@{clone}!skl\+::\+Printable@{skl\+::\+Printable}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ \hyperlink{classskl_1_1_printable}{skl\+::\+Printable}$<$ T $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+cloneを作る 
+
+\begin{DoxyReturn}{Returns}
+新しく作られたインスタンス 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_printable_8h}{Printable.\+h}\end{DoxyCompactItemize}

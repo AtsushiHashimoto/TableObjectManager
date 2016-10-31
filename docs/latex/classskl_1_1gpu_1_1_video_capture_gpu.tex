@@ -1,0 +1,98 @@
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu}{}\section{skl\+:\+:gpu\+:\+:Video\+Capture\+Gpu Class Reference}
+\label{classskl_1_1gpu_1_1_video_capture_gpu}\index{skl\+::gpu\+::\+Video\+Capture\+Gpu@{skl\+::gpu\+::\+Video\+Capture\+Gpu}}
+
+
+cv\+::gpu\+::\+Gpu\+Matを返すキャプチャ。処理中に次のフレームを非同期でdeviceに送る分、連続フレームに対する処理が高速化される。  
+
+
+
+
+{\ttfamily \#include $<$Video\+Capture\+Gpu.\+h$>$}
+
+Inheritance diagram for skl\+:\+:gpu\+:\+:Video\+Capture\+Gpu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1gpu_1_1_video_capture_gpu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_ae1f7efcbf9ad654fbaec674d2c282c40}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_ae1f7efcbf9ad654fbaec674d2c282c40} 
+\hyperlink{classskl_1_1gpu_1_1_video_capture_gpu_ae1f7efcbf9ad654fbaec674d2c282c40}{Video\+Capture\+Gpu} (Video\+Capture\+Ptr video\+\_\+capture\+\_\+cpu=Video\+Capture\+Ptr())
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a5e357372ee3f6717d8d407617178dc8c}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a5e357372ee3f6717d8d407617178dc8c} 
+virtual \hyperlink{classskl_1_1gpu_1_1_video_capture_gpu_a5e357372ee3f6717d8d407617178dc8c}{$\sim$\+Video\+Capture\+Gpu} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a5db6d5866b7be0673457872cfe9c8714}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a5db6d5866b7be0673457872cfe9c8714} 
+void {\bfseries set\+Base\+Capture} (Video\+Capture\+Ptr video\+\_\+capture\+\_\+cpu)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a9de0b1d144534e21d5a0c169966a2765}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a9de0b1d144534e21d5a0c169966a2765} 
+bool {\bfseries open} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a1d45dcb80d7ac64f30ac02fb3ee44af6}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a1d45dcb80d7ac64f30ac02fb3ee44af6} 
+bool {\bfseries open} (int device)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a1253eef48a2b45e7ca355c82c7cf3ff0}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a1253eef48a2b45e7ca355c82c7cf3ff0} 
+bool {\bfseries is\+Opened} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_ad9ccd9142fac1bfd4564df8ef660b8a8}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_ad9ccd9142fac1bfd4564df8ef660b8a8} 
+void \hyperlink{classskl_1_1gpu_1_1_video_capture_gpu_ad9ccd9142fac1bfd4564df8ef660b8a8}{release} ()
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a3dd8b97a47ca09b6f1414f68ba434be3}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a3dd8b97a47ca09b6f1414f68ba434be3} 
+bool {\bfseries grab} ()
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a83b956c7c450fa40045437f97acfef2e}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a83b956c7c450fa40045437f97acfef2e} 
+virtual bool {\bfseries retrieve} (cv\+::\+Mat \&image, int channel=0)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_af969b32c8038ecdbf9c241f2e01fbb43}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_af969b32c8038ecdbf9c241f2e01fbb43} 
+virtual bool {\bfseries retrieve} (cv\+::gpu\+::\+Gpu\+Mat \&image, int channel=0)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a10caf8a02f18b92b0ae3bd0c88c51469}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a10caf8a02f18b92b0ae3bd0c88c51469} 
+bool \hyperlink{classskl_1_1gpu_1_1_video_capture_gpu_a10caf8a02f18b92b0ae3bd0c88c51469}{set} (capture\+\_\+property\+\_\+t prop\+\_\+id, double val)
+\begin{DoxyCompactList}\small\item\em カメラに値やモード(camera\+\_\+mode\+\_\+tがset($\ast$,camera\+\_\+mode\+\_\+t mode)を通してvalに与えられる(modeは-\/4から-\/1までの整数)をセットする純粋仮想関数 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_ad13971c83c79a3507d529a4602cb98de}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_ad13971c83c79a3507d529a4602cb98de} 
+double \hyperlink{classskl_1_1gpu_1_1_video_capture_gpu_ad13971c83c79a3507d529a4602cb98de}{get} (capture\+\_\+property\+\_\+t prop\+\_\+id)
+\begin{DoxyCompactList}\small\item\em カメラから値をgetする純粋仮想関数(modeはインターフェイス簡素化のためサポートしない) \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a79f0b234dc5331fe30e4ffb76d1eb4c0}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a79f0b234dc5331fe30e4ffb76d1eb4c0} 
+\hyperlink{classskl_1_1gpu_1_1_video_capture_gpu}{Video\+Capture\+Gpu} \& {\bfseries operator$>$$>$} (cv\+::gpu\+::\+Gpu\+Mat \&gpu\+\_\+mat)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a50cbbd354550f63438d22fa1dc86af7d}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a50cbbd354550f63438d22fa1dc86af7d} 
+bool {\bfseries grab\+Next\+Frame} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a3689db663d8ed2886cd22210db000d5a}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a3689db663d8ed2886cd22210db000d5a} 
+Video\+Capture\+Ptr {\bfseries video\+\_\+capture\+\_\+cpu}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a234b5a7fa869951933de361c426ae438}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a234b5a7fa869951933de361c426ae438} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries switching\+\_\+mat} \mbox{[}2\mbox{]}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_ade760bce99317a45336bf38416809af9}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_ade760bce99317a45336bf38416809af9} 
+cv\+::\+Mat {\bfseries switching\+\_\+mat\+\_\+cpu} \mbox{[}2\mbox{]}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a921a7b3548d6a929ea7418d07324bb3b}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a921a7b3548d6a929ea7418d07324bb3b} 
+cv\+::gpu\+::\+Cuda\+Mem {\bfseries page\+\_\+locked\+\_\+mat}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_aa97f7007544dc01212513c25c568fd68}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_aa97f7007544dc01212513c25c568fd68} 
+bool {\bfseries is\+Next\+Frame\+Uploaded}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a9a117855378ddbd618350fa66fbceda3}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a9a117855378ddbd618350fa66fbceda3} 
+bool {\bfseries \+\_\+switch}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_video_capture_gpu_a56938aaf74d58a897333660efd6aaff1}{}\label{classskl_1_1gpu_1_1_video_capture_gpu_a56938aaf74d58a897333660efd6aaff1} 
+cv\+::gpu\+::\+Stream {\bfseries s}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+cv\+::gpu\+::\+Gpu\+Matを返すキャプチャ。処理中に次のフレームを非同期でdeviceに送る分、連続フレームに対する処理が高速化される。 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V\+G\+P\+U/include/\hyperlink{_video_capture_gpu_8h}{Video\+Capture\+Gpu.\+h}\item 
+Open\+C\+V\+G\+P\+U/src/\hyperlink{_video_capture_gpu_8cpp}{Video\+Capture\+Gpu.\+cpp}\end{DoxyCompactItemize}

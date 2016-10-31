@@ -1,0 +1,47 @@
+\hypertarget{classskl_1_1_graphcut}{}\section{skl\+:\+:Graphcut Class Reference}
+\label{classskl_1_1_graphcut}\index{skl\+::\+Graphcut@{skl\+::\+Graphcut}}
+
+
+Wrapper Class of graphcut by Vladimir Komogorov.  
+
+
+
+
+{\ttfamily \#include $<$Graphcut.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_graphcut_a1a784d4591dfd733eee7f172f56ae23b}{}\label{classskl_1_1_graphcut_a1a784d4591dfd733eee7f172f56ae23b} 
+\hyperlink{classskl_1_1_graphcut_a1a784d4591dfd733eee7f172f56ae23b}{Graphcut} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_graphcut_aadfc7d0fea926aac3e88be1930239adb}{}\label{classskl_1_1_graphcut_aadfc7d0fea926aac3e88be1930239adb} 
+virtual \hyperlink{classskl_1_1_graphcut_aadfc7d0fea926aac3e88be1930239adb}{$\sim$\+Graphcut} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_graphcut_add5ffe56f886d143450050e2fe1a6ae8}{}\label{classskl_1_1_graphcut_add5ffe56f886d143450050e2fe1a6ae8} 
+int {\bfseries compute} (const cv\+::\+Mat \&terminals, const cv\+::\+Mat \&left\+Transp, const cv\+::\+Mat \&right\+Transp, const cv\+::\+Mat \&top, const cv\+::\+Mat \&bottom, cv\+::\+Mat \&dest)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_graphcut_ae41c06b9e782bd69d2633760c32cfc53}{}\label{classskl_1_1_graphcut_ae41c06b9e782bd69d2633760c32cfc53} 
+Graph$<$ int, int, int $>$ $\ast$ {\bfseries graph}
+\item 
+\hypertarget{classskl_1_1_graphcut_a3dfcbf111a5d66f386d4ee6b5daccc77}{}\label{classskl_1_1_graphcut_a3dfcbf111a5d66f386d4ee6b5daccc77} 
+std\+::vector$<$ std\+::vector$<$ Graph$<$ int, int, int $>$\+::node\+\_\+id $>$ $>$ {\bfseries nodes}
+\item 
+\hypertarget{classskl_1_1_graphcut_acc37076a1fb4ed536fd0ba089f019b20}{}\label{classskl_1_1_graphcut_acc37076a1fb4ed536fd0ba089f019b20} 
+cv\+::\+Size {\bfseries graph\+\_\+size}
+\item 
+\hypertarget{classskl_1_1_graphcut_a2438ccbecf54676accbda142f0c641ea}{}\label{classskl_1_1_graphcut_a2438ccbecf54676accbda142f0c641ea} 
+size\+\_\+t {\bfseries graph\+\_\+node\+\_\+num}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper Class of graphcut by Vladimir Komogorov. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_graphcut_8h}{Graphcut.\+h}\item 
+Open\+C\+V/src/\hyperlink{_graphcut_8cpp}{Graphcut.\+cpp}\end{DoxyCompactItemize}

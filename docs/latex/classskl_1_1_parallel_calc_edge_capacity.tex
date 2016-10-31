@@ -1,0 +1,98 @@
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity}{}\section{skl\+:\+:Parallel\+Calc\+Edge\+Capacity Class Reference}
+\label{classskl_1_1_parallel_calc_edge_capacity}\index{skl\+::\+Parallel\+Calc\+Edge\+Capacity@{skl\+::\+Parallel\+Calc\+Edge\+Capacity}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a29c94dc3e4e2e7d1d58ab38e92b01dbb}{}\label{classskl_1_1_parallel_calc_edge_capacity_a29c94dc3e4e2e7d1d58ab38e92b01dbb} 
+{\bfseries Parallel\+Calc\+Edge\+Capacity} (const std\+::vector$<$ cv\+::\+Mat $>$ \&src, const std\+::vector$<$ cv\+::\+Mat $>$ \&sobel\+\_\+x, const std\+::vector$<$ cv\+::\+Mat $>$ \&sobel\+\_\+y, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+img, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+sobel\+\_\+x, const std\+::vector$<$ cv\+::\+Mat $>$ \&bg\+\_\+sobel\+\_\+y, const std\+::vector$<$ float $>$ \&noise\+\_\+std\+\_\+dev, const std\+::vector$<$ float $>$ \&gh\+\_\+expectation, const std\+::vector$<$ float $>$ \&gh\+\_\+std\+\_\+dev, float alpha, float thresh\+\_\+tex\+\_\+diff, unsigned char over\+\_\+exposure\+\_\+thresh, unsigned char under\+\_\+exposure\+\_\+thresh, cv\+::\+Mat \&data\+\_\+term, cv\+::\+Mat \&gradient\+\_\+heterogenuity, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+x, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+y)
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a90870970fb881a8df7fefcffcb5b4871}{}\label{classskl_1_1_parallel_calc_edge_capacity_a90870970fb881a8df7fefcffcb5b4871} 
+void {\bfseries operator()} (const cv\+::\+Blocked\+Range \&range) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ad4b59e6047dbce5350f77681aa9986ba}{}\label{classskl_1_1_parallel_calc_edge_capacity_ad4b59e6047dbce5350f77681aa9986ba} 
+static float {\bfseries calc\+Grad\+Hetero} (std\+::vector$<$ float $>$ \&power)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_aaad1201111c178f9459ad6e111e33fc8}{}\label{classskl_1_1_parallel_calc_edge_capacity_aaad1201111c178f9459ad6e111e33fc8} 
+void {\bfseries calc\+Data\+Term} (const cv\+::\+Mat \&sobel\+\_\+x, const cv\+::\+Mat \&sobel\+\_\+y, const cv\+::\+Mat \&bg\+\_\+sobel\+\_\+x, const cv\+::\+Mat \&bg\+\_\+sobel\+\_\+y, float nsd, float gh\+\_\+mean, float gh\+\_\+sd, float $\ast$tex\+\_\+int, float $\ast$gh, float $\ast$tex\+\_\+diff) const
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a80cce5c0ac677f00ef0dde521ee5e43f}{}\label{classskl_1_1_parallel_calc_edge_capacity_a80cce5c0ac677f00ef0dde521ee5e43f} 
+void {\bfseries calc\+Smoothing\+Term} (const cv\+::\+Mat \&src\+\_\+left, const cv\+::\+Mat \&src\+\_\+right, const cv\+::\+Mat \&bg\+\_\+left, const cv\+::\+Mat \&bg\+\_\+right, float $\ast$smoothing\+\_\+term, float nsd) const
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_acf7a71128e015c39b2024d193239eb6d}{}\label{classskl_1_1_parallel_calc_edge_capacity_acf7a71128e015c39b2024d193239eb6d} 
+float {\bfseries normalize} (float val, float sigma, float mean=0) const
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_aadec181a33ea4e8d7b3c553c8746fb3a}{}\label{classskl_1_1_parallel_calc_edge_capacity_aadec181a33ea4e8d7b3c553c8746fb3a} 
+int {\bfseries is\+Over\+Under\+Exposure} (const cv\+::\+Mat \&block) const
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ae4285b3c3516981a41e41971fb7e3bec}{}\label{classskl_1_1_parallel_calc_edge_capacity_ae4285b3c3516981a41e41971fb7e3bec} 
+bool {\bfseries is\+Over\+Under\+Exposure} (const std\+::vector$<$ cv\+::\+Mat $>$ \&img\+\_\+planes, const cv\+::\+Rect \&roi) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a602415235457aafde04a40b40ab574d8}{}\label{classskl_1_1_parallel_calc_edge_capacity_a602415235457aafde04a40b40ab574d8} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries src}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a4d9a3aa2a57fa9c0b35b9651e218f6b3}{}\label{classskl_1_1_parallel_calc_edge_capacity_a4d9a3aa2a57fa9c0b35b9651e218f6b3} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries sobel\+\_\+x}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ac24b6f8dbae9749dbc6fd96977cbd11b}{}\label{classskl_1_1_parallel_calc_edge_capacity_ac24b6f8dbae9749dbc6fd96977cbd11b} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries sobel\+\_\+y}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_af42527eec4864004932637f8b021d1cc}{}\label{classskl_1_1_parallel_calc_edge_capacity_af42527eec4864004932637f8b021d1cc} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries bg\+\_\+img}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a4765f43a0a01977f0e595c4b87a99806}{}\label{classskl_1_1_parallel_calc_edge_capacity_a4765f43a0a01977f0e595c4b87a99806} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries bg\+\_\+sobel\+\_\+x}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_afd31e7088e29e2395a6c40a788fa1198}{}\label{classskl_1_1_parallel_calc_edge_capacity_afd31e7088e29e2395a6c40a788fa1198} 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& {\bfseries bg\+\_\+sobel\+\_\+y}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ab055044f6afea0ae0c00ab61c7dcbfc2}{}\label{classskl_1_1_parallel_calc_edge_capacity_ab055044f6afea0ae0c00ab61c7dcbfc2} 
+const std\+::vector$<$ float $>$ \& {\bfseries noise\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a73505b059353d26c99eb16cb454fdf84}{}\label{classskl_1_1_parallel_calc_edge_capacity_a73505b059353d26c99eb16cb454fdf84} 
+const std\+::vector$<$ float $>$ \& {\bfseries gh\+\_\+expectation}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a0e4d4be48637b8329afced2078b24081}{}\label{classskl_1_1_parallel_calc_edge_capacity_a0e4d4be48637b8329afced2078b24081} 
+const std\+::vector$<$ float $>$ \& {\bfseries gh\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a8c1357b077c4e24cac27dbfc1ab37c5f}{}\label{classskl_1_1_parallel_calc_edge_capacity_a8c1357b077c4e24cac27dbfc1ab37c5f} 
+float {\bfseries alpha}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a3f8029fdb418938063f265e7aba12795}{}\label{classskl_1_1_parallel_calc_edge_capacity_a3f8029fdb418938063f265e7aba12795} 
+float {\bfseries smoothing\+\_\+term\+\_\+weight}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a5aa3e138bcc496248b4fd1856ebdf750}{}\label{classskl_1_1_parallel_calc_edge_capacity_a5aa3e138bcc496248b4fd1856ebdf750} 
+float {\bfseries thresh\+\_\+tex\+\_\+diff}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_adaa007555ae37355864ef92d75da1e5d}{}\label{classskl_1_1_parallel_calc_edge_capacity_adaa007555ae37355864ef92d75da1e5d} 
+unsigned char {\bfseries over\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a9bb9b4b9f637f66864556e2572c17c80}{}\label{classskl_1_1_parallel_calc_edge_capacity_a9bb9b4b9f637f66864556e2572c17c80} 
+unsigned char {\bfseries under\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ad0cc5000beb4722c91a9a18bdef20e0a}{}\label{classskl_1_1_parallel_calc_edge_capacity_ad0cc5000beb4722c91a9a18bdef20e0a} 
+cv\+::\+Mat \& {\bfseries data\+\_\+term}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ab80921f09bc3ac0d45b32cd5e5fe92ba}{}\label{classskl_1_1_parallel_calc_edge_capacity_ab80921f09bc3ac0d45b32cd5e5fe92ba} 
+cv\+::\+Mat \& {\bfseries gradient\+\_\+heterogenuity}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_ab151367254689104f5e8977c4a6673c8}{}\label{classskl_1_1_parallel_calc_edge_capacity_ab151367254689104f5e8977c4a6673c8} 
+cv\+::\+Mat \& {\bfseries smoothing\+\_\+term\+\_\+x}
+\item 
+\hypertarget{classskl_1_1_parallel_calc_edge_capacity_a4c2d2846717def8bd5df1310118c823c}{}\label{classskl_1_1_parallel_calc_edge_capacity_a4c2d2846717def8bd5df1310118c823c} 
+cv\+::\+Mat \& {\bfseries smoothing\+\_\+term\+\_\+y}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Tex\+Cut.\+h\item 
+Open\+C\+V/src/Tex\+Cut.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{_video_capture_image_list_8cpp}{}\section{Open\+C\+V/src/\+Video\+Capture\+Image\+List.cpp File Reference}
+\label{_video_capture_image_list_8cpp}\index{Open\+C\+V/src/\+Video\+Capture\+Image\+List.\+cpp@{Open\+C\+V/src/\+Video\+Capture\+Image\+List.\+cpp}}
+{\ttfamily \#include \char`\"{}Video\+Capture\+Image\+List.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$boost/regex.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/tuple/tuple.\+hpp$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_video_capture_image_list_8cpp_a8a309322830b75ba2dcb9e6ea4caa714}{}\label{_video_capture_image_list_8cpp_a8a309322830b75ba2dcb9e6ea4caa714} 
+\#define {\bfseries get\+Image}(index)~img\+\_\+list\+\_\+\mbox{[}img\+\_\+list\mbox{[}index\mbox{]}.first\mbox{]}
+\item 
+\hypertarget{_video_capture_image_list_8cpp_ae5b1a19a0e203a58f14d7e232e9df117}{}\label{_video_capture_image_list_8cpp_ae5b1a19a0e203a58f14d7e232e9df117} 
+\#define {\bfseries is\+Fake}(index)~img\+\_\+list\mbox{[}index\mbox{]}.second
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_video_capture_image_list_8cpp_ac06438af8423af53fbd68a16bc7fa323}{}\label{_video_capture_image_list_8cpp_ac06438af8423af53fbd68a16bc7fa323} 
+typedef std\+::pair$<$ size\+\_\+t, bool $>$ {\bfseries Pseudo\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_video_capture_image_list_8cpp_a1df35d97ace94119ac10477bff62eb84}{}\label{_video_capture_image_list_8cpp_a1df35d97ace94119ac10477bff62eb84} 
+void {\bfseries generate\+Index\+Straight} (const std\+::vector$<$ std\+::string $>$ \&list, std\+::vector$<$ Pseudo\+Index $>$ \&index)
+\item 
+void \hyperlink{_video_capture_image_list_8cpp_a30fabc26a9ed1c9bd9fd7fb496a60c60}{str\+Replace} (std\+::string \&str, const std\+::string \&from, const std\+::string \&to)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+a\+\_\+hasimoto 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Date Created\+: 2012/\+Jan/18 
+
+Last Change\+: 2013/\+Dec/02. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{_video_capture_image_list_8cpp_a30fabc26a9ed1c9bd9fd7fb496a60c60}{}\label{_video_capture_image_list_8cpp_a30fabc26a9ed1c9bd9fd7fb496a60c60} 
+\index{Video\+Capture\+Image\+List.\+cpp@{Video\+Capture\+Image\+List.\+cpp}!str\+Replace@{str\+Replace}}
+\index{str\+Replace@{str\+Replace}!Video\+Capture\+Image\+List.\+cpp@{Video\+Capture\+Image\+List.\+cpp}}
+\subsubsection{\texorpdfstring{str\+Replace()}{strReplace()}}
+{\footnotesize\ttfamily void str\+Replace (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{const std\+::string \&}]{from,  }\item[{const std\+::string \&}]{to }\end{DoxyParamCaption})}
+
+文字列中から文字列を検索して別の文字列に置換する 
+\begin{DoxyParams}{Parameters}
+{\em str} & \+: 置換対象の文字列。上書かれます。 \\
+\hline
+{\em from} & \+: 検索文字列 \\
+\hline
+{\em to} & \+: 置換後の文字列 \\
+\hline
+\end{DoxyParams}

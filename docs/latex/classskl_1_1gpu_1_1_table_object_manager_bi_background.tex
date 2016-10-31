@@ -1,0 +1,141 @@
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background}{}\section{skl\+:\+:gpu\+:\+:Table\+Object\+Manager\+Bi\+Background Class Reference}
+\label{classskl_1_1gpu_1_1_table_object_manager_bi_background}\index{skl\+::gpu\+::\+Table\+Object\+Manager\+Bi\+Background@{skl\+::gpu\+::\+Table\+Object\+Manager\+Bi\+Background}}
+
+
+2つの背景を利用して背景差分を行いながら机上物体の出入りを管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$Table\+Object\+Manager\+Bi\+Background\+Gpu.\+h$>$}
+
+Inheritance diagram for skl\+:\+:gpu\+:\+:Table\+Object\+Manager\+Bi\+Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1gpu_1_1_table_object_manager_bi_background}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_ab1cc00e9b9e4de283b2dd468b2a465ae}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_ab1cc00e9b9e4de283b2dd468b2a465ae} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ size\+\_\+t $>$ {\bfseries Region\+Labeling\+Algorithm}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a3f09b4d75c73ac8a41fe38789305a188}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a3f09b4d75c73ac8a41fe38789305a188} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ std\+::list$<$ size\+\_\+t $>$ $>$ {\bfseries Human\+Detector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a35b6b810cf8ef75b8be109f23907fd12}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a35b6b810cf8ef75b8be109f23907fd12} 
+{\bfseries Table\+Object\+Manager\+Bi\+Background} (float \+\_\+\+\_\+learning\+\_\+rate=0.\+05, float \+\_\+\+\_\+learning\+\_\+rate2=0.\+1, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ bgs\+\_\+algo=new \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ region\+\_\+labeling\+\_\+algo=new \hyperlink{classskl_1_1_region_labeling_simple}{Region\+Labeling\+Simple}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ human\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_human_detector_workspace_end}{Human\+Detector\+Workspace\+End}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ static\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_static_region_detector}{Static\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ touched\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_touched_region_detector}{Touched\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ bgs\+\_\+algo2=new \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background} $>$ patch\+\_\+model=new \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background}())
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b} 
+virtual \hyperlink{classskl_1_1gpu_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b}{$\sim$\+Table\+Object\+Manager\+Bi\+Background} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_af875fcfdae8a5dca77ca964311b48f51}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_af875fcfdae8a5dca77ca964311b48f51} 
+void {\bfseries compute} (const cv\+::\+Mat \&src, const cv\+::gpu\+::\+Gpu\+Mat \&src\+\_\+gpu, cv\+::\+Mat \&human, std\+::vector$<$ size\+\_\+t $>$ \&put\+\_\+objects, std\+::vector$<$ size\+\_\+t $>$ \&taken\+\_\+objects)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aed8aee1288baea588f768638a63bcc78}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aed8aee1288baea588f768638a63bcc78} 
+float {\bfseries learning\+\_\+rate2} ()
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a28a17c7fa031753bf2e822732cf0a342}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a28a17c7fa031753bf2e822732cf0a342} 
+void {\bfseries learning\+\_\+rate2} (float val)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4e9f3260c15904870a4c10f92d3fcdc2}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4e9f3260c15904870a4c10f92d3fcdc2} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ \& {\bfseries bgs\+\_\+algo2} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aade4b07c073b566b7ef79078cc73fb90}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aade4b07c073b566b7ef79078cc73fb90} 
+void {\bfseries bgs\+\_\+algo2} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ \&\+\_\+\+\_\+bgs\+\_\+algo2)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a56b0da50686913af3c87e9439275f623}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a56b0da50686913af3c87e9439275f623} 
+const cv\+::\+Mat \& {\bfseries bg2} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aba49b65c3192a0a587d584d00c635424}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aba49b65c3192a0a587d584d00c635424} 
+void {\bfseries bg2} (const cv\+::\+Mat \&\+\_\+\+\_\+bg2)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a5f0954a0268c4ab3822d22512684ecdc}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a5f0954a0268c4ab3822d22512684ecdc} 
+double $\ast$ {\bfseries time\+\_\+compute} ()
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_acc610e7b507cf93d136b39eeaeaec44a}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_acc610e7b507cf93d136b39eeaeaec44a} 
+double $\ast$ {\bfseries time\+\_\+bg} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a93f0c48a1761cf9e91bc0fc771007423}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a93f0c48a1761cf9e91bc0fc771007423} 
+double {\bfseries t\+\_\+bg\+\_\+subtract}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a46582d9e962e0108fb4d1752509cd6ad}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a46582d9e962e0108fb4d1752509cd6ad} 
+double {\bfseries t\+\_\+bg\+\_\+subtract\+\_\+compute}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a704ecd6b95a6a0d5b9e8892968114fbd}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a704ecd6b95a6a0d5b9e8892968114fbd} 
+double {\bfseries t\+\_\+patch}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aa0f7bc3fc4737a58d88972914c0d7864}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aa0f7bc3fc4737a58d88972914c0d7864} 
+double {\bfseries t\+\_\+mask}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a8303151dde3b9a9653d9f242eb510122}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a8303151dde3b9a9653d9f242eb510122} 
+double {\bfseries t\+\_\+bg\+\_\+update}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4c68b7b6bde6cd9c148e2ad4a7cc9c29}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4c68b7b6bde6cd9c148e2ad4a7cc9c29} 
+double {\bfseries t\+\_\+bg\+\_\+update\+\_\+parfor}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a3c1c9ab864bfb738b4236abac621a540}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a3c1c9ab864bfb738b4236abac621a540} 
+void {\bfseries bg\+\_\+subtract} (const cv\+::gpu\+::\+Gpu\+Mat \&src, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_abcc41b7f4769d0c1e8f660c08c972380}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_abcc41b7f4769d0c1e8f660c08c972380} 
+void {\bfseries bg\+\_\+update} (const cv\+::\+Mat \&new\+\_\+bg, const cv\+::\+Mat \&non\+\_\+update\+\_\+mask, const cv\+::\+Mat \&no\+\_\+touch\+\_\+fg)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_acdea7a839910b0e1776ad4e35405c072}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_acdea7a839910b0e1776ad4e35405c072} 
+cv\+::\+Mat {\bfseries \+\_\+bg2}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_ae8d4390f84787dd6d4ef6437c2b0e839}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_ae8d4390f84787dd6d4ef6437c2b0e839} 
+float {\bfseries \+\_\+learning\+\_\+rate2}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a93460f344b945e352e84032dcac7df35}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a93460f344b945e352e84032dcac7df35} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ {\bfseries \+\_\+bgs\+\_\+algo2}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a5f06d36acedb4c9418e7ad648c6235c7}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a5f06d36acedb4c9418e7ad648c6235c7} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background} $>$ {\bfseries \+\_\+patch\+\_\+model\+\_\+ptr2}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a2b4ec62aba8ac187b4c0cb1879500cec}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a2b4ec62aba8ac187b4c0cb1879500cec} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries bg\+\_\+for\+\_\+texcut2}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a6815a6a60f9ddeedfcf21c70a8734480}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a6815a6a60f9ddeedfcf21c70a8734480} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries \+\_\+bgs\+\_\+algo\+\_\+compute\+\_\+result}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aab0f1b6fc6c377376ce6010507033cb9}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aab0f1b6fc6c377376ce6010507033cb9} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries \+\_\+bgs\+\_\+algo2\+\_\+compute\+\_\+result}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_abc1c269ab3a63615e7c99bc1a73d9dbd}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_abc1c269ab3a63615e7c99bc1a73d9dbd} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries \+\_\+bitwise\+\_\+and\+\_\+result}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4356b991069ee2a14c881a7c6b1056eb}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a4356b991069ee2a14c881a7c6b1056eb} 
+cv\+::gpu\+::\+Stream {\bfseries \+\_\+bgs\+\_\+algo\+\_\+compute\+\_\+stream}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_ade7991cfdb5440ad179e5a7aac81f4b6}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_ade7991cfdb5440ad179e5a7aac81f4b6} 
+cv\+::gpu\+::\+Stream {\bfseries \+\_\+bgs\+\_\+algo2\+\_\+compute\+\_\+stream}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_aad147098dd2c5a4f0fd8264371523a21}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_aad147098dd2c5a4f0fd8264371523a21} 
+cv\+::gpu\+::\+Stream {\bfseries \+\_\+bitwise\+\_\+and\+\_\+stream}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_bi_background_a6f7b46a1287a4b649049aada7fb21833}{}\label{classskl_1_1gpu_1_1_table_object_manager_bi_background_a6f7b46a1287a4b649049aada7fb21833} 
+cv\+::gpu\+::\+Cuda\+Mem {\bfseries \+\_\+page\+\_\+locked\+\_\+bg2}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+2つの背景を利用して背景差分を行いながら机上物体の出入りを管理するクラス 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V\+G\+P\+U/include/Table\+Object\+Manager\+Bi\+Background\+Gpu.\+h\item 
+Open\+C\+V\+G\+P\+U/src/Table\+Object\+Manager\+Bi\+Background.\+cpp\end{DoxyCompactItemize}

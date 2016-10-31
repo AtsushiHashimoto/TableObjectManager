@@ -1,0 +1,63 @@
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager}{}\section{skl\+:\+:gpu\+:\+:Table\+Object\+Manager Class Reference}
+\label{classskl_1_1gpu_1_1_table_object_manager}\index{skl\+::gpu\+::\+Table\+Object\+Manager@{skl\+::gpu\+::\+Table\+Object\+Manager}}
+Inheritance diagram for skl\+:\+:gpu\+:\+:Table\+Object\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1gpu_1_1_table_object_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a75b519bccc987044293a735eef7f28af}{}\label{classskl_1_1gpu_1_1_table_object_manager_a75b519bccc987044293a735eef7f28af} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ size\+\_\+t $>$ {\bfseries Region\+Labeling\+Algorithm}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a2baac34bf45c2953749a6c4bc283365a}{}\label{classskl_1_1gpu_1_1_table_object_manager_a2baac34bf45c2953749a6c4bc283365a} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ std\+::list$<$ size\+\_\+t $>$ $>$ {\bfseries Human\+Detector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a0ff30de4687ffad72163fc748fc551e5}{}\label{classskl_1_1gpu_1_1_table_object_manager_a0ff30de4687ffad72163fc748fc551e5} 
+{\bfseries Table\+Object\+Manager} (float \+\_\+\+\_\+learning\+\_\+rate=0.\+05, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ bgs\+\_\+algo=new \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ region\+\_\+labeling\+\_\+algo=new \hyperlink{classskl_1_1_region_labeling_simple}{Region\+Labeling\+Simple}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ human\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_human_detector_workspace_end}{Human\+Detector\+Workspace\+End}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ static\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_static_region_detector}{Static\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ patch\+\_\+model=new \hyperlink{classskl_1_1_patch_model}{Patch\+Model}())
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a6c57e723de495cf9be622b249a612958}{}\label{classskl_1_1gpu_1_1_table_object_manager_a6c57e723de495cf9be622b249a612958} 
+virtual void {\bfseries compute} (const cv\+::\+Mat \&src, const cv\+::gpu\+::\+Gpu\+Mat \&src\+\_\+gpu, cv\+::\+Mat \&human, std\+::vector$<$ size\+\_\+t $>$ \&put\+\_\+objects, std\+::vector$<$ size\+\_\+t $>$ \&taken\+\_\+objects)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a7b7dcddbfa9228f34ca7ebd57626bf8d}{}\label{classskl_1_1gpu_1_1_table_object_manager_a7b7dcddbfa9228f34ca7ebd57626bf8d} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ \& {\bfseries bgs\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a7ef64b9fffa6e95946c73431ba6207c4}{}\label{classskl_1_1gpu_1_1_table_object_manager_a7ef64b9fffa6e95946c73431ba6207c4} 
+void {\bfseries bgs\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ \&\+\_\+\+\_\+bgs\+\_\+algo)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a54ae21fe001b5dfe605004be798ddd05}{}\label{classskl_1_1gpu_1_1_table_object_manager_a54ae21fe001b5dfe605004be798ddd05} 
+virtual void {\bfseries bg\+\_\+subtract} (const cv\+::gpu\+::\+Gpu\+Mat \&src, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a39dfb2a4da44e15fc82acaf4e9c2ada1}{}\label{classskl_1_1gpu_1_1_table_object_manager_a39dfb2a4da44e15fc82acaf4e9c2ada1} 
+virtual void {\bfseries bg\+\_\+update} (const cv\+::\+Mat \&src, const cv\+::\+Mat \&non\+\_\+update\+\_\+mask)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a799ccd9c25994262f4016c0c74486a1d}{}\label{classskl_1_1gpu_1_1_table_object_manager_a799ccd9c25994262f4016c0c74486a1d} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ {\bfseries \+\_\+bgs\+\_\+algo}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_a70c2b67b0afe1ad3ac4a2d7209e1b142}{}\label{classskl_1_1gpu_1_1_table_object_manager_a70c2b67b0afe1ad3ac4a2d7209e1b142} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries bg\+\_\+for\+\_\+texcut}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_ab48f43306b5113b29550519495d38482}{}\label{classskl_1_1gpu_1_1_table_object_manager_ab48f43306b5113b29550519495d38482} 
+bool {\bfseries do\+Set\+Background}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_aab6b340446a6a7d590d30d02744d45bf}{}\label{classskl_1_1gpu_1_1_table_object_manager_aab6b340446a6a7d590d30d02744d45bf} 
+cv\+::gpu\+::\+Cuda\+Mem {\bfseries \+\_\+page\+\_\+locked\+\_\+bg}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V\+G\+P\+U/include/Table\+Object\+Manager\+Gpu.\+h\item 
+Open\+C\+V\+G\+P\+U/src/Table\+Object\+Manager.\+cpp\end{DoxyCompactItemize}

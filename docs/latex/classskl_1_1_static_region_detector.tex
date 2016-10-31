@@ -1,0 +1,56 @@
+\hypertarget{classskl_1_1_static_region_detector}{}\section{skl\+:\+:Static\+Region\+Detector Class Reference}
+\label{classskl_1_1_static_region_detector}\index{skl\+::\+Static\+Region\+Detector@{skl\+::\+Static\+Region\+Detector}}
+Inheritance diagram for skl\+:\+:Static\+Region\+Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classskl_1_1_static_region_detector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_af9aad28d28e257629fcf3fcb5493f233}{}\label{classskl_1_1_static_region_detector_af9aad28d28e257629fcf3fcb5493f233} 
+{\bfseries Static\+Region\+Detector} (double thresh=0.\+95, size\+\_\+t life\+\_\+time=1)
+\item 
+\hypertarget{classskl_1_1_static_region_detector_aa1da9a506f8ba01ca425c2ffe2a86e1f}{}\label{classskl_1_1_static_region_detector_aa1da9a506f8ba01ca425c2ffe2a86e1f} 
+void {\bfseries set\+Param} (double thresh, size\+\_\+t life\+\_\+time=1)
+\item 
+\hypertarget{classskl_1_1_static_region_detector_aadb27183ceabe4245bc8d66cbde3bd09}{}\label{classskl_1_1_static_region_detector_aadb27183ceabe4245bc8d66cbde3bd09} 
+size\+\_\+t {\bfseries compute} (const cv\+::\+Mat \&region\+\_\+labels, const cv\+::\+Mat \&mask, cv\+::\+Mat \&object\+\_\+labels)
+\item 
+\hypertarget{classskl_1_1_static_region_detector_ae7fb3fd041ae662d003a5e51e333743c}{}\label{classskl_1_1_static_region_detector_ae7fb3fd041ae662d003a5e51e333743c} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_aa3cff990aee433457901e8a75a575511}{}\label{classskl_1_1_static_region_detector_aa3cff990aee433457901e8a75a575511} 
+std\+::vector$<$ bool $>$ {\bfseries update\+\_\+object\+\_\+life\+\_\+map} (const std\+::vector$<$ size\+\_\+t $>$ \&current\+\_\+object\+\_\+areas, const std\+::vector$<$ size\+\_\+t $>$ \&prev\+\_\+object\+\_\+areas, std\+::vector$<$ std\+::vector$<$ size\+\_\+t $>$ $>$ \&cross\+\_\+area\+\_\+mat)
+\item 
+\hypertarget{classskl_1_1_static_region_detector_ac3bb59ccc2fd2924e9629aa0ad7f81e4}{}\label{classskl_1_1_static_region_detector_ac3bb59ccc2fd2924e9629aa0ad7f81e4} 
+double {\bfseries calc\+Score} (double area1, double area2, double cross\+\_\+area) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_a25e5612d213f6bb3c88619c18dd4c34f}{}\label{classskl_1_1_static_region_detector_a25e5612d213f6bb3c88619c18dd4c34f} 
+double {\bfseries thresh}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_a7834bd2105ac6283f300fcba18654bee}{}\label{classskl_1_1_static_region_detector_a7834bd2105ac6283f300fcba18654bee} 
+int {\bfseries life\+\_\+time}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_aa098c876dadb30192223065f08aa190a}{}\label{classskl_1_1_static_region_detector_aa098c876dadb30192223065f08aa190a} 
+cv\+::\+Mat {\bfseries prev\+\_\+labels}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_aad91aa7788b52402a7f0bdb0bf7fcb9f}{}\label{classskl_1_1_static_region_detector_aad91aa7788b52402a7f0bdb0bf7fcb9f} 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries prev\+\_\+object\+\_\+areas}
+\item 
+\hypertarget{classskl_1_1_static_region_detector_a23d3aa54be57f5f856aa28c0a6799f6a}{}\label{classskl_1_1_static_region_detector_a23d3aa54be57f5f856aa28c0a6799f6a} 
+std\+::map$<$ size\+\_\+t, size\+\_\+t $>$ {\bfseries object\+\_\+life\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Static\+Region\+Detector.\+h\item 
+Open\+C\+V/src/Static\+Region\+Detector.\+cpp\end{DoxyCompactItemize}

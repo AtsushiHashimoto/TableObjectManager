@@ -1,0 +1,105 @@
+\hypertarget{classskl_1_1_flow}{}\section{skl\+:\+:Flow Class Reference}
+\label{classskl_1_1_flow}\index{skl\+::\+Flow@{skl\+::\+Flow}}
+
+
+Class for optical flow.  
+
+
+
+
+{\ttfamily \#include $<$Flow.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Flow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_flow}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_flow_a13fd439f2bea3c780a8db9869513f05c}{}\label{classskl_1_1_flow_a13fd439f2bea3c780a8db9869513f05c} 
+enum {\bfseries Direction} \{ {\bfseries X} =0, 
+{\bfseries Y} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_flow_ac9975e144e606242748197798e87dd32}{}\label{classskl_1_1_flow_ac9975e144e606242748197798e87dd32} 
+\hyperlink{classskl_1_1_flow_ac9975e144e606242748197798e87dd32}{Flow} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_flow_a5a65e36c874c5cd5283ac32a33eb0a8b}{}\label{classskl_1_1_flow_a5a65e36c874c5cd5283ac32a33eb0a8b} 
+\hyperlink{classskl_1_1_flow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow} (const \hyperlink{classskl_1_1_flow}{Flow} \&other)
+\begin{DoxyCompactList}\small\item\em Shallow Copyするコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_flow_ae3ff785a69417be037a89377215e82a2}{}\label{classskl_1_1_flow_ae3ff785a69417be037a89377215e82a2} 
+\hyperlink{classskl_1_1_flow_ae3ff785a69417be037a89377215e82a2}{Flow} (const cv\+::\+Mat \&u, const cv\+::\+Mat \&v)
+\begin{DoxyCompactList}\small\item\em Constractor which sets u and v. \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_flow_a112fcdcc7ef094f98efe49d2f58e3024}{}\label{classskl_1_1_flow_a112fcdcc7ef094f98efe49d2f58e3024} 
+\hyperlink{classskl_1_1_flow}{Flow} {\bfseries clone} () const
+\item 
+\hypertarget{classskl_1_1_flow_a5991efa6e8cf88c4ef2125cc727db333}{}\label{classskl_1_1_flow_a5991efa6e8cf88c4ef2125cc727db333} 
+virtual \hyperlink{classskl_1_1_flow_a5991efa6e8cf88c4ef2125cc727db333}{$\sim$\+Flow} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_flow_a0b978694e74a5b9fbd9cda8c30c81748}{}\label{classskl_1_1_flow_a0b978694e74a5b9fbd9cda8c30c81748} 
+\hyperlink{classskl_1_1_flow}{Flow} \& {\bfseries operator=} (const \hyperlink{classskl_1_1_flow}{Flow} \&other)
+\item 
+void \hyperlink{classskl_1_1_flow_af771e593b403a1b807ec5564409188f1}{distance} (cv\+::\+Mat \&r)
+\item 
+\hypertarget{classskl_1_1_flow_aad7005f577155b3486db299c36926b65}{}\label{classskl_1_1_flow_aad7005f577155b3486db299c36926b65} 
+cv\+::\+Mat {\bfseries distance} ()
+\item 
+\hypertarget{classskl_1_1_flow_ab52e31d8d97e1ea2e7d6258a40636055}{}\label{classskl_1_1_flow_ab52e31d8d97e1ea2e7d6258a40636055} 
+const cv\+::\+Mat \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Direction d) const
+\item 
+\hypertarget{classskl_1_1_flow_ad25fe4621fb0a59cf11f897369cf6ad8}{}\label{classskl_1_1_flow_ad25fe4621fb0a59cf11f897369cf6ad8} 
+cv\+::\+Mat \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Direction d)
+\item 
+\hypertarget{classskl_1_1_flow_a28aebd0d1764c11106df8b71fc3651ee}{}\label{classskl_1_1_flow_a28aebd0d1764c11106df8b71fc3651ee} 
+void {\bfseries angle} (cv\+::\+Mat \&rad, float offset\+\_\+rad=0, float origin\+\_\+return\+\_\+value=0)
+\item 
+\hypertarget{classskl_1_1_flow_a05c0dd2eb0f250678497977ce8f2c4cd}{}\label{classskl_1_1_flow_a05c0dd2eb0f250678497977ce8f2c4cd} 
+cv\+::\+Mat {\bfseries angle} (float offset\+\_\+rad=0, float origin\+\_\+return\+\_\+value=0)
+\item 
+\hypertarget{classskl_1_1_flow_ae80c303a98e877b5573bbeffcd9d96a4}{}\label{classskl_1_1_flow_ae80c303a98e877b5573bbeffcd9d96a4} 
+cv\+::\+Mat {\bfseries visualize} (cv\+::\+Mat \&base, int interval=8, const cv\+::\+Scalar \&arrow\+\_\+color=C\+V\+\_\+\+R\+GB(255, 0, 0))
+\item 
+\hypertarget{classskl_1_1_flow_a931d778cd2124acacf264777cae38eee}{}\label{classskl_1_1_flow_a931d778cd2124acacf264777cae38eee} 
+bool {\bfseries read} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1_flow_a3696523a55d599b88d4971eb3d023fea}{}\label{classskl_1_1_flow_a3696523a55d599b88d4971eb3d023fea} 
+bool {\bfseries write} (const std\+::string \&filename) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_flow_a2aa676dc599de74aa6776946d697d0e0}{}\label{classskl_1_1_flow_a2aa676dc599de74aa6776946d697d0e0} 
+cv\+::\+Mat {\bfseries u}
+\item 
+\hypertarget{classskl_1_1_flow_a1ecd332e688a2766d7946bce1707c4a0}{}\label{classskl_1_1_flow_a1ecd332e688a2766d7946bce1707c4a0} 
+cv\+::\+Mat {\bfseries v}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_flow_a98eb935c6ac591992afcfa718ab44964}{}\label{classskl_1_1_flow_a98eb935c6ac591992afcfa718ab44964} 
+bool \hyperlink{classskl_1_1_flow_a98eb935c6ac591992afcfa718ab44964}{is\+Valid} () const
+\begin{DoxyCompactList}\small\item\em check size and type of u and v. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for optical flow. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_flow_af771e593b403a1b807ec5564409188f1}{}\label{classskl_1_1_flow_af771e593b403a1b807ec5564409188f1} 
+\index{skl\+::\+Flow@{skl\+::\+Flow}!distance@{distance}}
+\index{distance@{distance}!skl\+::\+Flow@{skl\+::\+Flow}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily void Flow\+::distance (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{r }\end{DoxyParamCaption})}
+
+convert \{u,v\} to moved distance sqrt(u$^\wedge$2+v$^\wedge$2) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_flow_8h}{Flow.\+h}\item 
+Open\+C\+V/src/\hyperlink{_flow_8cpp}{Flow.\+cpp}\end{DoxyCompactItemize}

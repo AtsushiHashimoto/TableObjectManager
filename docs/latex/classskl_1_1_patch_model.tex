@@ -1,0 +1,155 @@
+\hypertarget{classskl_1_1_patch_model}{}\section{skl\+:\+:Patch\+Model Class Reference}
+\label{classskl_1_1_patch_model}\index{skl\+::\+Patch\+Model@{skl\+::\+Patch\+Model}}
+Inheritance diagram for skl\+:\+:Patch\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_patch_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_aeac5af0362e5aa9a17b5032cd5787e38}{}\label{classskl_1_1_patch_model_aeac5af0362e5aa9a17b5032cd5787e38} 
+{\bfseries Patch\+Model} (const cv\+::\+Mat \&base)
+\item 
+\hypertarget{classskl_1_1_patch_model_ab7b1f4e65e3fbc4a8d09a0c66bca618c}{}\label{classskl_1_1_patch_model_ab7b1f4e65e3fbc4a8d09a0c66bca618c} 
+\hyperlink{classskl_1_1_patch}{Patch} \& {\bfseries operator()} (size\+\_\+t ID)
+\item 
+\hypertarget{classskl_1_1_patch_model_a044c551eabb11a2ebd1da0b8c85453d4}{}\label{classskl_1_1_patch_model_a044c551eabb11a2ebd1da0b8c85453d4} 
+virtual void {\bfseries set\+Object\+Labels} (const cv\+::\+Mat \&img, const cv\+::\+Mat \&human\+\_\+label, const cv\+::\+Mat \&object\+\_\+cand\+\_\+labels, size\+\_\+t object\+\_\+cand\+\_\+num, std\+::vector$<$ size\+\_\+t $>$ $\ast$put\+\_\+object\+\_\+ids, std\+::vector$<$ size\+\_\+t $>$ $\ast$taken\+\_\+object\+\_\+ids)
+\item 
+\hypertarget{classskl_1_1_patch_model_a8b8e67814d07d164a8001c2d7182159f}{}\label{classskl_1_1_patch_model_a8b8e67814d07d164a8001c2d7182159f} 
+void {\bfseries save} (const std\+::string \&file\+\_\+head, const std\+::string \&ext) const
+\item 
+\hypertarget{classskl_1_1_patch_model_a8dd4f665030782c88e1c43e1791db427}{}\label{classskl_1_1_patch_model_a8dd4f665030782c88e1c43e1791db427} 
+const \hyperlink{classskl_1_1_patch}{Patch} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t ID) const
+\item 
+\hypertarget{classskl_1_1_patch_model_a28fd67d405a7bba59663cfdae1a0a6cb}{}\label{classskl_1_1_patch_model_a28fd67d405a7bba59663cfdae1a0a6cb} 
+virtual bool {\bfseries erase} (size\+\_\+t ID)
+\item 
+\hypertarget{classskl_1_1_patch_model_a92ec1672e24adbb28b9ac30bed4cde59}{}\label{classskl_1_1_patch_model_a92ec1672e24adbb28b9ac30bed4cde59} 
+virtual void {\bfseries base} (const cv\+::\+Mat \&\+\_\+\+\_\+bg)
+\item 
+\hypertarget{classskl_1_1_patch_model_a698cd109a2a2ebc425e62017afcc48ae}{}\label{classskl_1_1_patch_model_a698cd109a2a2ebc425e62017afcc48ae} 
+const cv\+::\+Mat \& {\bfseries base} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_a431184dc94a7f189db4b33d7f7f1d768}{}\label{classskl_1_1_patch_model_a431184dc94a7f189db4b33d7f7f1d768} 
+void {\bfseries latest\+\_\+bg} (const cv\+::\+Mat \&bg)
+\item 
+\hypertarget{classskl_1_1_patch_model_a8264c3659b3ea8ff56024a3e1f308395}{}\label{classskl_1_1_patch_model_a8264c3659b3ea8ff56024a3e1f308395} 
+const cv\+::\+Mat \& {\bfseries latest\+\_\+bg} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_ad11cc2666d1bb775c9c7da34431d3853}{}\label{classskl_1_1_patch_model_ad11cc2666d1bb775c9c7da34431d3853} 
+const std\+::list$<$ size\+\_\+t $>$ \& {\bfseries hidden\+\_\+objects} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_accefbe2067c2c8c29fb5d989709f7be4}{}\label{classskl_1_1_patch_model_accefbe2067c2c8c29fb5d989709f7be4} 
+const std\+::list$<$ size\+\_\+t $>$ \& {\bfseries newly\+\_\+hidden\+\_\+objects} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_ae4bc12f861ba1ad21ef7966771f43d4a}{}\label{classskl_1_1_patch_model_ae4bc12f861ba1ad21ef7966771f43d4a} 
+const std\+::list$<$ size\+\_\+t $>$ \& {\bfseries reappeared\+\_\+objects} () const
+\item 
+\hypertarget{classskl_1_1_patch_model_a9ea1281d94017e968185493bc7551e42}{}\label{classskl_1_1_patch_model_a9ea1281d94017e968185493bc7551e42} 
+const cv\+::\+Mat \& {\bfseries updated\+\_\+mask} ()
+\item 
+\hypertarget{classskl_1_1_patch_model_a60c6fc2c551f5653d54c1ba625653524}{}\label{classskl_1_1_patch_model_a60c6fc2c551f5653d54c1ba625653524} 
+void {\bfseries remove\+Patch\+From\+Model} (size\+\_\+t id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_ad7905ca278a70e87cceaad2ff2273b6f}{}\label{classskl_1_1_patch_model_ad7905ca278a70e87cceaad2ff2273b6f} 
+virtual size\+\_\+t {\bfseries put\+Patch} (const cv\+::\+Mat \&img, const cv\+::\+Mat \&fg\+\_\+edge, const cv\+::\+Mat \&mask, const cv\+::\+Rect \&roi)
+\item 
+\hypertarget{classskl_1_1_patch_model_a1b4c7a5c43d539c98244bdab51879f59}{}\label{classskl_1_1_patch_model_a1b4c7a5c43d539c98244bdab51879f59} 
+virtual void {\bfseries take\+Patch} (size\+\_\+t ID, std\+::vector$<$ size\+\_\+t $>$ $\ast$taken\+\_\+patch\+\_\+ids)
+\item 
+\hypertarget{classskl_1_1_patch_model_aa0b071c51878060ea7f542279ea9d741}{}\label{classskl_1_1_patch_model_aa0b071c51878060ea7f542279ea9d741} 
+void {\bfseries get\+Hidden\+Patches} (const cv\+::\+Mat \&human\+\_\+mask, std\+::list$<$ size\+\_\+t $>$ $\ast$hidden\+\_\+patch\+\_\+ids)
+\item 
+\hypertarget{classskl_1_1_patch_model_ae461451d928d786f2b1a6859b7acae43}{}\label{classskl_1_1_patch_model_ae461451d928d786f2b1a6859b7acae43} 
+bool {\bfseries check\+Taken\+Object} (const \hyperlink{classskl_1_1_patch}{Patch} \&patch, const cv\+::\+Mat \&bg\+\_\+edge, const cv\+::\+Rect $\ast$roi2=N\+U\+LL) const
+\item 
+\hypertarget{classskl_1_1_patch_model_a78a7921db7d860b04b3d074625070272}{}\label{classskl_1_1_patch_model_a78a7921db7d860b04b3d074625070272} 
+size\+\_\+t {\bfseries check\+Taken\+Object} (const cv\+::\+Mat \&bg\+\_\+edge, const cv\+::\+Rect \&roi) const
+\item 
+\hypertarget{classskl_1_1_patch_model_a72bcc7c60cc145286066eae25428773b}{}\label{classskl_1_1_patch_model_a72bcc7c60cc145286066eae25428773b} 
+virtual void {\bfseries update} ()
+\item 
+\hypertarget{classskl_1_1_patch_model_a52e5eb73c87a149455cecc3f9a0e2a82}{}\label{classskl_1_1_patch_model_a52e5eb73c87a149455cecc3f9a0e2a82} 
+void {\bfseries update\+Hidden\+State} (std\+::list$<$ size\+\_\+t $>$ \&\+\_\+\+\_\+hidden\+\_\+object)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_aa6f2a5d23c0402c064a9d31eca29b23f}{}\label{classskl_1_1_patch_model_aa6f2a5d23c0402c064a9d31eca29b23f} 
+static double {\bfseries calc\+Common\+Edge} (const Cv\+Rect \&common\+\_\+rect, const \hyperlink{classskl_1_1_patch}{Patch} \&patch\+\_\+1, const \hyperlink{classskl_1_1_patch}{Patch} \&patch\+\_\+2)
+\item 
+\hypertarget{classskl_1_1_patch_model_a4f0ce6af9380ddd1341cd0b456aa73b1}{}\label{classskl_1_1_patch_model_a4f0ce6af9380ddd1341cd0b456aa73b1} 
+static void {\bfseries get\+Object\+Sample\+Points} (const cv\+::\+Mat \&mask, std\+::vector$<$ cv\+::\+Point $>$ $\ast$points)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_abb3d094d92f8d8332c5af2ba19bb08b6}{}\label{classskl_1_1_patch_model_abb3d094d92f8d8332c5af2ba19bb08b6} 
+std\+::map$<$ size\+\_\+t, \hyperlink{classskl_1_1_patch}{Patch} $>$ {\bfseries patches}
+\item 
+\hypertarget{classskl_1_1_patch_model_aa1123ccba2f88ceadae4f527a7050d7e}{}\label{classskl_1_1_patch_model_aa1123ccba2f88ceadae4f527a7050d7e} 
+std\+::map$<$ size\+\_\+t, cv\+::\+Mat $>$ {\bfseries patches\+\_\+underside}
+\item 
+\hypertarget{classskl_1_1_patch_model_a64d22efe5341f9a42b0f970bfd79ab02}{}\label{classskl_1_1_patch_model_a64d22efe5341f9a42b0f970bfd79ab02} 
+cv\+::\+Mat {\bfseries \+\_\+latest\+\_\+bg}
+\item 
+\hypertarget{classskl_1_1_patch_model_a3f03f38a6e96857261840bf725548c04}{}\label{classskl_1_1_patch_model_a3f03f38a6e96857261840bf725548c04} 
+cv\+::\+Mat {\bfseries \+\_\+base}
+\item 
+\hypertarget{classskl_1_1_patch_model_a60cc251b084acf807c48edc5b7d3cd59}{}\label{classskl_1_1_patch_model_a60cc251b084acf807c48edc5b7d3cd59} 
+\hyperlink{classskl_1_1_patch_layer}{Patch\+Layer} {\bfseries layer}
+\item 
+\hypertarget{classskl_1_1_patch_model_aed5671d4a8d8f3e3449c2361ac0acc99}{}\label{classskl_1_1_patch_model_aed5671d4a8d8f3e3449c2361ac0acc99} 
+size\+\_\+t {\bfseries max\+\_\+id}
+\item 
+\hypertarget{classskl_1_1_patch_model_a2e418abf9b17dae7acbfb8efb4439e91}{}\label{classskl_1_1_patch_model_a2e418abf9b17dae7acbfb8efb4439e91} 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries put\+\_\+list}
+\item 
+\hypertarget{classskl_1_1_patch_model_a29a8acfda73d9cd90dee1e6c198235c0}{}\label{classskl_1_1_patch_model_a29a8acfda73d9cd90dee1e6c198235c0} 
+cv\+::\+Mat {\bfseries hidden\+\_\+image}
+\item 
+\hypertarget{classskl_1_1_patch_model_a0c9e62abe8b48655f6617ce7c689b79f}{}\label{classskl_1_1_patch_model_a0c9e62abe8b48655f6617ce7c689b79f} 
+cv\+::\+Mat {\bfseries hidden\+\_\+mask}
+\item 
+\hypertarget{classskl_1_1_patch_model_a103941995f4263a5b2de173f124d2ae1}{}\label{classskl_1_1_patch_model_a103941995f4263a5b2de173f124d2ae1} 
+cv\+::\+Mat {\bfseries \+\_\+updated\+\_\+mask}
+\item 
+\hypertarget{classskl_1_1_patch_model_a04e87619d969bf0feb95d6cef58aee38}{}\label{classskl_1_1_patch_model_a04e87619d969bf0feb95d6cef58aee38} 
+bool {\bfseries changed\+\_\+bg}
+\item 
+\hypertarget{classskl_1_1_patch_model_ae2d183017afc081074fc6172b801ddff}{}\label{classskl_1_1_patch_model_ae2d183017afc081074fc6172b801ddff} 
+bool {\bfseries changed\+\_\+fg}
+\item 
+\hypertarget{classskl_1_1_patch_model_a685ba43b43d79c6367ffe9756a57ae0c}{}\label{classskl_1_1_patch_model_a685ba43b43d79c6367ffe9756a57ae0c} 
+std\+::list$<$ size\+\_\+t $>$ {\bfseries \+\_\+hidden\+\_\+objects}
+\item 
+\hypertarget{classskl_1_1_patch_model_a5513394f563a573422b212a4b52a3f8d}{}\label{classskl_1_1_patch_model_a5513394f563a573422b212a4b52a3f8d} 
+std\+::list$<$ size\+\_\+t $>$ {\bfseries \+\_\+newly\+\_\+hidden\+\_\+objects}
+\item 
+\hypertarget{classskl_1_1_patch_model_aec19f93cb798d912d0abeea15822d772}{}\label{classskl_1_1_patch_model_aec19f93cb798d912d0abeea15822d772} 
+std\+::list$<$ size\+\_\+t $>$ {\bfseries \+\_\+reappeared\+\_\+objects}
+\item 
+\hypertarget{classskl_1_1_patch_model_a7f89389707a3ccc624cde071f0b97007}{}\label{classskl_1_1_patch_model_a7f89389707a3ccc624cde071f0b97007} 
+std\+::vector$<$ bool $>$ {\bfseries on\+\_\+table}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_model_a21c4d8aa35ab6b7ca00f74ceb9c62451}{}\label{classskl_1_1_patch_model_a21c4d8aa35ab6b7ca00f74ceb9c62451} 
+class {\bfseries Patch\+Layer}
+\item 
+\hypertarget{classskl_1_1_patch_model_a06137dac0e3c805556caa28e75365d9f}{}\label{classskl_1_1_patch_model_a06137dac0e3c805556caa28e75365d9f} 
+class {\bfseries Patch\+Tracker}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_patch_model_8h}{Patch\+Model.\+h}\item 
+Open\+C\+V/src/\hyperlink{_patch_model_8cpp}{Patch\+Model.\+cpp}\end{DoxyCompactItemize}

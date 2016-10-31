@@ -1,0 +1,78 @@
+\hypertarget{classskl_1_1_table_object_manager_bi_background}{}\section{skl\+:\+:Table\+Object\+Manager\+Bi\+Background Class Reference}
+\label{classskl_1_1_table_object_manager_bi_background}\index{skl\+::\+Table\+Object\+Manager\+Bi\+Background@{skl\+::\+Table\+Object\+Manager\+Bi\+Background}}
+
+
+2つの背景を利用して背景差分を行いながら机上物体の出入りを管理するクラス  
+
+
+
+
+{\ttfamily \#include $<$Table\+Object\+Manager\+Bi\+Background.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Table\+Object\+Manager\+Bi\+Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classskl_1_1_table_object_manager_bi_background}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_abe053e1676cc38136d416703f45e08b5}{}\label{classskl_1_1_table_object_manager_bi_background_abe053e1676cc38136d416703f45e08b5} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ size\+\_\+t $>$ {\bfseries Region\+Labeling\+Algorithm}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a1576c40dbd074e438ad99a0eb4e3c519}{}\label{classskl_1_1_table_object_manager_bi_background_a1576c40dbd074e438ad99a0eb4e3c519} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ std\+::list$<$ size\+\_\+t $>$ $>$ {\bfseries Human\+Detector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a99f6f3daa03e567d324f27242a2a5440}{}\label{classskl_1_1_table_object_manager_bi_background_a99f6f3daa03e567d324f27242a2a5440} 
+\hyperlink{classskl_1_1_table_object_manager_bi_background_a99f6f3daa03e567d324f27242a2a5440}{Table\+Object\+Manager\+Bi\+Background} (float \+\_\+\+\_\+learning\+\_\+rate=0.\+05, float \+\_\+\+\_\+learning\+\_\+rate2=0.\+05, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ bgs\+\_\+algo=new \hyperlink{classskl_1_1_tex_cut}{Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ region\+\_\+labeling\+\_\+algo=new \hyperlink{classskl_1_1_region_labeling_simple}{Region\+Labeling\+Simple}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ human\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_human_detector_workspace_end}{Human\+Detector\+Workspace\+End}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ static\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_static_region_detector}{Static\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ touched\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_touched_region_detector}{Touched\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ bgs\+\_\+algo2=new \hyperlink{classskl_1_1_tex_cut}{Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background} $>$ patch\+\_\+model=new \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background}())
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b}{}\label{classskl_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b} 
+virtual \hyperlink{classskl_1_1_table_object_manager_bi_background_aec0a2e4c54a2acdc20577fc849538f6b}{$\sim$\+Table\+Object\+Manager\+Bi\+Background} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a0601f81ef37c34f1b6bd3c95fd9fbcf3}{}\label{classskl_1_1_table_object_manager_bi_background_a0601f81ef37c34f1b6bd3c95fd9fbcf3} 
+virtual void {\bfseries compute} (const cv\+::\+Mat \&src, cv\+::\+Mat \&human, std\+::vector$<$ size\+\_\+t $>$ \&put\+\_\+objects, std\+::vector$<$ size\+\_\+t $>$ \&taken\+\_\+objects)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a01c366c81705243ede4ce322089324c8}{}\label{classskl_1_1_table_object_manager_bi_background_a01c366c81705243ede4ce322089324c8} 
+const cv\+::\+Mat \& {\bfseries bg2} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_acf8fb57cd0bdd70f8aa8072b2417c809}{}\label{classskl_1_1_table_object_manager_bi_background_acf8fb57cd0bdd70f8aa8072b2417c809} 
+float {\bfseries \+\_\+learning\+\_\+rate2}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a38c74ac192fce56a894e988906f16597}{}\label{classskl_1_1_table_object_manager_bi_background_a38c74ac192fce56a894e988906f16597} 
+void {\bfseries bg\+\_\+subtract} (const cv\+::\+Mat \&src, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_ad3587a9842be2f26376e535839503a8e}{}\label{classskl_1_1_table_object_manager_bi_background_ad3587a9842be2f26376e535839503a8e} 
+void {\bfseries bg\+\_\+update} (const cv\+::\+Mat \&new\+\_\+bg, const cv\+::\+Mat \&update\+\_\+mask, const cv\+::\+Mat \&no\+\_\+touch\+\_\+fg)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a630f4ad3a4c83b25c667cce5f4ee63aa}{}\label{classskl_1_1_table_object_manager_bi_background_a630f4ad3a4c83b25c667cce5f4ee63aa} 
+cv\+::\+Mat {\bfseries \+\_\+bg2}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_a3797cfa1877c52118d44f37b5059e29c}{}\label{classskl_1_1_table_object_manager_bi_background_a3797cfa1877c52118d44f37b5059e29c} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ {\bfseries \+\_\+bgs\+\_\+algo2}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_bi_background_aa75a91916b64a30ed728eca33da906a4}{}\label{classskl_1_1_table_object_manager_bi_background_aa75a91916b64a30ed728eca33da906a4} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model_bi_background}{Patch\+Model\+Bi\+Background} $>$ {\bfseries \+\_\+patch\+\_\+model\+\_\+ptr2}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+2つの背景を利用して背景差分を行いながら机上物体の出入りを管理するクラス 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_table_object_manager_bi_background_8h}{Table\+Object\+Manager\+Bi\+Background.\+h}\item 
+Open\+C\+V/src/Table\+Object\+Manager\+Bi\+Background.\+cpp\end{DoxyCompactItemize}

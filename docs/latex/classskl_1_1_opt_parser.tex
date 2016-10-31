@@ -1,0 +1,92 @@
+\hypertarget{classskl_1_1_opt_parser}{}\section{skl\+:\+:Opt\+Parser Class Reference}
+\label{classskl_1_1_opt_parser}\index{skl\+::\+Opt\+Parser@{skl\+::\+Opt\+Parser}}
+
+
+Parse Option from Command\+Line.  
+
+
+
+
+{\ttfamily \#include $<$Opt\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_opt_parser_ab8720ec621a124e68046a31c85405d1d}{}\label{classskl_1_1_opt_parser_ab8720ec621a124e68046a31c85405d1d} 
+\hyperlink{classskl_1_1_opt_parser_ab8720ec621a124e68046a31c85405d1d}{Opt\+Parser} (const std\+::string \&conf\+\_\+deliminator=\char`\"{}\+:\char`\"{})
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_opt_parser_afda19cef607451fa8bddeeff1be0f1a2}{}\label{classskl_1_1_opt_parser_afda19cef607451fa8bddeeff1be0f1a2} 
+virtual \hyperlink{classskl_1_1_opt_parser_afda19cef607451fa8bddeeff1be0f1a2}{$\sim$\+Opt\+Parser} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_opt_parser_a5b035092633240161519545cca3534a1}{}\label{classskl_1_1_opt_parser_a5b035092633240161519545cca3534a1} 
+void {\bfseries on} (const std\+::string \&long\+\_\+form, const std\+::string \&expression, const std\+::string \&explanation)
+\item 
+\hypertarget{classskl_1_1_opt_parser_aaad7fee81b7d17ffe0672161d61a31cf}{}\label{classskl_1_1_opt_parser_aaad7fee81b7d17ffe0672161d61a31cf} 
+void {\bfseries on} (const std\+::string \&short\+\_\+form, const std\+::string \&long\+\_\+form, const std\+::string \&expression, const std\+::string \&explanation)
+\item 
+\hypertarget{classskl_1_1_opt_parser_aa0cdaff6ce699507675bf17debdb37c1}{}\label{classskl_1_1_opt_parser_aa0cdaff6ce699507675bf17debdb37c1} 
+bool {\bfseries get} (const std\+::string \&var\+\_\+name, std\+::string $\ast$var) const
+\item 
+\hypertarget{classskl_1_1_opt_parser_a97bc22822e584f3766a35b089b47ab96}{}\label{classskl_1_1_opt_parser_a97bc22822e584f3766a35b089b47ab96} 
+std\+::vector$<$ std\+::string $>$ {\bfseries parse} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\hypertarget{classskl_1_1_opt_parser_a5f4ca7a65af552f6b2d14b89efdf4a9c}{}\label{classskl_1_1_opt_parser_a5f4ca7a65af552f6b2d14b89efdf4a9c} 
+std\+::vector$<$ std\+::string $>$ {\bfseries parse} (const std\+::vector$<$ std\+::string $>$ \&args)
+\item 
+\hypertarget{classskl_1_1_opt_parser_a051739884bbb805d84ac301da7c93673}{}\label{classskl_1_1_opt_parser_a051739884bbb805d84ac301da7c93673} 
+void {\bfseries usage} () const
+\item 
+\hypertarget{classskl_1_1_opt_parser_af22343fc946d98c029e8699b9e15abf2}{}\label{classskl_1_1_opt_parser_af22343fc946d98c029e8699b9e15abf2} 
+bool {\bfseries help} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_opt_parser_a07d5d90a99e9c3058d245f1d79939e1e}{}\label{classskl_1_1_opt_parser_a07d5d90a99e9c3058d245f1d79939e1e} 
+int {\bfseries check\+Type} (const std\+::string \&str) const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_opt_parser_acd1bb930b4330c4d29a294537b874f01}{}\label{classskl_1_1_opt_parser_acd1bb930b4330c4d29a294537b874f01} 
+static void {\bfseries parse\+\_\+short\+\_\+form} (const std\+::string \&form, std\+::string $\ast$var\+\_\+name)
+\item 
+\hypertarget{classskl_1_1_opt_parser_ab56f6bdd5af0b74ce57ef739fe6f7671}{}\label{classskl_1_1_opt_parser_ab56f6bdd5af0b74ce57ef739fe6f7671} 
+static void {\bfseries parse\+\_\+long\+\_\+form} (const std\+::string \&form, std\+::string $\ast$var\+\_\+name)
+\item 
+\hypertarget{classskl_1_1_opt_parser_a33940c3ac37e2493bf0f4b0e3808794f}{}\label{classskl_1_1_opt_parser_a33940c3ac37e2493bf0f4b0e3808794f} 
+static std\+::string {\bfseries get\+\_\+short\+\_\+form} (const std\+::string \&str)
+\item 
+\hypertarget{classskl_1_1_opt_parser_a4204efe57580846f70fffbd9a6323569}{}\label{classskl_1_1_opt_parser_a4204efe57580846f70fffbd9a6323569} 
+static std\+::string {\bfseries get\+\_\+long\+\_\+form} (const std\+::string \&str)
+\item 
+\hypertarget{classskl_1_1_opt_parser_a712f0d6b2d077b45651b252bc6b12da2}{}\label{classskl_1_1_opt_parser_a712f0d6b2d077b45651b252bc6b12da2} 
+static std\+::string {\bfseries make\+\_\+usage} (const std\+::string \&short\+\_\+name, const std\+::string \&var\+\_\+name, const std\+::string \&expression, const std\+::string \&explanation)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_opt_parser_a185db13bf585b6064d5c8829484655c4}{}\label{classskl_1_1_opt_parser_a185db13bf585b6064d5c8829484655c4} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries explanations}
+\item 
+\hypertarget{classskl_1_1_opt_parser_acfc5e5e788691729aa4c491a531d6f26}{}\label{classskl_1_1_opt_parser_acfc5e5e788691729aa4c491a531d6f26} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries option\+\_\+values}
+\item 
+\hypertarget{classskl_1_1_opt_parser_a283fca12ae09d559e337a725c54e9623}{}\label{classskl_1_1_opt_parser_a283fca12ae09d559e337a725c54e9623} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries short\+\_\+long\+\_\+map}
+\item 
+\hypertarget{classskl_1_1_opt_parser_a212dd7ecb4ed3c5175866a3b6df3b365}{}\label{classskl_1_1_opt_parser_a212dd7ecb4ed3c5175866a3b6df3b365} 
+std\+::string {\bfseries conf\+\_\+deliminator}
+\item 
+\hypertarget{classskl_1_1_opt_parser_a2f60d7aa1373b2682e2b524bfd34992e}{}\label{classskl_1_1_opt_parser_a2f60d7aa1373b2682e2b524bfd34992e} 
+bool {\bfseries \+\_\+help}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parse Option from Command\+Line. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_opt_parser_8h}{Opt\+Parser.\+h}\item 
+Core/src/\hyperlink{_opt_parser_8cpp}{Opt\+Parser.\+cpp}\end{DoxyCompactItemize}

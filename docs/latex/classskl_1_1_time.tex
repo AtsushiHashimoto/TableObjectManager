@@ -1,0 +1,249 @@
+\hypertarget{classskl_1_1_time}{}\section{skl\+:\+:Time Class Reference}
+\label{classskl_1_1_time}\index{skl\+::\+Time@{skl\+::\+Time}}
+
+
+\hyperlink{classskl_1_1_time}{Time}.  
+
+
+
+
+{\ttfamily \#include $<$skl\+Time.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Time\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_time}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classskl_1_1_time_acaa93bb22917f383bd74ea58ba1ae6e6}{Time} (long n\+Sec, int n\+M\+Sec, int n\+U\+Sec=0)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_a0408b1fdca0d7f086a8901e8594294bd}{}\label{classskl_1_1_time_a0408b1fdca0d7f086a8901e8594294bd} 
+{\bfseries Time} (const \hyperlink{classskl_1_1_time}{Time} \&other)
+\item 
+\hypertarget{classskl_1_1_time_a48bd8879a40202da5d2186f463c1fde8}{}\label{classskl_1_1_time_a48bd8879a40202da5d2186f463c1fde8} 
+{\bfseries Time} (int Y\+Y\+YY, int MM, int DD, int hh, int mm, int ss=0, int mmm=0, int usec=0)
+\item 
+\hypertarget{classskl_1_1_time_aa2ac2ed4b34fba1f6aadc09481601c77}{}\label{classskl_1_1_time_aa2ac2ed4b34fba1f6aadc09481601c77} 
+\hyperlink{classskl_1_1_time}{Time} \& {\bfseries operator=} (const \hyperlink{classskl_1_1_time}{Time} \&other)
+\item 
+\hypertarget{classskl_1_1_time_aa4d8bd52002f3ca8bbbae51ebfdbc5ba}{}\label{classskl_1_1_time_aa4d8bd52002f3ca8bbbae51ebfdbc5ba} 
+int {\bfseries get\+Year} () const
+\item 
+\hypertarget{classskl_1_1_time_ab7c2d4943a54151c9774a8bd704c3225}{}\label{classskl_1_1_time_ab7c2d4943a54151c9774a8bd704c3225} 
+int {\bfseries get\+Month} () const
+\item 
+\hypertarget{classskl_1_1_time_af3982a0a799c7bf72483f837a1e1f799}{}\label{classskl_1_1_time_af3982a0a799c7bf72483f837a1e1f799} 
+int {\bfseries get\+Day} () const
+\item 
+\hypertarget{classskl_1_1_time_a197e9349622b1daa36584b75e0642110}{}\label{classskl_1_1_time_a197e9349622b1daa36584b75e0642110} 
+int {\bfseries get\+Hour} () const
+\item 
+\hypertarget{classskl_1_1_time_aecfe6ed53802a6db895473f6ddd514b0}{}\label{classskl_1_1_time_aecfe6ed53802a6db895473f6ddd514b0} 
+int {\bfseries get\+Minute} () const
+\item 
+\hypertarget{classskl_1_1_time_a650a587f6499a627666d590b13dd3756}{}\label{classskl_1_1_time_a650a587f6499a627666d590b13dd3756} 
+int {\bfseries get\+Second} () const
+\item 
+\hypertarget{classskl_1_1_time_a604e6a1d2ffb3fc3a81a269f891588fd}{}\label{classskl_1_1_time_a604e6a1d2ffb3fc3a81a269f891588fd} 
+int {\bfseries get\+Milli\+Second} () const
+\item 
+void \hyperlink{classskl_1_1_time_aa4f63cd3ca5d31ef346b034af94da928}{parse\+String} (const std\+::string \&strxx)  throw (\+Time\+Format\+Exception)
+\begin{DoxyCompactList}\small\item\em Default\+Formatterに従った文字列を解析し，値を得る \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_affe013a77399e031ab79ab58ae9a306b}{to\+String} () const
+\begin{DoxyCompactList}\small\item\em 文字列表現を返す \end{DoxyCompactList}\item 
+void \hyperlink{classskl_1_1_time_acc9ee556bd8ddd2b85430b114892365f}{parse\+String} (const std\+::string \&str, \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$timeformatter)  throw (\+Time\+Format\+Exception)
+\begin{DoxyCompactList}\small\item\em 指定された\+Formatterを使って文字列を解析し，値を得る \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_a44aed89659091d18d67e4503c47f0748}{to\+String} (\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$timeformatter) const
+\begin{DoxyCompactList}\small\item\em 指定された\+Formatterを使って文字列表現に変換する \end{DoxyCompactList}\item 
+void \hyperlink{classskl_1_1_time_a523581fa6908222b9cec994dd325458c}{set\+Default\+Time\+Formatter} (const \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$tf)
+\begin{DoxyCompactList}\small\item\em デフォルトの\+Formatterを設定する． cloneされるので，引数で渡した\+Time\+Formatterオブジェクトは自分で解放すること． \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_a4ffada22c1d4786f68ba2c03689d948e}{}\label{classskl_1_1_time_a4ffada22c1d4786f68ba2c03689d948e} 
+bool {\bfseries operator==} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_a28e4b688a730c859a25e0dea7548bddd}{}\label{classskl_1_1_time_a28e4b688a730c859a25e0dea7548bddd} 
+bool {\bfseries operator!=} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_a21df0f8a7b08e71b3b04ccb2793d0aa4}{}\label{classskl_1_1_time_a21df0f8a7b08e71b3b04ccb2793d0aa4} 
+bool {\bfseries operator$<$} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_a19eb5fa20b1e111cbe505eaaac4e407d}{}\label{classskl_1_1_time_a19eb5fa20b1e111cbe505eaaac4e407d} 
+bool {\bfseries operator$>$} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_ae119912f5b9fbdc64b740100ed715b9e}{}\label{classskl_1_1_time_ae119912f5b9fbdc64b740100ed715b9e} 
+bool {\bfseries operator$<$=} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_a88e8297465ed8c31909d37df3905f30a}{}\label{classskl_1_1_time_a88e8297465ed8c31909d37df3905f30a} 
+bool {\bfseries operator$>$=} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_afbab90106944fd4b175d21418c418356}{}\label{classskl_1_1_time_afbab90106944fd4b175d21418c418356} 
+long long {\bfseries operator-\/} (const \hyperlink{classskl_1_1_time}{Time} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_acfeef5cfb9d63b959ceedfb59a1e9b24}{}\label{classskl_1_1_time_acfeef5cfb9d63b959ceedfb59a1e9b24} 
+\hyperlink{classskl_1_1_time}{Time} {\bfseries operator+} (long long M\+Sec) const
+\item 
+\hypertarget{classskl_1_1_time_ac6b932ed1a3b61eb92f166167689be77}{}\label{classskl_1_1_time_ac6b932ed1a3b61eb92f166167689be77} 
+\hyperlink{classskl_1_1_time}{Time} {\bfseries operator-\/} (long long M\+Sec) const
+\item 
+\hypertarget{classskl_1_1_time_ab4383eae5d09c10ea359d1caeec6f4b6}{}\label{classskl_1_1_time_ab4383eae5d09c10ea359d1caeec6f4b6} 
+\hyperlink{classskl_1_1_time}{Time} \& {\bfseries operator+=} (long long M\+Sec)
+\item 
+\hypertarget{classskl_1_1_time_acfab25531e506af2831ac42a7d779b0b}{}\label{classskl_1_1_time_acfab25531e506af2831ac42a7d779b0b} 
+\hyperlink{classskl_1_1_time}{Time} \& {\bfseries operator-\/=} (long long M\+Sec)
+\item 
+\hypertarget{classskl_1_1_time_a2b1f64ac04f08ec0516c99c402afed2a}{}\label{classskl_1_1_time_a2b1f64ac04f08ec0516c99c402afed2a} 
+long long {\bfseries operator\%} (long long M\+Sec)
+\item 
+\hypertarget{classskl_1_1_time_ae6befd5d3f2ae2bca4f600860b2205a9}{}\label{classskl_1_1_time_ae6befd5d3f2ae2bca4f600860b2205a9} 
+void {\bfseries print} (std\+::ostream \&out) const
+\item 
+\hypertarget{classskl_1_1_time_a49211f29831d4821318db5b45afb5bfe}{}\label{classskl_1_1_time_a49211f29831d4821318db5b45afb5bfe} 
+long \hyperlink{classskl_1_1_time_a49211f29831d4821318db5b45afb5bfe}{\+\_\+buf\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em \+\_\+serializeで生成される予定のbufの長さを返す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_ae251fce04eb6c0d5181485b2393b3273}{}\label{classskl_1_1_time_ae251fce04eb6c0d5181485b2393b3273} 
+void \hyperlink{classskl_1_1_time_ae251fce04eb6c0d5181485b2393b3273}{\+\_\+serialize} ()
+\begin{DoxyCompactList}\small\item\em クラスの中身を直列化してメンバ変数のbufに格納する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_a62573da15db11ef9379b7b113c972ab6}{}\label{classskl_1_1_time_a62573da15db11ef9379b7b113c972ab6} 
+void \hyperlink{classskl_1_1_time_a62573da15db11ef9379b7b113c972ab6}{\+\_\+deserialize} (const char $\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}, long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size})
+\begin{DoxyCompactList}\small\item\em 直列化されたクラスの中身を読み込む \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classskl_1_1_time}{Time} \hyperlink{classskl_1_1_time_a017b1cdbe2841f1b7f4c9323e3cac184}{now} (int utc\+\_\+local\+\_\+diff=J\+P\+\_\+\+L\+O\+C\+AL)
+\begin{DoxyCompactList}\small\item\em 現在時刻を表すオブジェクトを返す静的メソッド \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_a252caab991847ae076f51597fcd3966b}{}\label{classskl_1_1_time_a252caab991847ae076f51597fcd3966b} 
+static int {\bfseries J\+P\+\_\+\+L\+O\+C\+AL} = 9
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classskl_1_1_time}{Time}. 
+
+非負で1usec単位のタイムスタンプを扱えるクラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classskl_1_1_time_acaa93bb22917f383bd74ea58ba1ae6e6}{}\label{classskl_1_1_time_acaa93bb22917f383bd74ea58ba1ae6e6} 
+\index{skl\+::\+Time@{skl\+::\+Time}!Time@{Time}}
+\index{Time@{Time}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily skl\+::\+Time\+::\+Time (\begin{DoxyParamCaption}\item[{long}]{n\+Sec,  }\item[{int}]{n\+M\+Sec,  }\item[{int}]{n\+U\+Sec = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Sec} & 紀元(1970年1月1日00\+:00\+:00 U\+TC)からの経過時間 Second \\
+\hline
+{\em n\+M\+Sec} & Mili\+Second 3桁 \\
+\hline
+{\em n\+U\+Sec} & Micro\+Second 3桁 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_time_a017b1cdbe2841f1b7f4c9323e3cac184}{}\label{classskl_1_1_time_a017b1cdbe2841f1b7f4c9323e3cac184} 
+\index{skl\+::\+Time@{skl\+::\+Time}!now@{now}}
+\index{now@{now}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily static \hyperlink{classskl_1_1_time}{Time} skl\+::\+Time\+::now (\begin{DoxyParamCaption}\item[{int}]{utc\+\_\+local\+\_\+diff = {\ttfamily JP\+\_\+LOCAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+現在時刻を表すオブジェクトを返す静的メソッド 
+
+\begin{DoxyReturn}{Returns}
+現在時刻を表す \hyperlink{classskl_1_1_time}{Time} オブジェクト 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_time_aa4f63cd3ca5d31ef346b034af94da928}{}\label{classskl_1_1_time_aa4f63cd3ca5d31ef346b034af94da928} 
+\index{skl\+::\+Time@{skl\+::\+Time}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{parse\+String()}{parseString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void skl\+::\+Time\+::parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption}) throw  \hyperlink{classskl_1_1_time_format_exception}{Time\+Format\+Exception}) }
+
+
+
+Default\+Formatterに従った文字列を解析し，値を得る 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & 変換元の文字列 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classskl_1_1_time_acc9ee556bd8ddd2b85430b114892365f}{}\label{classskl_1_1_time_acc9ee556bd8ddd2b85430b114892365f} 
+\index{skl\+::\+Time@{skl\+::\+Time}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{parse\+String()}{parseString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void skl\+::\+Time\+::parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$}]{timeformatter }\end{DoxyParamCaption}) throw  \hyperlink{classskl_1_1_time_format_exception}{Time\+Format\+Exception}) }
+
+
+
+指定された\+Formatterを使って文字列を解析し，値を得る 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & 指定された\+Formatterに従った文字列 \\
+\hline
+{\em timeformatter} & Formatter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classskl_1_1_time_a523581fa6908222b9cec994dd325458c}{}\label{classskl_1_1_time_a523581fa6908222b9cec994dd325458c} 
+\index{skl\+::\+Time@{skl\+::\+Time}!set\+Default\+Time\+Formatter@{set\+Default\+Time\+Formatter}}
+\index{set\+Default\+Time\+Formatter@{set\+Default\+Time\+Formatter}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{set\+Default\+Time\+Formatter()}{setDefaultTimeFormatter()}}
+{\footnotesize\ttfamily void skl\+::\+Time\+::set\+Default\+Time\+Formatter (\begin{DoxyParamCaption}\item[{const \hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$}]{tf }\end{DoxyParamCaption})}
+
+
+
+デフォルトの\+Formatterを設定する． cloneされるので，引数で渡した\+Time\+Formatterオブジェクトは自分で解放すること． 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tf} & 指定したい\+Time\+Formatter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classskl_1_1_time_affe013a77399e031ab79ab58ae9a306b}{}\label{classskl_1_1_time_affe013a77399e031ab79ab58ae9a306b} 
+\index{skl\+::\+Time@{skl\+::\+Time}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+文字列表現を返す 
+
+\begin{DoxyReturn}{Returns}
+Default\+Formatterに従って変換した文字列 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_time_a44aed89659091d18d67e4503c47f0748}{}\label{classskl_1_1_time_a44aed89659091d18d67e4503c47f0748} 
+\index{skl\+::\+Time@{skl\+::\+Time}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!skl\+::\+Time@{skl\+::\+Time}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+::to\+String (\begin{DoxyParamCaption}\item[{\hyperlink{classskl_1_1_time_formatter}{Time\+Formatter} $\ast$}]{timeformatter }\end{DoxyParamCaption}) const}
+
+
+
+指定された\+Formatterを使って文字列表現に変換する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeformatter} & Formatter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+このオブジェクトの文字列表現 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/skl\+Time.\+h\item 
+Core/src/skl\+Time.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\hypertarget{shared_8h}{}\section{Open\+C\+V\+G\+P\+U/include/shared.h File Reference}
+\label{shared_8h}\index{Open\+C\+V\+G\+P\+U/include/shared.\+h@{Open\+C\+V\+G\+P\+U/include/shared.\+h}}
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}cuda\+\_\+runtime.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{shared_8h_a55108b0d3b440f934dad266d47cc7a1a}{}\label{shared_8h_a55108b0d3b440f934dad266d47cc7a1a} 
+\#define {\bfseries T\+E\+X\+C\+U\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}~4
+\item 
+\hypertarget{shared_8h_acbd106421e5065dbd4ea3cafcff47d9d}{}\label{shared_8h_acbd106421e5065dbd4ea3cafcff47d9d} 
+\#define {\bfseries T\+E\+X\+C\+U\+T\+\_\+\+S\+Q\+U\+A\+R\+E\+\_\+\+A\+R\+EA}~16
+\item 
+\hypertarget{shared_8h_a137548791a84d2ef944ee10b0646bb39}{}\label{shared_8h_a137548791a84d2ef944ee10b0646bb39} 
+\#define {\bfseries T\+E\+X\+C\+U\+T\+\_\+\+S\+Q\+U\+A\+R\+E\+\_\+\+A\+R\+E\+A\+\_\+\+H\+A\+RF}~8
+\item 
+\hypertarget{shared_8h_ac8d82ac269f2aef70561edb7ed6f5e05}{}\label{shared_8h_ac8d82ac269f2aef70561edb7ed6f5e05} 
+\#define {\bfseries T\+E\+X\+C\+U\+T\+\_\+\+S\+Q\+R\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}~2
+\item 
+\hypertarget{shared_8h_a46b0ca2487e666b15120b9eb49db4a34}{}\label{shared_8h_a46b0ca2487e666b15120b9eb49db4a34} 
+\#define {\bfseries G\+R\+A\+P\+H\+C\+U\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}~S\+H\+R\+T\+\_\+\+M\+AX
+\item 
+\hypertarget{shared_8h_ae42978afd835c3a1f70d409a1b5f5a39}{}\label{shared_8h_ae42978afd835c3a1f70d409a1b5f5a39} 
+\#define {\bfseries S\+Q\+R\+T3}~1.\+7320508075688772935275f
+\item 
+\hypertarget{shared_8h_ab0e482bfa11c54c94f84397cddf55fb9}{}\label{shared_8h_ab0e482bfa11c54c94f84397cddf55fb9} 
+\#define {\bfseries cuda\+Safe\+Call}(expr)~\+\_\+\+\_\+cuda\+Safe\+Call(expr,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\item 
+\hypertarget{shared_8h_ada7d72e72a246598192c3cdb763090ae}{}\label{shared_8h_ada7d72e72a246598192c3cdb763090ae} 
+\#define {\bfseries div\+Up}(val,  grain)~( (val)+(grain)-\/1 )/(grain)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{shared_8h_a89d20ae7c47fd1abb6653ccc2f2e249b}{}\label{shared_8h_a89d20ae7c47fd1abb6653ccc2f2e249b} 
+dim3 {\bfseries skl\+::gpu\+::max\+Block\+Size} (int $\ast$shared\+\_\+mem\+\_\+size, float byte\+\_\+per\+\_\+thread, float byte\+\_\+per\+\_\+row=0.f, float byte\+\_\+per\+\_\+col=0.f, int byte\+\_\+const=0, bool near\+\_\+square=true, int dev=0)
+\item 
+\hypertarget{shared_8h_a4e0acf56a1971a40440c1019d1821fb3}{}\label{shared_8h_a4e0acf56a1971a40440c1019d1821fb3} 
+void {\bfseries skl\+::gpu\+::set\+Alpha} (float alpha)
+\item 
+\hypertarget{shared_8h_aec7f0f38e9e77349ce8461dc6b64b18a}{}\label{shared_8h_aec7f0f38e9e77349ce8461dc6b64b18a} 
+void {\bfseries skl\+::gpu\+::set\+Smoothing\+Term\+Weight} (float smoothing\+\_\+term\+\_\+weight)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+a\+\_\+hasimoto 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Date Created\+: 2012/\+Jan/25 
+
+Last Change\+:2014/\+Mar/04. 
+\end{DoxyDate}

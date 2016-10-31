@@ -1,0 +1,47 @@
+\hypertarget{classskl_1_1_patch_layer}{}\section{skl\+:\+:Patch\+Layer Class Reference}
+\label{classskl_1_1_patch_layer}\index{skl\+::\+Patch\+Layer@{skl\+::\+Patch\+Layer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_layer_a77447ce905d028d0b0e4c0313a01c2ef}{}\label{classskl_1_1_patch_layer_a77447ce905d028d0b0e4c0313a01c2ef} 
+{\bfseries Patch\+Layer} (std\+::map$<$ size\+\_\+t, \hyperlink{classskl_1_1_patch}{Patch} $>$ $\ast$patches=N\+U\+LL)
+\item 
+\hypertarget{classskl_1_1_patch_layer_ae222dc95783058d764c42061551a2471}{}\label{classskl_1_1_patch_layer_ae222dc95783058d764c42061551a2471} 
+void {\bfseries push} (size\+\_\+t ID)
+\item 
+\hypertarget{classskl_1_1_patch_layer_ac0115e794b79083a88db1c09a2f022c8}{}\label{classskl_1_1_patch_layer_ac0115e794b79083a88db1c09a2f022c8} 
+virtual bool {\bfseries erase} (size\+\_\+t ID)
+\item 
+\hypertarget{classskl_1_1_patch_layer_a6b8723ec9960e8c5643d267c27429cbf}{}\label{classskl_1_1_patch_layer_a6b8723ec9960e8c5643d267c27429cbf} 
+size\+\_\+t {\bfseries get\+Upper\+Patch} (size\+\_\+t ID, Patch\+::\+Type) const
+\item 
+\hypertarget{classskl_1_1_patch_layer_a0c96a6ff8ede69f3868794c0f6da58c3}{}\label{classskl_1_1_patch_layer_a0c96a6ff8ede69f3868794c0f6da58c3} 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries get\+All\+Beneath\+Patch} (size\+\_\+t ID, Patch\+::\+Type type)
+\item 
+\hypertarget{classskl_1_1_patch_layer_ab00a1d873e26d5e5eb784fe7b9ea5e43}{}\label{classskl_1_1_patch_layer_ab00a1d873e26d5e5eb784fe7b9ea5e43} 
+size\+\_\+t {\bfseries get\+Order} (size\+\_\+t ID) const
+\item 
+\hypertarget{classskl_1_1_patch_layer_ada45e01006d75ebf73e90fbe7cbcc18b}{}\label{classskl_1_1_patch_layer_ada45e01006d75ebf73e90fbe7cbcc18b} 
+size\+\_\+t {\bfseries get\+Top\+Layer} () const
+\item 
+\hypertarget{classskl_1_1_patch_layer_a6cb7a4626327f3cacffc87a304f0c9a3}{}\label{classskl_1_1_patch_layer_a6cb7a4626327f3cacffc87a304f0c9a3} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\hypertarget{classskl_1_1_patch_layer_a91e45cfce7cab4c8043282d2efc01a9f}{}\label{classskl_1_1_patch_layer_a91e45cfce7cab4c8043282d2efc01a9f} 
+size\+\_\+t {\bfseries get\+Layer} (size\+\_\+t i, bool from\+\_\+top=true) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_layer_afffbcc24517448a6c2b3120d6ef0c9a7}{}\label{classskl_1_1_patch_layer_afffbcc24517448a6c2b3120d6ef0c9a7} 
+std\+::list$<$ size\+\_\+t $>$ {\bfseries layer\+\_\+order}
+\item 
+\hypertarget{classskl_1_1_patch_layer_afb3d1dde73086548899cf0412339d086}{}\label{classskl_1_1_patch_layer_afb3d1dde73086548899cf0412339d086} 
+std\+::map$<$ size\+\_\+t, \hyperlink{classskl_1_1_patch}{Patch} $>$ $\ast$ {\bfseries patches}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_patch_model_8h}{Patch\+Model.\+h}\item 
+Open\+C\+V/src/\hyperlink{_patch_layer_8cpp}{Patch\+Layer.\+cpp}\end{DoxyCompactItemize}

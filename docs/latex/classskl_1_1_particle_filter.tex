@@ -1,0 +1,72 @@
+\hypertarget{classskl_1_1_particle_filter}{}\section{skl\+:\+:Particle\+Filter$<$ Observation, Likelihood\+Calc\+Functor $>$ Class Template Reference}
+\label{classskl_1_1_particle_filter}\index{skl\+::\+Particle\+Filter$<$ Observation, Likelihood\+Calc\+Functor $>$@{skl\+::\+Particle\+Filter$<$ Observation, Likelihood\+Calc\+Functor $>$}}
+
+
+Interface for Particle Filter with S\+IR (or Con\+Den\+Sation) algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Particle\+Filter.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classskl_1_1_particle_filter_1_1_state}{State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_particle_filter_acb38d20f662a6c11bdae4f52f5527943}{}\label{classskl_1_1_particle_filter_acb38d20f662a6c11bdae4f52f5527943} 
+\hyperlink{classskl_1_1_particle_filter_acb38d20f662a6c11bdae4f52f5527943}{Particle\+Filter} (size\+\_\+t sample\+\_\+num=5000)
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_particle_filter_a20b8b32eb36de639b614dc3d48e1aa22}{}\label{classskl_1_1_particle_filter_a20b8b32eb36de639b614dc3d48e1aa22} 
+\hyperlink{classskl_1_1_particle_filter_a20b8b32eb36de639b614dc3d48e1aa22}{Particle\+Filter} (size\+\_\+t sample\+\_\+num, cv\+::\+Ptr$<$ Likelihood\+Calc\+Functor $>$ functor)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_particle_filter_a064210a454753bd675b05b4c7606cfe0}{}\label{classskl_1_1_particle_filter_a064210a454753bd675b05b4c7606cfe0} 
+virtual \hyperlink{classskl_1_1_particle_filter_a064210a454753bd675b05b4c7606cfe0}{$\sim$\+Particle\+Filter} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_particle_filter_ab9a3888afe33833f9b764e5c60645758}{}\label{classskl_1_1_particle_filter_ab9a3888afe33833f9b764e5c60645758} 
+void {\bfseries compute} (const Observation \&observation)
+\item 
+\hypertarget{classskl_1_1_particle_filter_a6ec47ece53b23a5905c89029c2a537d9}{}\label{classskl_1_1_particle_filter_a6ec47ece53b23a5905c89029c2a537d9} 
+const \hyperlink{classskl_1_1_particle_filter_1_1_state}{State} {\bfseries state} (size\+\_\+t n) const
+\item 
+\hypertarget{classskl_1_1_particle_filter_ab74ab71fab3e103a09e72778eb2624d5}{}\label{classskl_1_1_particle_filter_ab74ab71fab3e103a09e72778eb2624d5} 
+float {\bfseries confidence} (size\+\_\+t n) const
+\item 
+\hypertarget{classskl_1_1_particle_filter_a056fe06e6b166febf4d23d781db88bc2}{}\label{classskl_1_1_particle_filter_a056fe06e6b166febf4d23d781db88bc2} 
+void {\bfseries initialize} (const \hyperlink{classskl_1_1_particle_filter_1_1_state}{State} \&lower\+Bound, const \hyperlink{classskl_1_1_particle_filter_1_1_state}{State} \&upper\+Bound, const cv\+::\+Mat \&Dynam\+Mat=cv\+::\+Mat())
+\item 
+\hypertarget{classskl_1_1_particle_filter_a2814b29008d805d64860a1bfe5046c13}{}\label{classskl_1_1_particle_filter_a2814b29008d805d64860a1bfe5046c13} 
+void {\bfseries set\+Rand\+State\+Param} (size\+\_\+t d, float max, float min, long seed, int dist\+\_\+type=C\+V\+\_\+\+R\+A\+N\+D\+\_\+\+N\+O\+R\+M\+AL)
+\item 
+\hypertarget{classskl_1_1_particle_filter_ac340d5aaeb05ab64726f9219068a7be6}{}\label{classskl_1_1_particle_filter_ac340d5aaeb05ab64726f9219068a7be6} 
+size\+\_\+t {\bfseries sample\+\_\+num} () const
+\item 
+\hypertarget{classskl_1_1_particle_filter_ac6999a8ec64d50a15e413157046657db}{}\label{classskl_1_1_particle_filter_ac6999a8ec64d50a15e413157046657db} 
+const cv\+::\+Ptr$<$ Likelihood\+Calc\+Functor $>$ \& {\bfseries functor} () const
+\item 
+\hypertarget{classskl_1_1_particle_filter_a9a74f9fc43a22eb4d244026152bf226a}{}\label{classskl_1_1_particle_filter_a9a74f9fc43a22eb4d244026152bf226a} 
+void {\bfseries functor} (const cv\+::\+Ptr$<$ Likelihood\+Calc\+Functor $>$ \&\+\_\+\+\_\+functor)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_particle_filter_a281a0e512359ce17a5a30140f5ab5238}{}\label{classskl_1_1_particle_filter_a281a0e512359ce17a5a30140f5ab5238} 
+size\+\_\+t {\bfseries \+\_\+sample\+\_\+num}
+\item 
+\hypertarget{classskl_1_1_particle_filter_ad80ae552b97c95fe48b35993e0b90bda}{}\label{classskl_1_1_particle_filter_ad80ae552b97c95fe48b35993e0b90bda} 
+cv\+::\+Ptr$<$ Likelihood\+Calc\+Functor $>$ {\bfseries \+\_\+functor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Observation, class Likelihood\+Calc\+Functor$>$\newline
+class skl\+::\+Particle\+Filter$<$ Observation, Likelihood\+Calc\+Functor $>$}
+
+Interface for Particle Filter with S\+IR (or Con\+Den\+Sation) algorithm. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Particle\+Filter.\+hpp\end{DoxyCompactItemize}

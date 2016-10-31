@@ -1,0 +1,68 @@
+\hypertarget{classskl_1_1_object_state}{}\section{skl\+:\+:Object\+State Class Reference}
+\label{classskl_1_1_object_state}\index{skl\+::\+Object\+State@{skl\+::\+Object\+State}}
+Inheritance diagram for skl\+:\+:Object\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_object_state}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_object_state_ae78add76688604bf19f221cf84df44b6}{}\label{classskl_1_1_object_state_ae78add76688604bf19f221cf84df44b6} 
+enum {\bfseries Handling\+State} \{ {\bfseries N\+O\+T\+\_\+\+H\+A\+N\+D\+L\+ED} =0, 
+{\bfseries H\+A\+N\+D\+L\+ED} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_object_state_a3bc97a3a7493cbef68d9442e3e0711e5}{}\label{classskl_1_1_object_state_a3bc97a3a7493cbef68d9442e3e0711e5} 
+\hyperlink{classskl_1_1_object_state_a3bc97a3a7493cbef68d9442e3e0711e5}{Object\+State} (int location\+\_\+resolution=S\+K\+L\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT)
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_object_state_a622db4af996ce80f6b4fd4f3b788a876}{}\label{classskl_1_1_object_state_a622db4af996ce80f6b4fd4f3b788a876} 
+\hyperlink{classskl_1_1_object_state_a622db4af996ce80f6b4fd4f3b788a876}{Object\+State} (const \hyperlink{classskl_1_1_flow}{Flow} \&other)
+\begin{DoxyCompactList}\small\item\em 他のインスタンスからのコンストラクタ．\+Shallow Copyであることに注意 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_object_state_a4a6f7317a6fa42f6080b38573d205373}{}\label{classskl_1_1_object_state_a4a6f7317a6fa42f6080b38573d205373} 
+virtual \hyperlink{classskl_1_1_object_state_a4a6f7317a6fa42f6080b38573d205373}{$\sim$\+Object\+State} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_object_state_a4be418599ae600c7e3beeeaddf69e44a}{}\label{classskl_1_1_object_state_a4be418599ae600c7e3beeeaddf69e44a} 
+\hyperlink{classskl_1_1_object_state}{Object\+State} \& {\bfseries operator=} (const \hyperlink{classskl_1_1_object_state}{Object\+State} \&other)
+\item 
+\hypertarget{classskl_1_1_object_state_ab74af07c26fc335bd43ee486475cad13}{}\label{classskl_1_1_object_state_ab74af07c26fc335bd43ee486475cad13} 
+cv\+::\+Point {\bfseries argmax\+\_\+location} (Handling\+State h) const
+\item 
+\hypertarget{classskl_1_1_object_state_afd29f207af856e1a00a9d957d2296316}{}\label{classskl_1_1_object_state_afd29f207af856e1a00a9d957d2296316} 
+cv\+::\+Point {\bfseries argmax\+\_\+location} () const
+\item 
+\hypertarget{classskl_1_1_object_state_a39fa0da0d058be0daf30b4cda4025dae}{}\label{classskl_1_1_object_state_a39fa0da0d058be0daf30b4cda4025dae} 
+cv\+::\+Point {\bfseries argmax\+\_\+location} (Handling\+State h, float \&prob) const
+\item 
+\hypertarget{classskl_1_1_object_state_a8bc3f2ac6f88a460f244d6f64d437603}{}\label{classskl_1_1_object_state_a8bc3f2ac6f88a460f244d6f64d437603} 
+cv\+::\+Point {\bfseries argmax\+\_\+location} (float \&prob) const
+\item 
+\hypertarget{classskl_1_1_object_state_a23a03a3bd6eeff791756cdc0cddc00ad}{}\label{classskl_1_1_object_state_a23a03a3bd6eeff791756cdc0cddc00ad} 
+float {\bfseries prob\+Handling\+State} (Handling\+State h) const
+\item 
+\hypertarget{classskl_1_1_object_state_af9c33e4dc0a97aa12097585e581799ca}{}\label{classskl_1_1_object_state_af9c33e4dc0a97aa12097585e581799ca} 
+int {\bfseries resolution} () const
+\item 
+\hypertarget{classskl_1_1_object_state_ac1f11d384a0abe08b432e52365cedb5d}{}\label{classskl_1_1_object_state_ac1f11d384a0abe08b432e52365cedb5d} 
+const cv\+::\+Mat \& {\bfseries location} (Handling\+State h\+\_\+state) const
+\item 
+\hypertarget{classskl_1_1_object_state_a7d955879826351089d98bac30604c9dd}{}\label{classskl_1_1_object_state_a7d955879826351089d98bac30604c9dd} 
+cv\+::\+Mat \& {\bfseries location} (Handling\+State h\+\_\+state)
+\item 
+\hypertarget{classskl_1_1_object_state_a96dddb1afb7508618cefc07cf1dd8894}{}\label{classskl_1_1_object_state_a96dddb1afb7508618cefc07cf1dd8894} 
+const cv\+::\+Mat \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Handling\+State h) const
+\item 
+\hypertarget{classskl_1_1_object_state_a0c7b27f3a691a1002e8701adfff0bc8e}{}\label{classskl_1_1_object_state_a0c7b27f3a691a1002e8701adfff0bc8e} 
+cv\+::\+Mat \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Handling\+State h)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_object_state_8h}{Object\+State.\+h}\item 
+Open\+C\+V/src/\hyperlink{_object_state_8cpp}{Object\+State.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\hypertarget{classskl_1_1_patch}{}\section{skl\+:\+:Patch Class Reference}
+\label{classskl_1_1_patch}\index{skl\+::\+Patch@{skl\+::\+Patch}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_aecc289e5d82e1ae42f2c38bfcd4d4ec7}{}\label{classskl_1_1_patch_aecc289e5d82e1ae42f2c38bfcd4d4ec7} 
+enum {\bfseries Type} \{ {\bfseries original} =0, 
+{\bfseries dilate} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_a410b66fe8fd29cb6d6ba3498414d4412}{}\label{classskl_1_1_patch_a410b66fe8fd29cb6d6ba3498414d4412} 
+{\bfseries Patch} (const cv\+::\+Mat \&mask, const cv\+::\+Mat \&img, const cv\+::\+Mat \&fg\+\_\+edge, const cv\+::\+Rect \&roi)
+\item 
+\hypertarget{classskl_1_1_patch_ac5515855c4eba975b606e076b3471d15}{}\label{classskl_1_1_patch_ac5515855c4eba975b606e076b3471d15} 
+{\bfseries Patch} (const \hyperlink{classskl_1_1_patch}{Patch} \&other)
+\item 
+\hypertarget{classskl_1_1_patch_a045692d09e5943b36b92d6586e9b3106}{}\label{classskl_1_1_patch_a045692d09e5943b36b92d6586e9b3106} 
+void {\bfseries set} (const cv\+::\+Mat \&mask, const cv\+::\+Mat \&img, const cv\+::\+Mat \&fg\+\_\+edge, const cv\+::\+Rect \&roi)
+\item 
+\hypertarget{classskl_1_1_patch_a263bb2f0f54409f887615bfeedb7228a}{}\label{classskl_1_1_patch_a263bb2f0f54409f887615bfeedb7228a} 
+void {\bfseries set\+Covered\+State} (const cv\+::\+Rect \&rect, const cv\+::\+Mat \&mask, bool is\+Covered)
+\item 
+\hypertarget{classskl_1_1_patch_abdd8faf6f581904c29858be0bf672c9b}{}\label{classskl_1_1_patch_abdd8faf6f581904c29858be0bf672c9b} 
+void {\bfseries set\+Covered\+State} (int x, int y, bool is\+Covered)
+\item 
+\hypertarget{classskl_1_1_patch_a82c113e89db9a30a62e91b223ccc9e76}{}\label{classskl_1_1_patch_a82c113e89db9a30a62e91b223ccc9e76} 
+bool {\bfseries is\+Covered} (int x, int y) const
+\item 
+\hypertarget{classskl_1_1_patch_a43359ea1b7386dfe745ec746c480bef9}{}\label{classskl_1_1_patch_a43359ea1b7386dfe745ec746c480bef9} 
+void {\bfseries save} (const std\+::string \&filename, Type type, const std\+::string \&edge\+\_\+filename=\char`\"{}\char`\"{}) const
+\item 
+\hypertarget{classskl_1_1_patch_a77e6d545fa84cabeda518b986df78623}{}\label{classskl_1_1_patch_a77e6d545fa84cabeda518b986df78623} 
+float {\bfseries mask\+Value} (int x, int y, Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_aaee529f694b825532e2aab29b8685c94}{}\label{classskl_1_1_patch_aaee529f694b825532e2aab29b8685c94} 
+const unsigned char $\ast$ {\bfseries operator()} (int x, int y, Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_a2266c93571c9388fff4cf7402770700d}{}\label{classskl_1_1_patch_a2266c93571c9388fff4cf7402770700d} 
+unsigned char $\ast$ {\bfseries operator()} (int x, int y, Type type=original)
+\item 
+\hypertarget{classskl_1_1_patch_aa3de02f7f9a20e028855c273300d0986}{}\label{classskl_1_1_patch_aa3de02f7f9a20e028855c273300d0986} 
+const cv\+::\+Rect \& {\bfseries roi} (Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_aed50eddb4214b3ff6024455bccb8ecd7}{}\label{classskl_1_1_patch_aed50eddb4214b3ff6024455bccb8ecd7} 
+cv\+::\+Mat {\bfseries print\+\_\+image} (Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_a9130cd5aa346fc64aa2fec63ecc42319}{}\label{classskl_1_1_patch_a9130cd5aa346fc64aa2fec63ecc42319} 
+cv\+::\+Mat {\bfseries print\+\_\+mask} (Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_a235e134d5cf9c682bf800acf1b291c88}{}\label{classskl_1_1_patch_a235e134d5cf9c682bf800acf1b291c88} 
+cv\+::\+Mat \& {\bfseries image} (Type type=original)
+\item 
+\hypertarget{classskl_1_1_patch_a4144c1f974ac9f2139830ec7d80f2005}{}\label{classskl_1_1_patch_a4144c1f974ac9f2139830ec7d80f2005} 
+const cv\+::\+Mat \& {\bfseries image} (Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_a289a61ef226dbcd31a2f3d421d16a1c2}{}\label{classskl_1_1_patch_a289a61ef226dbcd31a2f3d421d16a1c2} 
+const cv\+::\+Mat \& {\bfseries mask} (Type type=original) const
+\item 
+\hypertarget{classskl_1_1_patch_aef6de246ed39db02b5384afeb805d9cc}{}\label{classskl_1_1_patch_aef6de246ed39db02b5384afeb805d9cc} 
+const cv\+::\+Mat \& {\bfseries edge} () const
+\item 
+\hypertarget{classskl_1_1_patch_a081388c13161c8136a45e691473ed087}{}\label{classskl_1_1_patch_a081388c13161c8136a45e691473ed087} 
+void {\bfseries edge} (const cv\+::\+Mat \&\+\_\+\+\_\+edge)
+\item 
+\hypertarget{classskl_1_1_patch_a6b08f6c05423685d8ba63f1f0025ada1}{}\label{classskl_1_1_patch_a6b08f6c05423685d8ba63f1f0025ada1} 
+size\+\_\+t {\bfseries edge\+\_\+count} () const
+\item 
+\hypertarget{classskl_1_1_patch_a29c1684e0b6edce4dab2aa881924692d}{}\label{classskl_1_1_patch_a29c1684e0b6edce4dab2aa881924692d} 
+const std\+::vector$<$ cv\+::\+Point $>$ \& {\bfseries points} () const
+\item 
+\hypertarget{classskl_1_1_patch_a5795c9ea377512c81a1d4d22f34fe2c1}{}\label{classskl_1_1_patch_a5795c9ea377512c81a1d4d22f34fe2c1} 
+const std\+::vector$<$ cv\+::\+Point $>$ \& {\bfseries edge\+\_\+points} () const
+\item 
+\hypertarget{classskl_1_1_patch_af03652c43ac6a4efb37283d2dfb25d24}{}\label{classskl_1_1_patch_af03652c43ac6a4efb37283d2dfb25d24} 
+const cv\+::\+Mat \& {\bfseries covered\+\_\+state} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_ab33610ba0447e8f343c2d7e7dbbebe7a}{}\label{classskl_1_1_patch_ab33610ba0447e8f343c2d7e7dbbebe7a} 
+static cv\+::\+Mat {\bfseries blur\+\_\+mask} (const cv\+::\+Mat \&mask, size\+\_\+t blur\+\_\+width)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_patch_aa056ad5596cf6874ff2b1324b1feeb7c}{}\label{classskl_1_1_patch_aa056ad5596cf6874ff2b1324b1feeb7c} 
+cv\+::\+Mat {\bfseries \+\_\+mask} \mbox{[}2\mbox{]}
+\item 
+\hypertarget{classskl_1_1_patch_abfb3a9a0f09a8e781b21c53114250790}{}\label{classskl_1_1_patch_abfb3a9a0f09a8e781b21c53114250790} 
+cv\+::\+Mat {\bfseries \+\_\+image} \mbox{[}2\mbox{]}
+\item 
+\hypertarget{classskl_1_1_patch_a6f49c51be64d4c920cd105a6518874c4}{}\label{classskl_1_1_patch_a6f49c51be64d4c920cd105a6518874c4} 
+cv\+::\+Mat {\bfseries \+\_\+edge}
+\item 
+\hypertarget{classskl_1_1_patch_adadf5ea37cb2161b715c326dec6f7b01}{}\label{classskl_1_1_patch_adadf5ea37cb2161b715c326dec6f7b01} 
+cv\+::\+Rect {\bfseries \+\_\+roi} \mbox{[}2\mbox{]}
+\item 
+\hypertarget{classskl_1_1_patch_a0675a67ef7fc045f3b1fc10c9850a20c}{}\label{classskl_1_1_patch_a0675a67ef7fc045f3b1fc10c9850a20c} 
+cv\+::\+Mat {\bfseries \+\_\+covered\+\_\+state}
+\item 
+\hypertarget{classskl_1_1_patch_abf2c18d9da914d52dfb57249a56b292a}{}\label{classskl_1_1_patch_abf2c18d9da914d52dfb57249a56b292a} 
+cv\+::\+Size {\bfseries base\+\_\+size}
+\item 
+\hypertarget{classskl_1_1_patch_a556e8355c58e1923f752e78122528fe5}{}\label{classskl_1_1_patch_a556e8355c58e1923f752e78122528fe5} 
+std\+::vector$<$ cv\+::\+Point $>$ {\bfseries \+\_\+points}
+\item 
+\hypertarget{classskl_1_1_patch_a28121ed6024a12767302450a4aa2d7b2}{}\label{classskl_1_1_patch_a28121ed6024a12767302450a4aa2d7b2} 
+std\+::vector$<$ cv\+::\+Point $>$ {\bfseries \+\_\+edge\+\_\+points}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_patch_model_8h}{Patch\+Model.\+h}\item 
+Open\+C\+V/src/\hyperlink{_patch_8cpp}{Patch.\+cpp}\end{DoxyCompactItemize}

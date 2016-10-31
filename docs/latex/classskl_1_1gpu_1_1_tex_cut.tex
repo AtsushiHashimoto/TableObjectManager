@@ -1,0 +1,188 @@
+\hypertarget{classskl_1_1gpu_1_1_tex_cut}{}\section{skl\+:\+:gpu\+:\+:Tex\+Cut Class Reference}
+\label{classskl_1_1gpu_1_1_tex_cut}\index{skl\+::gpu\+::\+Tex\+Cut@{skl\+::gpu\+::\+Tex\+Cut}}
+
+
+G\+P\+U上で\+Tex\+Cutによる背景差分を行うプログラム  
+
+
+
+
+{\ttfamily \#include $<$Tex\+Cut.\+h$>$}
+
+Inheritance diagram for skl\+:\+:gpu\+:\+:Tex\+Cut\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classskl_1_1gpu_1_1_tex_cut}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a19ec5fb7b9020127cacee0def7bae3ed}{}\label{classskl_1_1gpu_1_1_tex_cut_a19ec5fb7b9020127cacee0def7bae3ed} 
+\hyperlink{classskl_1_1gpu_1_1_tex_cut_a19ec5fb7b9020127cacee0def7bae3ed}{Tex\+Cut} (float alpha=1.\+5, float smoothing\+\_\+term\+\_\+weight=1.\+0, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8, bool do\+Smoothing=true)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a04f718d5961299b4131879487494182c}{}\label{classskl_1_1gpu_1_1_tex_cut_a04f718d5961299b4131879487494182c} 
+\hyperlink{classskl_1_1gpu_1_1_tex_cut_a04f718d5961299b4131879487494182c}{$\sim$\+Tex\+Cut} ()
+\begin{DoxyCompactList}\small\item\em �ǥ��ȥ饯�� \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a77cbff21b38d5691de210f2d298fea01}{}\label{classskl_1_1gpu_1_1_tex_cut_a77cbff21b38d5691de210f2d298fea01} 
+void {\bfseries set\+Params} (float alpha=1.\+5, float smoothing\+\_\+term\+\_\+weight=1.\+0, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a8a3bac8170db78b4438c61dac1b811e0}{}\label{classskl_1_1gpu_1_1_tex_cut_a8a3bac8170db78b4438c61dac1b811e0} 
+void {\bfseries set\+Noise\+Model} (const std\+::vector$<$ float $>$ \&noise\+\_\+std\+\_\+dev, const std\+::vector$<$ float $>$ \&gh\+\_\+expectation, const std\+::vector$<$ float $>$ \&gh\+\_\+std\+\_\+dev)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a9f17e1a9801b5c7fbeb8a18913077700}{}\label{classskl_1_1gpu_1_1_tex_cut_a9f17e1a9801b5c7fbeb8a18913077700} 
+virtual bool {\bfseries compute} (const cv\+::gpu\+::\+Gpu\+Mat \&src, cv\+::gpu\+::\+Gpu\+Mat \&dest, cv\+::gpu\+::\+Stream \&stream\+\_\+external=cv\+::gpu\+::\+Stream\+::\+Null())
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_abb5cdf45b8994faf5189ec982bffce08}{}\label{classskl_1_1gpu_1_1_tex_cut_abb5cdf45b8994faf5189ec982bffce08} 
+{\bfseries Tex\+Cut} (const cv\+::gpu\+::\+Gpu\+Mat \&bg1, const cv\+::gpu\+::\+Gpu\+Mat \&bg2, float alpha=1.\+0, float smoothing\+\_\+term\+\_\+weight=1.\+0, float thresh\+\_\+tex\+\_\+diff=0.\+4, unsigned char over\+\_\+exposure\+\_\+thresh=248, unsigned char under\+\_\+exposure\+\_\+thresh=8, bool do\+Smoothing=true)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a7a29872141520673771dfb60013e4aa0}{}\label{classskl_1_1gpu_1_1_tex_cut_a7a29872141520673771dfb60013e4aa0} 
+void {\bfseries set\+Background} (const cv\+::gpu\+::\+Gpu\+Mat \&bg, bool no\+Smoothing=false)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a9bcc32ef68f1ab5352fa33ea909bd333}{}\label{classskl_1_1gpu_1_1_tex_cut_a9bcc32ef68f1ab5352fa33ea909bd333} 
+void {\bfseries learn\+Image\+Noise\+Model} (const cv\+::gpu\+::\+Gpu\+Mat \&bg2)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a05adae108755609cfcdbeecca045ef9e}{}\label{classskl_1_1gpu_1_1_tex_cut_a05adae108755609cfcdbeecca045ef9e} 
+void {\bfseries update\+Background\+Model} (const cv\+::gpu\+::\+Gpu\+Mat \&img)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a7da9b6a166f0d1bd87c63b77b722a6b1}{}\label{classskl_1_1gpu_1_1_tex_cut_a7da9b6a166f0d1bd87c63b77b722a6b1} 
+void {\bfseries set\+Background} (const cv\+::\+Mat \&bg)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a1ecc86f3961f8febc70ad1b8f05a870d}{}\label{classskl_1_1gpu_1_1_tex_cut_a1ecc86f3961f8febc70ad1b8f05a870d} 
+void {\bfseries learn\+Image\+Noise\+Model} (const cv\+::\+Mat \&bg2)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ac5dd4b7b756a6c354d8d9cb642babc0c}{}\label{classskl_1_1gpu_1_1_tex_cut_ac5dd4b7b756a6c354d8d9cb642babc0c} 
+void {\bfseries update\+Background\+Model} (const cv\+::\+Mat \&img)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_adc746bf324057c087feab95ef0982056}{}\label{classskl_1_1gpu_1_1_tex_cut_adc746bf324057c087feab95ef0982056} 
+cv\+::\+Mat {\bfseries background} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a39564819fa2bbc56882e1a8dfc64209e}{}\label{classskl_1_1gpu_1_1_tex_cut_a39564819fa2bbc56882e1a8dfc64209e} 
+bool {\bfseries do\+Smoothing} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a354d9d8c8509ce75bb15641159e65256}{}\label{classskl_1_1gpu_1_1_tex_cut_a354d9d8c8509ce75bb15641159e65256} 
+void {\bfseries do\+Smoothing} (bool \+\_\+\+\_\+do\+Smoothing)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a6d2b4c631e685a5d873bacb85c90b190}{}\label{classskl_1_1gpu_1_1_tex_cut_a6d2b4c631e685a5d873bacb85c90b190} 
+cv\+::gpu\+::\+Stream \& {\bfseries get\+Stream\+Set\+Background} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a720ccfa1a20523b6a8dd69dc55031d78}{}\label{classskl_1_1gpu_1_1_tex_cut_a720ccfa1a20523b6a8dd69dc55031d78} 
+double $\ast$ {\bfseries t\+\_\+compute}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a6036f029093059ef33580ec3696d3498}{}\label{classskl_1_1gpu_1_1_tex_cut_a6036f029093059ef33580ec3696d3498} 
+double {\bfseries t\+\_\+bg} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a84f0be67cf31aed4b3e885607314a330}{}\label{classskl_1_1gpu_1_1_tex_cut_a84f0be67cf31aed4b3e885607314a330} 
+void {\bfseries alloc\+\_\+gpu} (const cv\+::\+Size \&img\+\_\+size, size\+\_\+t n\+Channels)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a8cfff71b4b342f808ec2bdb08938587c}{}\label{classskl_1_1gpu_1_1_tex_cut_a8cfff71b4b342f808ec2bdb08938587c} 
+bool {\bfseries \+\_\+do\+Smoothing}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a14f856cabc0043857f11b47348b70610}{}\label{classskl_1_1gpu_1_1_tex_cut_a14f856cabc0043857f11b47348b70610} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+background}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_afd8709d4020944511def0cffb595be71}{}\label{classskl_1_1gpu_1_1_tex_cut_afd8709d4020944511def0cffb595be71} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+bg\+\_\+blur\+\_\+temp}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a7a299cdf2a301a503839e0bced95f3e4}{}\label{classskl_1_1gpu_1_1_tex_cut_a7a299cdf2a301a503839e0bced95f3e4} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+bg\+\_\+sobel\+\_\+x}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a393b7f51df3f20d3cdcf53c6af3cc972}{}\label{classskl_1_1gpu_1_1_tex_cut_a393b7f51df3f20d3cdcf53c6af3cc972} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+bg\+\_\+sobel\+\_\+y}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_aa6685ac7d607fb1cd97be316374a1e95}{}\label{classskl_1_1gpu_1_1_tex_cut_aa6685ac7d607fb1cd97be316374a1e95} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries \+\_\+bg\+\_\+buf\+\_\+sobel\+\_\+x}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a085ad3c00498843727e8742e16a668bb}{}\label{classskl_1_1gpu_1_1_tex_cut_a085ad3c00498843727e8742e16a668bb} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries \+\_\+bg\+\_\+buf\+\_\+sobel\+\_\+y}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a54f33c3c824d040d3c0cf706cbee7b5d}{}\label{classskl_1_1gpu_1_1_tex_cut_a54f33c3c824d040d3c0cf706cbee7b5d} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+bg\+\_\+tex\+\_\+intencity}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ad01e8a454af87f461621907622ae7c3c}{}\label{classskl_1_1gpu_1_1_tex_cut_ad01e8a454af87f461621907622ae7c3c} 
+std\+::vector$<$ cv\+::gpu\+::\+Gpu\+Mat $>$ {\bfseries \+\_\+bg\+\_\+gradient\+\_\+heterogenuity}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_aa661cd66555f522bff787aaca52c354b}{}\label{classskl_1_1gpu_1_1_tex_cut_aa661cd66555f522bff787aaca52c354b} 
+std\+::vector$<$ float $>$ {\bfseries noise\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a4813022abf9a9f4305f7b73527f6b514}{}\label{classskl_1_1gpu_1_1_tex_cut_a4813022abf9a9f4305f7b73527f6b514} 
+std\+::vector$<$ float $>$ {\bfseries gh\+\_\+expectation}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ab741d9765e1899ab326795b940f6a618}{}\label{classskl_1_1gpu_1_1_tex_cut_ab741d9765e1899ab326795b940f6a618} 
+std\+::vector$<$ float $>$ {\bfseries gh\+\_\+std\+\_\+dev}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a5600fc961ecda5a4527bfc4bdecc0d4b}{}\label{classskl_1_1gpu_1_1_tex_cut_a5600fc961ecda5a4527bfc4bdecc0d4b} 
+float {\bfseries alpha}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a40fa380adc2ccd67a56219d3796e5b8d}{}\label{classskl_1_1gpu_1_1_tex_cut_a40fa380adc2ccd67a56219d3796e5b8d} 
+float {\bfseries smoothing\+\_\+term\+\_\+weight}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_aa7a35234ff57bb949ef19aac21830481}{}\label{classskl_1_1gpu_1_1_tex_cut_aa7a35234ff57bb949ef19aac21830481} 
+float {\bfseries thresh\+\_\+tex\+\_\+diff}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ab48e26d5aa9049d6b9cd54f3fb155cef}{}\label{classskl_1_1gpu_1_1_tex_cut_ab48e26d5aa9049d6b9cd54f3fb155cef} 
+unsigned char {\bfseries over\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ad21505b70952f3ff98185d9b188ece6e}{}\label{classskl_1_1gpu_1_1_tex_cut_ad21505b70952f3ff98185d9b188ece6e} 
+unsigned char {\bfseries under\+\_\+exposure\+\_\+thresh}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ab8a34fbea50d34ada65866e9cad5cd4e}{}\label{classskl_1_1gpu_1_1_tex_cut_ab8a34fbea50d34ada65866e9cad5cd4e} 
+cv\+::\+Size {\bfseries graph\+\_\+size}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a907def0c22b5f5b74d237054827947fa}{}\label{classskl_1_1gpu_1_1_tex_cut_a907def0c22b5f5b74d237054827947fa} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries terminals}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a21b3938b975bb21e22c700390bc0697b}{}\label{classskl_1_1gpu_1_1_tex_cut_a21b3938b975bb21e22c700390bc0697b} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries right\+Transp}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a50b9c7cb1cd48b7f0234a5fbdd34acf8}{}\label{classskl_1_1gpu_1_1_tex_cut_a50b9c7cb1cd48b7f0234a5fbdd34acf8} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries left\+Transp}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a8503ba5ccc4930542e8c038296d87ee2}{}\label{classskl_1_1gpu_1_1_tex_cut_a8503ba5ccc4930542e8c038296d87ee2} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries bottom}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a7ab4d9bf13da0ec674242b02b98c20b9}{}\label{classskl_1_1gpu_1_1_tex_cut_a7ab4d9bf13da0ec674242b02b98c20b9} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries top}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_af4742375eb1b7e571a63c12c6cd0014d}{}\label{classskl_1_1gpu_1_1_tex_cut_af4742375eb1b7e571a63c12c6cd0014d} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries max\+\_\+intencity}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a924fd90150dd032ef30bf5e2f87a7322}{}\label{classskl_1_1gpu_1_1_tex_cut_a924fd90150dd032ef30bf5e2f87a7322} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries max\+\_\+gradient\+\_\+heterogenuity}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a7516fe05b68bd8616dd59c0bf7e315d6}{}\label{classskl_1_1gpu_1_1_tex_cut_a7516fe05b68bd8616dd59c0bf7e315d6} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries fg\+\_\+is\+\_\+over\+\_\+exposure}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_ac4e23a172d72bc2a41871dc60ada9bba}{}\label{classskl_1_1gpu_1_1_tex_cut_ac4e23a172d72bc2a41871dc60ada9bba} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries fg\+\_\+is\+\_\+under\+\_\+exposure}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_abee8e25ec391a878ca9a054665f81751}{}\label{classskl_1_1gpu_1_1_tex_cut_abee8e25ec391a878ca9a054665f81751} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries bg\+\_\+is\+\_\+over\+\_\+exposure}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_acacd3700554f2cdee01512ec48833c9e}{}\label{classskl_1_1gpu_1_1_tex_cut_acacd3700554f2cdee01512ec48833c9e} 
+cv\+::gpu\+::\+Gpu\+Mat {\bfseries bg\+\_\+is\+\_\+under\+\_\+exposure}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a8f8005dc8398031a8f01e3034a8470b6}{}\label{classskl_1_1gpu_1_1_tex_cut_a8f8005dc8398031a8f01e3034a8470b6} 
+cv\+::gpu\+::\+Stream {\bfseries stream\+\_\+set\+Background}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_tex_cut_a6d47a2588356abb2567a91368e857ec4}{}\label{classskl_1_1gpu_1_1_tex_cut_a6d47a2588356abb2567a91368e857ec4} 
+\hyperlink{classskl_1_1_graphcut}{skl\+::\+Graphcut} {\bfseries gc\+\_\+algo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\+P\+U上で\+Tex\+Cutによる背景差分を行うプログラム 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V\+G\+P\+U/include/Tex\+Cut.\+h\item 
+Open\+C\+V\+G\+P\+U/src/Tex\+Cut.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{_opt_parser_8h}{}\section{Core/include/\+Opt\+Parser.h File Reference}
+\label{_opt_parser_8h}\index{Core/include/\+Opt\+Parser.\+h@{Core/include/\+Opt\+Parser.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include \char`\"{}sklstring.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classskl_1_1_opt_parser}{skl\+::\+Opt\+Parser}
+\begin{DoxyCompactList}\small\item\em Parse Option from Command\+Line. \end{DoxyCompactList}\item 
+class \hyperlink{classskl_1_1_opt_parser_atom_interface}{skl\+::\+Opt\+Parser\+Atom\+Interface}
+\item 
+class \hyperlink{classskl_1_1_opt_parser_atom}{skl\+::\+Opt\+Parser\+Atom$<$ T $>$}
+\item 
+class \hyperlink{classskl_1_1_opt_parser_atom_container}{skl\+::\+Opt\+Parser\+Atom\+Container$<$ T, Container $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_opt_parser_8h_a4ea405037f37641df90239d0f3767fcf}{}\label{_opt_parser_8h_a4ea405037f37641df90239d0f3767fcf} 
+\#define {\bfseries opt\+\_\+on\+\_\+bool}(V\+AR,  S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  E\+X\+P\+L\+A\+N\+A\+T\+I\+ON)~opt\+\_\+on(bool, V\+AR, false, S\+H\+O\+R\+T\+\_\+\+F\+O\+RM, \char`\"{}$<$B\+O\+OL$>$\char`\"{}, E\+X\+P\+L\+A\+N\+A\+T\+I\+ON)
+\item 
+\#define {\bfseries opt\+\_\+on}(T\+Y\+PE,  V\+AR,  D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL,  S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  E\+X\+P\+R\+E\+S\+S\+I\+ON,  E\+X\+P\+L\+A\+N\+A\+T\+I\+ON)
+\item 
+\#define {\bfseries opt\+\_\+on\+\_\+container}(C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+Y\+PE,  E\+L\+E\+M\+\_\+\+T\+Y\+PE,  V\+AR,  D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL,  S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  E\+X\+P\+R\+E\+S\+S\+I\+ON,  E\+X\+P\+L\+A\+N\+A\+T\+I\+ON,  D\+E\+L\+I\+M\+I\+N\+A\+T\+OR,  L\+E\+N\+G\+TH)
+\item 
+\#define {\bfseries opt\+\_\+parse}(P\+A\+R\+S\+ER,  A\+R\+GC,  A\+R\+GV,  A\+R\+GS)
+\item 
+\hypertarget{_opt_parser_8h_a103fe6e979af6382db35faa05562f007}{}\label{_opt_parser_8h_a103fe6e979af6382db35faa05562f007} 
+\#define {\bfseries generate\+\_\+atomic\+\_\+parser}(T\+Y\+PE,  V\+AR,  S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  E\+X\+P\+R\+E\+S\+S\+I\+ON,  E\+X\+P\+L\+A\+N\+A\+T\+I\+ON)~\hyperlink{classskl_1_1_opt_parser_atom}{skl\+::\+Opt\+Parser\+Atom}$<$T\+Y\+PE$>$ \+\_\+\+\_\+opt\+\_\+parser\+\_\+atom\+\_\+\#\#V\+AR(S\+H\+O\+R\+T\+\_\+\+F\+O\+RM, \#V\+AR, E\+X\+P\+R\+E\+S\+S\+I\+ON, E\+X\+P\+L\+A\+N\+A\+T\+I\+ON, \&V\+AR)
+\item 
+\hypertarget{_opt_parser_8h_af0ef192a29ced2928675e3b334a71ac3}{}\label{_opt_parser_8h_af0ef192a29ced2928675e3b334a71ac3} 
+\#define {\bfseries generate\+\_\+atomic\+\_\+parser\+\_\+container}(C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+Y\+PE,  E\+L\+E\+M\+\_\+\+T\+Y\+PE,  V\+AR,  D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL,  S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  E\+X\+P\+R\+E\+S\+S\+I\+ON,  E\+X\+P\+L\+A\+N\+A\+T\+I\+ON,  D\+E\+L\+I\+M\+I\+N\+A\+T\+OR,  L\+E\+N\+G\+TH)~\hyperlink{classskl_1_1_opt_parser_atom_container}{skl\+::\+Opt\+Parser\+Atom\+Container} $<$ E\+L\+E\+M\+\_\+\+T\+Y\+PE, C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+Y\+PE $<$ E\+L\+E\+M\+\_\+\+T\+Y\+PE $>$ $>$ \+\_\+\+\_\+opt\+\_\+parser\+\_\+atom\+\_\+container\+\_\+\#\#V\+AR(S\+H\+O\+R\+T\+\_\+\+F\+O\+RM, \#V\+AR, D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL, E\+X\+P\+R\+E\+S\+S\+I\+ON, E\+X\+P\+L\+A\+N\+A\+T\+I\+ON, \&V\+AR, D\+E\+L\+I\+M\+I\+N\+A\+T\+OR, L\+E\+N\+G\+TH)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+a\+\_\+hasimoto 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Date Created\+: 2011/\+Dec/27 
+
+Last Change\+:2013/\+Nov/25. 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_opt_parser_8h_a5d8d40ef669f167dc209c128efc3e704}{}\label{_opt_parser_8h_a5d8d40ef669f167dc209c128efc3e704} 
+\index{Opt\+Parser.\+h@{Opt\+Parser.\+h}!opt\+\_\+on@{opt\+\_\+on}}
+\index{opt\+\_\+on@{opt\+\_\+on}!Opt\+Parser.\+h@{Opt\+Parser.\+h}}
+\subsubsection{\texorpdfstring{opt\+\_\+on}{opt\_on}}
+{\footnotesize\ttfamily \#define opt\+\_\+on(\begin{DoxyParamCaption}\item[{}]{T\+Y\+PE,  }\item[{}]{V\+AR,  }\item[{}]{D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL,  }\item[{}]{S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  }\item[{}]{E\+X\+P\+R\+E\+S\+S\+I\+ON,  }\item[{}]{E\+X\+P\+L\+A\+N\+A\+T\+I\+ON }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+TYPE VAR( DEFAULT\_VAL );\(\backslash\)
+generate\_atomic\_parser(TYPE,VAR,SHORT\_FORM, EXPRESSION, EXPLANATION);\(\backslash\)
+\end{DoxyCode}
+\hypertarget{_opt_parser_8h_abe64775ae9a5b782eec45cf9425c582b}{}\label{_opt_parser_8h_abe64775ae9a5b782eec45cf9425c582b} 
+\index{Opt\+Parser.\+h@{Opt\+Parser.\+h}!opt\+\_\+on\+\_\+container@{opt\+\_\+on\+\_\+container}}
+\index{opt\+\_\+on\+\_\+container@{opt\+\_\+on\+\_\+container}!Opt\+Parser.\+h@{Opt\+Parser.\+h}}
+\subsubsection{\texorpdfstring{opt\+\_\+on\+\_\+container}{opt\_on\_container}}
+{\footnotesize\ttfamily \#define opt\+\_\+on\+\_\+container(\begin{DoxyParamCaption}\item[{}]{C\+O\+N\+T\+A\+I\+N\+E\+R\+\_\+\+T\+Y\+PE,  }\item[{}]{E\+L\+E\+M\+\_\+\+T\+Y\+PE,  }\item[{}]{V\+AR,  }\item[{}]{D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL,  }\item[{}]{S\+H\+O\+R\+T\+\_\+\+F\+O\+RM,  }\item[{}]{E\+X\+P\+R\+E\+S\+S\+I\+ON,  }\item[{}]{E\+X\+P\+L\+A\+N\+A\+T\+I\+ON,  }\item[{}]{D\+E\+L\+I\+M\+I\+N\+A\+T\+OR,  }\item[{}]{L\+E\+N\+G\+TH }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+CONTAINER\_TYPE< ELEM\_TYPE > VAR;\(\backslash\)
+generate\_atomic\_parser\_container(CONTAINER\_TYPE, ELEM\_TYPE,VAR,DEFAULT\_VAL, SHORT\_FORM, EXPRESSION, 
+      EXPLANATION, DELIMINATOR, LENGTH);\(\backslash\)
+\end{DoxyCode}
+\hypertarget{_opt_parser_8h_a309d3f15951f807bf7493c18670ef755}{}\label{_opt_parser_8h_a309d3f15951f807bf7493c18670ef755} 
+\index{Opt\+Parser.\+h@{Opt\+Parser.\+h}!opt\+\_\+parse@{opt\+\_\+parse}}
+\index{opt\+\_\+parse@{opt\+\_\+parse}!Opt\+Parser.\+h@{Opt\+Parser.\+h}}
+\subsubsection{\texorpdfstring{opt\+\_\+parse}{opt\_parse}}
+{\footnotesize\ttfamily \#define opt\+\_\+parse(\begin{DoxyParamCaption}\item[{}]{P\+A\+R\+S\+ER,  }\item[{}]{A\+R\+GC,  }\item[{}]{A\+R\+GV,  }\item[{}]{A\+R\+GS }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{classskl_1_1_opt_parser_atom_interface}{skl::OptParserAtomInterface}* \_\_opt\_parser\_func\_list\_\_ = 
+      skl::OptParserAtomInterface::atom\_top;\(\backslash\)
+while(\_\_opt\_parser\_func\_list\_\_!=NULL)\{\(\backslash\)
+    \_\_opt\_parser\_func\_list\_\_->on(& PARSER);\(\backslash\)
+    \_\_opt\_parser\_func\_list\_\_ = \_\_opt\_parser\_func\_list\_\_->next;\(\backslash\)
+\}\(\backslash\)
+ARGS = PARSER.parse(ARGC,ARGV);\(\backslash\)
+\_\_opt\_parser\_func\_list\_\_ = skl::OptParserAtomInterface::atom\_top;\(\backslash\)
+while(\_\_opt\_parser\_func\_list\_\_!=NULL)\{\(\backslash\)
+    \_\_opt\_parser\_func\_list\_\_->get(& PARSER);\(\backslash\)
+    \_\_opt\_parser\_func\_list\_\_ = \_\_opt\_parser\_func\_list\_\_->next;\(\backslash\)
+\}
+\end{DoxyCode}

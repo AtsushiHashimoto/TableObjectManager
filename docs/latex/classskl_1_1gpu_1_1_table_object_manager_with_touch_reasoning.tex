@@ -1,0 +1,48 @@
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning}{}\section{skl\+:\+:gpu\+:\+:Table\+Object\+Manager\+With\+Touch\+Reasoning Class Reference}
+\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning}\index{skl\+::gpu\+::\+Table\+Object\+Manager\+With\+Touch\+Reasoning@{skl\+::gpu\+::\+Table\+Object\+Manager\+With\+Touch\+Reasoning}}
+Inheritance diagram for skl\+:\+:gpu\+:\+:Table\+Object\+Manager\+With\+Touch\+Reasoning\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_ad3124bcae3baed4b2e1da0f154e2d1d8}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_ad3124bcae3baed4b2e1da0f154e2d1d8} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ size\+\_\+t $>$ {\bfseries Region\+Labeling\+Algorithm}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a542b635e1260a1a1043c94aefffd2465}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a542b635e1260a1a1043c94aefffd2465} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ std\+::list$<$ size\+\_\+t $>$ $>$ {\bfseries Human\+Detector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a8d5dc605bb1cf199c16f77dbbd2a84fa}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a8d5dc605bb1cf199c16f77dbbd2a84fa} 
+{\bfseries Table\+Object\+Manager\+With\+Touch\+Reasoning} (float \+\_\+\+\_\+learning\+\_\+rate=0.\+05, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1gpu_1_1_tex_cut}{skl\+::gpu\+::\+Tex\+Cut} $>$ bgs\+\_\+algo=new \hyperlink{classskl_1_1gpu_1_1_tex_cut}{Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ rl\+\_\+algo=new \hyperlink{classskl_1_1_region_labeling_simple}{Region\+Labeling\+Simple}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ human\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_human_detector_workspace_end}{Human\+Detector\+Workspace\+End}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ static\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_static_region_detector}{Static\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ touched\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_touched_region_detector}{Touched\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ patch\+\_\+model=new \hyperlink{classskl_1_1_patch_model}{Patch\+Model}())
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a4d38c192d84e9184d11f2bbe55733e4f}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a4d38c192d84e9184d11f2bbe55733e4f} 
+virtual \hyperlink{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a4d38c192d84e9184d11f2bbe55733e4f}{$\sim$\+Table\+Object\+Manager\+With\+Touch\+Reasoning} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a7a82b7839390fe4d51cb5b572b4253c6}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a7a82b7839390fe4d51cb5b572b4253c6} 
+void {\bfseries compute} (const cv\+::\+Mat \&src, const cv\+::gpu\+::\+Gpu\+Mat \&src\+\_\+gpu, cv\+::\+Mat \&human, std\+::vector$<$ size\+\_\+t $>$ \&put\+\_\+objects, std\+::vector$<$ size\+\_\+t $>$ \&taken\+\_\+objects)
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a406479505414e1ccb9f024d44a423202}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a406479505414e1ccb9f024d44a423202} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \& {\bfseries trd\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a829aa1a1edead8c607e176be17c5bbb4}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_a829aa1a1edead8c607e176be17c5bbb4} 
+void {\bfseries trd\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \&\+\_\+\+\_\+trd\+\_\+algo)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_ac2d437b86cd319442b00727cdc74ab49}{}\label{classskl_1_1gpu_1_1_table_object_manager_with_touch_reasoning_ac2d437b86cd319442b00727cdc74ab49} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ {\bfseries \+\_\+trd\+\_\+algo}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V\+G\+P\+U/include/Table\+Object\+Manager\+With\+Touch\+Reasoning\+Gpu.\+h\item 
+Open\+C\+V\+G\+P\+U/src/Table\+Object\+Manager\+With\+Touch\+Reasoning.\+cpp\end{DoxyCompactItemize}

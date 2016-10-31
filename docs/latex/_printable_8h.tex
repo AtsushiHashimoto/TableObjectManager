@@ -1,0 +1,30 @@
+\hypertarget{_printable_8h}{}\section{Core/include/\+Printable.h File Reference}
+\label{_printable_8h}\index{Core/include/\+Printable.\+h@{Core/include/\+Printable.\+h}}
+{\ttfamily \#include \char`\"{}Serializable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Comparable.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classskl_1_1_printable}{skl\+::\+Printable$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em 文字列として書き出しが可能であることを保証するインターフェイス \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_printable_8h_a894bb878e00635b50cb6c622375f443d}{}\label{_printable_8h_a894bb878e00635b50cb6c622375f443d} 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& {\bfseries skl\+::operator$<$$<$} (std\+::ostream \&lhs, const Printable$<$ T $>$ \&rhs)
+\item 
+\hypertarget{_printable_8h_ac9bd6dde1dd9d688a28119118b8c9363}{}\label{_printable_8h_ac9bd6dde1dd9d688a28119118b8c9363} 
+{\footnotesize template$<$class T $>$ }\\std\+::istream \& {\bfseries skl\+::operator$>$$>$} (std\+::istream \&lhs, Printable$<$ T $>$ \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+橋本敦史 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Last Change\+:2012/\+Jan/13. 
+\end{DoxyDate}

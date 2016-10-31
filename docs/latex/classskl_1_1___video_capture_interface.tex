@@ -1,0 +1,91 @@
+\hypertarget{classskl_1_1___video_capture_interface}{}\section{skl\+:\+:\+\_\+\+Video\+Capture\+Interface Class Reference}
+\label{classskl_1_1___video_capture_interface}\index{skl\+::\+\_\+\+Video\+Capture\+Interface@{skl\+::\+\_\+\+Video\+Capture\+Interface}}
+
+
+S\+K\+Lにおける\+Video\+Capture用のインターフェイス  実際に\+Video\+Captureを作るときには,この後で宣言されているoperator$<$$<$を持ったテンプレートつきインターフェイス\+Video\+Capture$<$\+T$>$を継承すること  
+
+
+
+
+{\ttfamily \#include $<$Video\+Capture\+Interface.\+h$>$}
+
+Inheritance diagram for skl\+:\+:\+\_\+\+Video\+Capture\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.733746cm]{classskl_1_1___video_capture_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a6212124bf4488c7b17255a2689a32d64}{}\label{classskl_1_1___video_capture_interface_a6212124bf4488c7b17255a2689a32d64} 
+virtual bool {\bfseries open} (const std\+::string \&filename)=0
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a62596ea37320dd4790e5e37912c44cda}{}\label{classskl_1_1___video_capture_interface_a62596ea37320dd4790e5e37912c44cda} 
+virtual bool {\bfseries open} (int device)=0
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a4130707d281129aa9eb648ac9b6b99d2}{}\label{classskl_1_1___video_capture_interface_a4130707d281129aa9eb648ac9b6b99d2} 
+virtual bool {\bfseries is\+Opened} () const =0
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a9d3990d3cd85cbfbe70ce8d6565a3dea}{}\label{classskl_1_1___video_capture_interface_a9d3990d3cd85cbfbe70ce8d6565a3dea} 
+virtual void \hyperlink{classskl_1_1___video_capture_interface_a9d3990d3cd85cbfbe70ce8d6565a3dea}{release} ()=0
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1___video_capture_interface_a0dc57d91df8cee80a3e0c5cc09814ec1}{}\label{classskl_1_1___video_capture_interface_a0dc57d91df8cee80a3e0c5cc09814ec1} 
+virtual bool {\bfseries grab} ()=0
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a915ccf5860023e3277abfd0c5d85eb14}{}\label{classskl_1_1___video_capture_interface_a915ccf5860023e3277abfd0c5d85eb14} 
+virtual bool {\bfseries retrieve} (cv\+::\+Mat \&image, int channel=0)=0
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_aef1026d5becac43d49f341dceff4440d}{}\label{classskl_1_1___video_capture_interface_aef1026d5becac43d49f341dceff4440d} 
+size\+\_\+t {\bfseries size} () const
+\item 
+virtual bool \hyperlink{classskl_1_1___video_capture_interface_acf6bb54ae5d4bcee82029b36c8ae17bf}{is\+Pseudo\+Capture} () const
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a02ca8e0e253ee5f88cc5d078123d4caf}{}\label{classskl_1_1___video_capture_interface_a02ca8e0e253ee5f88cc5d078123d4caf} 
+virtual bool \hyperlink{classskl_1_1___video_capture_interface_a02ca8e0e253ee5f88cc5d078123d4caf}{set} (capture\+\_\+property\+\_\+t prop\+\_\+id, double val)=0
+\begin{DoxyCompactList}\small\item\em カメラに値やモード(camera\+\_\+mode\+\_\+tがset($\ast$,camera\+\_\+mode\+\_\+t mode)を通してvalに与えられる(modeは-\/4から-\/1までの整数)をセットする純粋仮想関数 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1___video_capture_interface_a9cb748d4cc424556936febfaaa74d9d8}{}\label{classskl_1_1___video_capture_interface_a9cb748d4cc424556936febfaaa74d9d8} 
+virtual double \hyperlink{classskl_1_1___video_capture_interface_a9cb748d4cc424556936febfaaa74d9d8}{get} (capture\+\_\+property\+\_\+t prop\+\_\+id)=0
+\begin{DoxyCompactList}\small\item\em カメラから値をgetする純粋仮想関数(modeはインターフェイス簡素化のためサポートしない) \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1___video_capture_interface_a0a5b4a468dd49b004b9ccf087190e145}{}\label{classskl_1_1___video_capture_interface_a0a5b4a468dd49b004b9ccf087190e145} 
+bool {\bfseries set} (const \hyperlink{classskl_1_1_video_capture_params}{Video\+Capture\+Params} \&params)
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a012ea0273c77069c70c8c2d8b2d1648d}{}\label{classskl_1_1___video_capture_interface_a012ea0273c77069c70c8c2d8b2d1648d} 
+bool {\bfseries set} (const std\+::string \&prop\+\_\+name, double val)
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_ad7e9069d5579b736e7b1088595ab12db}{}\label{classskl_1_1___video_capture_interface_ad7e9069d5579b736e7b1088595ab12db} 
+bool {\bfseries set} (const std\+::string \&prop\+\_\+name, camera\+\_\+mode\+\_\+t mode)
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a5ed9bbd7ac6450a5d343e1c24c7f0ed7}{}\label{classskl_1_1___video_capture_interface_a5ed9bbd7ac6450a5d343e1c24c7f0ed7} 
+bool {\bfseries set} (capture\+\_\+property\+\_\+t prop\+\_\+id, camera\+\_\+mode\+\_\+t mode)
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_ae8521689d8536434e121ffcaf42a2653}{}\label{classskl_1_1___video_capture_interface_ae8521689d8536434e121ffcaf42a2653} 
+const \hyperlink{classskl_1_1_video_capture_params}{Video\+Capture\+Params} \& {\bfseries get} ()
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_a3ab336503077b3567c56fbe3f0d2dbaa}{}\label{classskl_1_1___video_capture_interface_a3ab336503077b3567c56fbe3f0d2dbaa} 
+double {\bfseries get} (const std\+::string \&prop\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1___video_capture_interface_ad1732916c33a970c2a5c0fa12698f4ab}{}\label{classskl_1_1___video_capture_interface_ad1732916c33a970c2a5c0fa12698f4ab} 
+\hyperlink{classskl_1_1_video_capture_params}{Video\+Capture\+Params} {\bfseries params}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+K\+Lにおける\+Video\+Capture用のインターフェイス  実際に\+Video\+Captureを作るときには,この後で宣言されているoperator$<$$<$を持ったテンプレートつきインターフェイス\+Video\+Capture$<$\+T$>$を継承すること 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1___video_capture_interface_acf6bb54ae5d4bcee82029b36c8ae17bf}{}\label{classskl_1_1___video_capture_interface_acf6bb54ae5d4bcee82029b36c8ae17bf} 
+\index{skl\+::\+\_\+\+Video\+Capture\+Interface@{skl\+::\+\_\+\+Video\+Capture\+Interface}!is\+Pseudo\+Capture@{is\+Pseudo\+Capture}}
+\index{is\+Pseudo\+Capture@{is\+Pseudo\+Capture}!skl\+::\+\_\+\+Video\+Capture\+Interface@{skl\+::\+\_\+\+Video\+Capture\+Interface}}
+\subsubsection{\texorpdfstring{is\+Pseudo\+Capture()}{isPseudoCapture()}}
+{\footnotesize\ttfamily virtual bool skl\+::\+\_\+\+Video\+Capture\+Interface\+::is\+Pseudo\+Capture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+本来は取得データがないのに補間したデータなどを利用している 場合にtrueとなる。具象クラスで特に実装がなければfalseを返す 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_video_capture_interface_8h}{Video\+Capture\+Interface.\+h}\item 
+Open\+C\+V/src/\hyperlink{_video_capture_interface_8cpp}{Video\+Capture\+Interface.\+cpp}\end{DoxyCompactItemize}

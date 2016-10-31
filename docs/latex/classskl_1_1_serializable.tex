@@ -1,0 +1,108 @@
+\hypertarget{classskl_1_1_serializable}{}\section{skl\+:\+:Serializable Class Reference}
+\label{classskl_1_1_serializable}\index{skl\+::\+Serializable@{skl\+::\+Serializable}}
+
+
+Black\+Boardを介してデータをやりとりするクラスのインターフェイス  
+
+
+
+
+{\ttfamily \#include $<$Serializable.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Serializable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.787234cm]{classskl_1_1_serializable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_serializable_a94b5cf22d52d2bb6a0fb58e417fa504e}{}\label{classskl_1_1_serializable_a94b5cf22d52d2bb6a0fb58e417fa504e} 
+\hyperlink{classskl_1_1_serializable_a94b5cf22d52d2bb6a0fb58e417fa504e}{Serializable} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_afe0b4a8ee83b34ae2e2b9cd126c662a4}{}\label{classskl_1_1_serializable_afe0b4a8ee83b34ae2e2b9cd126c662a4} 
+virtual \hyperlink{classskl_1_1_serializable_afe0b4a8ee83b34ae2e2b9cd126c662a4}{$\sim$\+Serializable} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_abcf129d50dc5b2f51300645a07ea3a38}{}\label{classskl_1_1_serializable_abcf129d50dc5b2f51300645a07ea3a38} 
+virtual std\+::string \hyperlink{classskl_1_1_serializable_abcf129d50dc5b2f51300645a07ea3a38}{get\+Class\+Name} () const
+\begin{DoxyCompactList}\small\item\em 関数名を返す \end{DoxyCompactList}\item 
+virtual long \hyperlink{classskl_1_1_serializable_a4bd0c82fdb8a663215b54671df1222f2}{serialize} (char $\ast$$\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{\+\_\+buf\+\_\+size()}の返り値を元にbufのメモリ管理をしてから\+\_\+serializeを呼び出す \end{DoxyCompactList}\item 
+virtual void \hyperlink{classskl_1_1_serializable_a09f2101bdae407e65e83a286f76cd65f}{deserialize} (const char $\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}, long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size}=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{\+\_\+buf\+\_\+size()}の返り値を元にbufのメモリ管理をしてから\+\_\+serializeを呼び出す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_aa2710ac29cb9cd325bc8624c5cfc8f7d}{}\label{classskl_1_1_serializable_aa2710ac29cb9cd325bc8624c5cfc8f7d} 
+long \hyperlink{classskl_1_1_serializable_aa2710ac29cb9cd325bc8624c5cfc8f7d}{serialized\+Data\+Length} () const
+\begin{DoxyCompactList}\small\item\em 直列化された場合のデータのサイズを返す \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_serializable_af62d2ecb4f263cbd1099c6d32e9a0558}{}\label{classskl_1_1_serializable_af62d2ecb4f263cbd1099c6d32e9a0558} 
+\hyperlink{classskl_1_1_serializable_af62d2ecb4f263cbd1099c6d32e9a0558}{Serializable} (const \hyperlink{classskl_1_1_serializable}{Serializable} \&other)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{}\label{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5} 
+virtual long \hyperlink{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{\+\_\+buf\+\_\+size} () const =0
+\begin{DoxyCompactList}\small\item\em \+\_\+serializeで生成される予定のbufの長さを返す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_a1ebe63f20226d3e63fb13e25720b5339}{}\label{classskl_1_1_serializable_a1ebe63f20226d3e63fb13e25720b5339} 
+virtual void \hyperlink{classskl_1_1_serializable_a1ebe63f20226d3e63fb13e25720b5339}{\+\_\+serialize} ()=0
+\begin{DoxyCompactList}\small\item\em クラスの中身を直列化してメンバ変数のbufに格納する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_a63a6d619bb4d2fd9f5bf423a544e514c}{}\label{classskl_1_1_serializable_a63a6d619bb4d2fd9f5bf423a544e514c} 
+virtual void \hyperlink{classskl_1_1_serializable_a63a6d619bb4d2fd9f5bf423a544e514c}{\+\_\+deserialize} (const char $\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}, long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size})=0
+\begin{DoxyCompactList}\small\item\em 直列化されたクラスの中身を読み込む \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{}\label{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1} 
+long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size}
+\begin{DoxyCompactList}\small\item\em 直前に呼ばれたserializeで生成されたbufの長さ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{}\label{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a} 
+char $\ast$ \hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}
+\begin{DoxyCompactList}\small\item\em 直前に呼ばれたserializeで生成されたbufの中身 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Black\+Boardを介してデータをやりとりするクラスのインターフェイス 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_serializable_a09f2101bdae407e65e83a286f76cd65f}{}\label{classskl_1_1_serializable_a09f2101bdae407e65e83a286f76cd65f} 
+\index{skl\+::\+Serializable@{skl\+::\+Serializable}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!skl\+::\+Serializable@{skl\+::\+Serializable}}
+\subsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily void skl\+::\+Serializable\+::deserialize (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buf,  }\item[{long}]{buf\+\_\+size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{\+\_\+buf\+\_\+size()}の返り値を元にbufのメモリ管理をしてから\+\_\+serializeを呼び出す 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & blackboardに投げるバッファ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+バッファのバイト長(sizeof(char)x\+NのN) 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_serializable_a4bd0c82fdb8a663215b54671df1222f2}{}\label{classskl_1_1_serializable_a4bd0c82fdb8a663215b54671df1222f2} 
+\index{skl\+::\+Serializable@{skl\+::\+Serializable}!serialize@{serialize}}
+\index{serialize@{serialize}!skl\+::\+Serializable@{skl\+::\+Serializable}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily long skl\+::\+Serializable\+::serialize (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{classskl_1_1_serializable_a489e26e25bacf78d0dae50f0286c62b5}{\+\_\+buf\+\_\+size()}の返り値を元にbufのメモリ管理をしてから\+\_\+serializeを呼び出す 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & blackboardに投げるバッファ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+バッファのバイト長(sizeof(char)x\+NのN) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_serializable_8h}{Serializable.\+h}\item 
+Core/src/\hyperlink{_serializable_8cpp}{Serializable.\+cpp}\end{DoxyCompactItemize}

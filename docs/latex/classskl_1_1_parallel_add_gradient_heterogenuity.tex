@@ -1,0 +1,38 @@
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity}{}\section{skl\+:\+:Parallel\+Add\+Gradient\+Heterogenuity Class Reference}
+\label{classskl_1_1_parallel_add_gradient_heterogenuity}\index{skl\+::\+Parallel\+Add\+Gradient\+Heterogenuity@{skl\+::\+Parallel\+Add\+Gradient\+Heterogenuity}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_a85b164b06a685548f6f6b7e106aa1fa7}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_a85b164b06a685548f6f6b7e106aa1fa7} 
+{\bfseries Parallel\+Add\+Gradient\+Heterogenuity} (const cv\+::\+Mat \&data\+\_\+term, const cv\+::\+Mat \&gradient\+\_\+heterogenuity, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+x, cv\+::\+Mat \&smoothing\+\_\+term\+\_\+y, float smoothing\+\_\+term\+\_\+weight)
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_a85da87e245322013360fea2232e161b9}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_a85da87e245322013360fea2232e161b9} 
+void {\bfseries operator()} (const cv\+::\+Blocked\+Range \&range) const
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_aabafc3b922fcd0809692c2b187bb9134}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_aabafc3b922fcd0809692c2b187bb9134} 
+int {\bfseries calc\+Data\+Term\+Penalty} (int val) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_a0f44d68f3570ffddac3f19db27e70975}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_a0f44d68f3570ffddac3f19db27e70975} 
+const cv\+::\+Mat \& {\bfseries data\+\_\+term}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_acc07e5bd2e5b6cd1e79fdd69612aaccf}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_acc07e5bd2e5b6cd1e79fdd69612aaccf} 
+const cv\+::\+Mat \& {\bfseries gradient\+\_\+heterogenuity}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_a17765db83b342f0eb47d4bbf6b767b35}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_a17765db83b342f0eb47d4bbf6b767b35} 
+cv\+::\+Mat \& {\bfseries smoothing\+\_\+term\+\_\+x}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_aafa6aa99d6a4740d51d5426ed8028494}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_aafa6aa99d6a4740d51d5426ed8028494} 
+cv\+::\+Mat \& {\bfseries smoothing\+\_\+term\+\_\+y}
+\item 
+\hypertarget{classskl_1_1_parallel_add_gradient_heterogenuity_ab048e3c50d479c3d802e95f90e5386e2}{}\label{classskl_1_1_parallel_add_gradient_heterogenuity_ab048e3c50d479c3d802e95f90e5386e2} 
+float {\bfseries smoothing\+\_\+term\+\_\+weight}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Tex\+Cut.\+h\item 
+Open\+C\+V/src/Tex\+Cut.\+cpp\end{DoxyCompactItemize}

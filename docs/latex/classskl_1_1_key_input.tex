@@ -1,0 +1,80 @@
+\hypertarget{classskl_1_1_key_input}{}\section{skl\+:\+:Key\+Input Class Reference}
+\label{classskl_1_1_key_input}\index{skl\+::\+Key\+Input@{skl\+::\+Key\+Input}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_key_input_a3041907e37053b075d2204f07e790cbb}{}\label{classskl_1_1_key_input_a3041907e37053b075d2204f07e790cbb} 
+enum \{ \newline
+{\bfseries S\+H\+I\+FT} = 0x10000, 
+{\bfseries C\+T\+RL} = 0x40000, 
+{\bfseries N\+U\+M\+L\+O\+CK} = 0x100000, 
+{\bfseries C\+A\+P\+S\+L\+O\+CK} = 0x20000, 
+\newline
+{\bfseries A\+LT} = 0x80000, 
+{\bfseries L\+E\+F\+T\+\_\+\+A\+R\+R\+OW} = 65361, 
+{\bfseries U\+P\+\_\+\+A\+R\+R\+OW} = 65362, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+A\+R\+R\+OW} = 65363, 
+\newline
+{\bfseries D\+O\+W\+N\+\_\+\+A\+R\+R\+OW} = 65364
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_key_input_a433d183979067662820d7b929e249b95}{}\label{classskl_1_1_key_input_a433d183979067662820d7b929e249b95} 
+char {\bfseries set} (int keystroke)
+\item 
+\hypertarget{classskl_1_1_key_input_a9590de3ef1f3b34e1371090fc02d3b80}{}\label{classskl_1_1_key_input_a9590de3ef1f3b34e1371090fc02d3b80} 
+char {\bfseries get\+Char} ()
+\item 
+\hypertarget{classskl_1_1_key_input_a8e3f6b5a26823d68b42bd3373376d712}{}\label{classskl_1_1_key_input_a8e3f6b5a26823d68b42bd3373376d712} 
+bool {\bfseries is\+Valid} ()
+\item 
+\hypertarget{classskl_1_1_key_input_a5d705978e5e08298d21ccc5efe574f03}{}\label{classskl_1_1_key_input_a5d705978e5e08298d21ccc5efe574f03} 
+int {\bfseries code} () const
+\item 
+\hypertarget{classskl_1_1_key_input_adcad47367d0a140fa7d56ada00fbce9a}{}\label{classskl_1_1_key_input_adcad47367d0a140fa7d56ada00fbce9a} 
+bool {\bfseries shift} () const
+\item 
+\hypertarget{classskl_1_1_key_input_ad62de27cadf145a1a3321c0dbcfa2f81}{}\label{classskl_1_1_key_input_ad62de27cadf145a1a3321c0dbcfa2f81} 
+bool {\bfseries ctrl} () const
+\item 
+\hypertarget{classskl_1_1_key_input_a9561162d5ffd33754b806e3d2bf9b8b2}{}\label{classskl_1_1_key_input_a9561162d5ffd33754b806e3d2bf9b8b2} 
+bool {\bfseries numlock} () const
+\item 
+\hypertarget{classskl_1_1_key_input_adb125489e60f7eaa0d32c048a0544841}{}\label{classskl_1_1_key_input_adb125489e60f7eaa0d32c048a0544841} 
+bool {\bfseries capslock} () const
+\item 
+\hypertarget{classskl_1_1_key_input_aa8928da3627ae3556198e7e2e3a5af10}{}\label{classskl_1_1_key_input_aa8928da3627ae3556198e7e2e3a5af10} 
+bool {\bfseries alt} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_key_input_ab7c445dee3b0c2de8c266dd7a2eb2b00}{}\label{classskl_1_1_key_input_ab7c445dee3b0c2de8c266dd7a2eb2b00} 
+int {\bfseries \+\_\+code}
+\item 
+\hypertarget{classskl_1_1_key_input_a537fbedb395a46169c3c99af808691e1}{}\label{classskl_1_1_key_input_a537fbedb395a46169c3c99af808691e1} 
+bool {\bfseries \+\_\+shift}
+\item 
+\hypertarget{classskl_1_1_key_input_a5efcbdadc726872cae91386163c84bdf}{}\label{classskl_1_1_key_input_a5efcbdadc726872cae91386163c84bdf} 
+bool {\bfseries \+\_\+ctrl}
+\item 
+\hypertarget{classskl_1_1_key_input_a9c3c98ec877767c743853c7367e4747c}{}\label{classskl_1_1_key_input_a9c3c98ec877767c743853c7367e4747c} 
+bool {\bfseries \+\_\+numlock}
+\item 
+\hypertarget{classskl_1_1_key_input_a17d3c07d17ecd1195078790cf712f4cb}{}\label{classskl_1_1_key_input_a17d3c07d17ecd1195078790cf712f4cb} 
+bool {\bfseries \+\_\+capslock}
+\item 
+\hypertarget{classskl_1_1_key_input_a0bb09cf95828ac5fb0df5a62e7559423}{}\label{classskl_1_1_key_input_a0bb09cf95828ac5fb0df5a62e7559423} 
+bool {\bfseries \+\_\+alt}
+\item 
+\hypertarget{classskl_1_1_key_input_a4205ff6d7423d192ab8bc97bd0874d99}{}\label{classskl_1_1_key_input_a4205ff6d7423d192ab8bc97bd0874d99} 
+bool {\bfseries is\+\_\+valid}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_key_input_8h}{Key\+Input.\+h}\item 
+Core/src/\hyperlink{_key_input_8cpp}{Key\+Input.\+cpp}\end{DoxyCompactItemize}

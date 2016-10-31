@@ -1,0 +1,68 @@
+\hypertarget{class_labeling}{}\section{Labeling$<$ SrcT, DstT $>$ Class Template Reference}
+\label{class_labeling}\index{Labeling$<$ Src\+T, Dst\+T $>$@{Labeling$<$ Src\+T, Dst\+T $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_labeling_1_1_raster_segment}{Raster\+Segment}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_labeling_1_1_raster_segment}{Raster\+Segment}. \end{DoxyCompactList}\item 
+class \hyperlink{class_labeling_1_1_region_info}{Region\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_labeling_aed2219f3d8b3a803d96da6750834fe16}{}\label{class_labeling_aed2219f3d8b3a803d96da6750834fe16} 
+typedef std\+::list$<$ \hyperlink{class_labeling_1_1_raster_segment}{Raster\+Segment} $\ast$ $>$ {\bfseries R\+S\+P\+List}
+\item 
+\hypertarget{class_labeling_a8a57d7361dcb88b2aba008ac3369f8df}{}\label{class_labeling_a8a57d7361dcb88b2aba008ac3369f8df} 
+typedef std\+::list$<$ \hyperlink{class_labeling_1_1_raster_segment}{Raster\+Segment} $\ast$ $>$\+::iterator {\bfseries R\+S\+P\+Iterator}
+\item 
+\hypertarget{class_labeling_ad6742d43c058dda1a526f114a41955d6}{}\label{class_labeling_ad6742d43c058dda1a526f114a41955d6} 
+typedef std\+::queue$<$ \hyperlink{class_labeling_1_1_raster_segment}{Raster\+Segment} $\ast$ $>$ {\bfseries R\+S\+P\+Queue}
+\item 
+\hypertarget{class_labeling_a268813d6a00e26c7b524122bd2d88596}{}\label{class_labeling_a268813d6a00e26c7b524122bd2d88596} 
+typedef std\+::list$<$ \hyperlink{class_labeling_1_1_region_info}{Region\+Info} $\ast$ $>$ {\bfseries R\+I\+P\+List}
+\item 
+\hypertarget{class_labeling_a9264d38d8c52860116e8a751bb0a75eb}{}\label{class_labeling_a9264d38d8c52860116e8a751bb0a75eb} 
+typedef std\+::list$<$ \hyperlink{class_labeling_1_1_region_info}{Region\+Info} $\ast$ $>$\+::iterator {\bfseries R\+I\+P\+Iterator}
+\item 
+\hypertarget{class_labeling_aecf75ed5a0fa2ee88a1b24e09af35f8c}{}\label{class_labeling_aecf75ed5a0fa2ee88a1b24e09af35f8c} 
+typedef std\+::vector$<$ \hyperlink{class_labeling_1_1_region_info}{Region\+Info} $\ast$ $>$ {\bfseries R\+I\+P\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_labeling_a7ef9dffc4fdda47cab7bd87d16419bcc}{}\label{class_labeling_a7ef9dffc4fdda47cab7bd87d16419bcc} 
+int {\bfseries Get\+Num\+Of\+Regions} (void) const
+\item 
+\hypertarget{class_labeling_ac459520ccd9b51c42c9e19aa08dd49d2}{}\label{class_labeling_ac459520ccd9b51c42c9e19aa08dd49d2} 
+int {\bfseries Get\+Num\+Of\+Result\+Regions} (void) const
+\item 
+\hypertarget{class_labeling_a61c657da16920ffd8570c9ffa6fe7c1a}{}\label{class_labeling_a61c657da16920ffd8570c9ffa6fe7c1a} 
+\hyperlink{class_labeling_1_1_region_info}{Region\+Info} $\ast$ {\bfseries Get\+Result\+Region\+Info} (const int num) const
+\item 
+int \hyperlink{class_labeling_a639673f1a391609c6a78f46b0575774a}{Exec} (SrcT $\ast$target, DstT $\ast$result, int target\+\_\+width, int target\+\_\+height, const bool is\+\_\+sort\+\_\+region, const int region\+\_\+size\+\_\+min)
+\begin{DoxyCompactList}\small\item\em ラベリング処理を実行。処理後、\+Dst\+Tには\mbox{[}0,\#region\mbox{]}までのいずれかの値が格納される。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_labeling_a639673f1a391609c6a78f46b0575774a}{}\label{class_labeling_a639673f1a391609c6a78f46b0575774a} 
+\index{Labeling@{Labeling}!Exec@{Exec}}
+\index{Exec@{Exec}!Labeling@{Labeling}}
+\subsubsection{\texorpdfstring{Exec()}{Exec()}}
+{\footnotesize\ttfamily template$<$class SrcT, class DstT$>$ \\
+int \hyperlink{class_labeling}{Labeling}$<$ SrcT, DstT $>$\+::Exec (\begin{DoxyParamCaption}\item[{SrcT $\ast$}]{target,  }\item[{DstT $\ast$}]{result,  }\item[{int}]{target\+\_\+width,  }\item[{int}]{target\+\_\+height,  }\item[{const bool}]{is\+\_\+sort\+\_\+region,  }\item[{const int}]{region\+\_\+size\+\_\+min }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ラベリング処理を実行。処理後、\+Dst\+Tには\mbox{[}0,\#region\mbox{]}までのいずれかの値が格納される。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em DstT} & DstT\mbox{[}x,y\mbox{]}=0ならば背景領域、\+DstT\mbox{[}x,y\mbox{]}=kならばk番目の領域を表す。 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_labeling_8h}{Labeling.\+h}\end{DoxyCompactItemize}

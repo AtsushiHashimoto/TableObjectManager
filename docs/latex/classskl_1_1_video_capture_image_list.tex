@@ -1,0 +1,86 @@
+\hypertarget{classskl_1_1_video_capture_image_list}{}\section{skl\+:\+:Video\+Capture\+Image\+List Class Reference}
+\label{classskl_1_1_video_capture_image_list}\index{skl\+::\+Video\+Capture\+Image\+List@{skl\+::\+Video\+Capture\+Image\+List}}
+
+
+画像列が記述されたファイルリストからファイルを読み込む  
+
+
+
+
+{\ttfamily \#include $<$Video\+Capture\+Image\+List.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Video\+Capture\+Image\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classskl_1_1_video_capture_image_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_a01adf7ae192e5c22ee43ff011f61aecb}{}\label{classskl_1_1_video_capture_image_list_a01adf7ae192e5c22ee43ff011f61aecb} 
+\hyperlink{classskl_1_1_video_capture_image_list_a01adf7ae192e5c22ee43ff011f61aecb}{Video\+Capture\+Image\+List} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_image_list_afbd4271704c52c53c0044afc9554260e}{}\label{classskl_1_1_video_capture_image_list_afbd4271704c52c53c0044afc9554260e} 
+virtual \hyperlink{classskl_1_1_video_capture_image_list_afbd4271704c52c53c0044afc9554260e}{$\sim$\+Video\+Capture\+Image\+List} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_image_list_ac2ee0961a1620389d30e367251cbc6fd}{}\label{classskl_1_1_video_capture_image_list_ac2ee0961a1620389d30e367251cbc6fd} 
+virtual bool {\bfseries open} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_a6ac572e50288fa2c48c6d48026124f46}{}\label{classskl_1_1_video_capture_image_list_a6ac572e50288fa2c48c6d48026124f46} 
+bool {\bfseries is\+Opened} () const
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_aa341c3148f8cd67c152d8d24dc1c7a09}{}\label{classskl_1_1_video_capture_image_list_aa341c3148f8cd67c152d8d24dc1c7a09} 
+void \hyperlink{classskl_1_1_video_capture_image_list_aa341c3148f8cd67c152d8d24dc1c7a09}{release} ()
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_image_list_a6598af40f62a9088ee423aa966b77c09}{}\label{classskl_1_1_video_capture_image_list_a6598af40f62a9088ee423aa966b77c09} 
+bool {\bfseries grab} ()
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_ab2291aa8a1dae8966a8f43716cb0d128}{}\label{classskl_1_1_video_capture_image_list_ab2291aa8a1dae8966a8f43716cb0d128} 
+bool {\bfseries retrieve} (cv\+::\+Mat \&image, int channel=0)
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_ae7b49a05d26607c526c6f8082d15e979}{}\label{classskl_1_1_video_capture_image_list_ae7b49a05d26607c526c6f8082d15e979} 
+virtual bool {\bfseries is\+Pseudo\+Capture} ()
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_acb500fb9f193ad0c0a94099426b4ebf9}{}\label{classskl_1_1_video_capture_image_list_acb500fb9f193ad0c0a94099426b4ebf9} 
+bool \hyperlink{classskl_1_1_video_capture_image_list_acb500fb9f193ad0c0a94099426b4ebf9}{set} (capture\+\_\+property\+\_\+t prop\+\_\+id, double val)
+\begin{DoxyCompactList}\small\item\em カメラに値やモード(camera\+\_\+mode\+\_\+tがset($\ast$,camera\+\_\+mode\+\_\+t mode)を通してvalに与えられる(modeは-\/4から-\/1までの整数)をセットする純粋仮想関数 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_image_list_a439231c580b1e93c68230667bfe07c1e}{}\label{classskl_1_1_video_capture_image_list_a439231c580b1e93c68230667bfe07c1e} 
+double \hyperlink{classskl_1_1_video_capture_image_list_a439231c580b1e93c68230667bfe07c1e}{get} (capture\+\_\+property\+\_\+t prop\+\_\+id)
+\begin{DoxyCompactList}\small\item\em カメラから値をgetする純粋仮想関数(modeはインターフェイス簡素化のためサポートしない) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_aa520467fba47f993d72eac492ad34ad0}{}\label{classskl_1_1_video_capture_image_list_aa520467fba47f993d72eac492ad34ad0} 
+void {\bfseries generate\+Index} (const std\+::vector$<$ std\+::string $>$ \&list, std\+::vector$<$ std\+::pair$<$ size\+\_\+t, bool $>$ $>$ \&index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_a07a9d7ba42284858346a0b22f79a8546}{}\label{classskl_1_1_video_capture_image_list_a07a9d7ba42284858346a0b22f79a8546} 
+int {\bfseries index}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_aa45d84456af4dd8819cd5a1248346659}{}\label{classskl_1_1_video_capture_image_list_aa45d84456af4dd8819cd5a1248346659} 
+std\+::vector$<$ std\+::pair$<$ size\+\_\+t, bool $>$ $>$ {\bfseries img\+\_\+list}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_afc70915373577ee01bb546f3b6792075}{}\label{classskl_1_1_video_capture_image_list_afc70915373577ee01bb546f3b6792075} 
+std\+::vector$<$ std\+::string $>$ {\bfseries img\+\_\+list\+\_\+}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_ada19dc79dc7bf69d12c91735db419e8a}{}\label{classskl_1_1_video_capture_image_list_ada19dc79dc7bf69d12c91735db419e8a} 
+int {\bfseries bayer\+\_\+change}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_abb1a3688f5789ccb88e1f813d31237bb}{}\label{classskl_1_1_video_capture_image_list_abb1a3688f5789ccb88e1f813d31237bb} 
+int {\bfseries imread\+\_\+option}
+\item 
+\hypertarget{classskl_1_1_video_capture_image_list_aca89f798845c8da4039c032705a79953}{}\label{classskl_1_1_video_capture_image_list_aca89f798845c8da4039c032705a79953} 
+int {\bfseries checked\+\_\+frame\+\_\+pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+画像列が記述されたファイルリストからファイルを読み込む 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_video_capture_image_list_8h}{Video\+Capture\+Image\+List.\+h}\item 
+Open\+C\+V/src/\hyperlink{_video_capture_image_list_8cpp}{Video\+Capture\+Image\+List.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classskl_1_1_video_capture_default}{}\section{skl\+:\+:Video\+Capture\+Default Class Reference}
+\label{classskl_1_1_video_capture_default}\index{skl\+::\+Video\+Capture\+Default@{skl\+::\+Video\+Capture\+Default}}
+
+
+Open\+C\+Vのcv\+::\+Video\+Captureを利用する\+Video\+Capture.  
+
+
+
+
+{\ttfamily \#include $<$Video\+Capture\+Default.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Video\+Capture\+Default\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.601286cm]{classskl_1_1_video_capture_default}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_default_a1c4eac1dbe596afa16d3663947260004}{}\label{classskl_1_1_video_capture_default_a1c4eac1dbe596afa16d3663947260004} 
+\hyperlink{classskl_1_1_video_capture_default_a1c4eac1dbe596afa16d3663947260004}{Video\+Capture\+Default} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_default_ab80757b0119e28a212e4e9a7c966c883}{}\label{classskl_1_1_video_capture_default_ab80757b0119e28a212e4e9a7c966c883} 
+virtual \hyperlink{classskl_1_1_video_capture_default_ab80757b0119e28a212e4e9a7c966c883}{$\sim$\+Video\+Capture\+Default} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_default_ac0898bf274ee0acf05fbbe895229c21b}{}\label{classskl_1_1_video_capture_default_ac0898bf274ee0acf05fbbe895229c21b} 
+bool {\bfseries open} (const std\+::string \&filename)
+\item 
+\hypertarget{classskl_1_1_video_capture_default_afb80319eef496baba0ab45fc1b040ff2}{}\label{classskl_1_1_video_capture_default_afb80319eef496baba0ab45fc1b040ff2} 
+bool {\bfseries open} (int device)
+\item 
+\hypertarget{classskl_1_1_video_capture_default_a6c6045af240272db07a981b605174dff}{}\label{classskl_1_1_video_capture_default_a6c6045af240272db07a981b605174dff} 
+bool {\bfseries is\+Opened} () const
+\item 
+\hypertarget{classskl_1_1_video_capture_default_a4d86ae1172274a23cc401f2ca4116a5c}{}\label{classskl_1_1_video_capture_default_a4d86ae1172274a23cc401f2ca4116a5c} 
+void \hyperlink{classskl_1_1_video_capture_default_a4d86ae1172274a23cc401f2ca4116a5c}{release} ()
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_default_a0667bbfc63c734b78fc5db51e7329419}{}\label{classskl_1_1_video_capture_default_a0667bbfc63c734b78fc5db51e7329419} 
+bool {\bfseries grab} ()
+\item 
+\hypertarget{classskl_1_1_video_capture_default_ab606b047d7d5e94c6aee600c2674a3b3}{}\label{classskl_1_1_video_capture_default_ab606b047d7d5e94c6aee600c2674a3b3} 
+bool {\bfseries retrieve} (cv\+::\+Mat \&image, int channel=0)
+\item 
+\hypertarget{classskl_1_1_video_capture_default_a626a3b49fd2ba92cc3f39a59513e8414}{}\label{classskl_1_1_video_capture_default_a626a3b49fd2ba92cc3f39a59513e8414} 
+bool \hyperlink{classskl_1_1_video_capture_default_a626a3b49fd2ba92cc3f39a59513e8414}{set} (capture\+\_\+property\+\_\+t prop\+\_\+id, double val)
+\begin{DoxyCompactList}\small\item\em カメラに値やモード(camera\+\_\+mode\+\_\+tがset($\ast$,camera\+\_\+mode\+\_\+t mode)を通してvalに与えられる(modeは-\/4から-\/1までの整数)をセットする純粋仮想関数 \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_video_capture_default_a17131b806cb6f62a159e3459f2c1a724}{}\label{classskl_1_1_video_capture_default_a17131b806cb6f62a159e3459f2c1a724} 
+double \hyperlink{classskl_1_1_video_capture_default_a17131b806cb6f62a159e3459f2c1a724}{get} (capture\+\_\+property\+\_\+t prop\+\_\+id)
+\begin{DoxyCompactList}\small\item\em カメラから値をgetする純粋仮想関数(modeはインターフェイス簡素化のためサポートしない) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_video_capture_default_a6965fe5cd25ec2aa2eeac3c002b306e8}{}\label{classskl_1_1_video_capture_default_a6965fe5cd25ec2aa2eeac3c002b306e8} 
+cv\+::\+Mat {\bfseries buf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Open\+C\+Vのcv\+::\+Video\+Captureを利用する\+Video\+Capture. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_video_capture_default_8h}{Video\+Capture\+Default.\+h}\item 
+Open\+C\+V/src/\hyperlink{_video_capture_default_8cpp}{Video\+Capture\+Default.\+cpp}\end{DoxyCompactItemize}

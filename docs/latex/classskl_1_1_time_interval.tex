@@ -1,0 +1,187 @@
+\hypertarget{classskl_1_1_time_interval}{}\section{skl\+:\+:Time\+Interval Class Reference}
+\label{classskl_1_1_time_interval}\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+
+
+時間間隔を表すクラス(最小単位\+:msec)  
+
+
+
+
+{\ttfamily \#include $<$Time\+Interval.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Time\+Interval\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classskl_1_1_time_interval}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_interval_adfa93f83372d9d25e27282ed38e35345}{}\label{classskl_1_1_time_interval_adfa93f83372d9d25e27282ed38e35345} 
+\hyperlink{classskl_1_1_time_interval_adfa93f83372d9d25e27282ed38e35345}{Time\+Interval} (long long msec=0)
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_a1d2f4f99ab2358c6c2c9d812835e50ce}{}\label{classskl_1_1_time_interval_a1d2f4f99ab2358c6c2c9d812835e50ce} 
+\hyperlink{classskl_1_1_time_interval_a1d2f4f99ab2358c6c2c9d812835e50ce}{Time\+Interval} (long hour, int minute, int sec=0, int msec=0, int sign=1)
+\begin{DoxyCompactList}\small\item\em 要素毎に指定するコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_aa0aa3a4fa4887826b0d194036891bb10}{}\label{classskl_1_1_time_interval_aa0aa3a4fa4887826b0d194036891bb10} 
+\hyperlink{classskl_1_1_time_interval_aa0aa3a4fa4887826b0d194036891bb10}{Time\+Interval} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em 文字列を引数にとるコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_a62581176e8c9c785d8a4c0a23ace8605}{}\label{classskl_1_1_time_interval_a62581176e8c9c785d8a4c0a23ace8605} 
+\hyperlink{classskl_1_1_time_interval_a62581176e8c9c785d8a4c0a23ace8605}{Time\+Interval} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_ab9e4f540a894261106ac579d1d409b23}{}\label{classskl_1_1_time_interval_ab9e4f540a894261106ac579d1d409b23} 
+virtual \hyperlink{classskl_1_1_time_interval_ab9e4f540a894261106ac579d1d409b23}{$\sim$\+Time\+Interval} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_interval_a371c857881c27d68bff36e169646126a}{to\+String} () const
+\begin{DoxyCompactList}\small\item\em 文字列として書き出す(本体はprint()) \end{DoxyCompactList}\item 
+void \hyperlink{classskl_1_1_time_interval_ae706d4ce4795c566ce481f96380a878f}{parse\+String} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em 文字列から読み出す(本体はscanで定義) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_interval_a1605c779683229ccc9e714f651ab3b1d}{print} () const
+\begin{DoxyCompactList}\small\item\em 文字列として書き出す \end{DoxyCompactList}\item 
+bool \hyperlink{classskl_1_1_time_interval_ac2ad9a1a830ce70e6702969815ca7468}{scan} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em 文字列から読み出す \end{DoxyCompactList}\item 
+double \hyperlink{classskl_1_1_time_interval_afa1dd3e11159f1f8886e83db1c11eb5a}{get\+As\+Second} () const
+\begin{DoxyCompactList}\small\item\em millisecond以下を小数として、秒単位で取り出す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_a7b1ae87caad5ec9346f4c93415e3574f}{}\label{classskl_1_1_time_interval_a7b1ae87caad5ec9346f4c93415e3574f} 
+{\bfseries operator long long} () const
+\item 
+\hypertarget{classskl_1_1_time_interval_a50850c985e918e73c2e189cd7666fa1d}{}\label{classskl_1_1_time_interval_a50850c985e918e73c2e189cd7666fa1d} 
+bool \hyperlink{classskl_1_1_time_interval_a50850c985e918e73c2e189cd7666fa1d}{operator$<$} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other) const
+\begin{DoxyCompactList}\small\item\em 比較演算子(但し、printした文字列の順序を利用するので、意味のある比較をした場合には具象クラス毎に定義すること) \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_af2846332871234fdb1e6eb1b50ea3105}{}\label{classskl_1_1_time_interval_af2846332871234fdb1e6eb1b50ea3105} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator=} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other)
+\item 
+\hypertarget{classskl_1_1_time_interval_a7b4730d6e3512cf5a81d984452b9ee3f}{}\label{classskl_1_1_time_interval_a7b4730d6e3512cf5a81d984452b9ee3f} 
+long long {\bfseries operator-\/} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_interval_afe7e4bed83dfd04b54bac4fe7f68ebe5}{}\label{classskl_1_1_time_interval_afe7e4bed83dfd04b54bac4fe7f68ebe5} 
+long long {\bfseries operator+} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other) const
+\item 
+\hypertarget{classskl_1_1_time_interval_a74ec9555c6d258bd3b8627a60ca5c634}{}\label{classskl_1_1_time_interval_a74ec9555c6d258bd3b8627a60ca5c634} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator-\/=} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other)
+\item 
+\hypertarget{classskl_1_1_time_interval_a8a27f01d1abea70e9fea32aa79de79c3}{}\label{classskl_1_1_time_interval_a8a27f01d1abea70e9fea32aa79de79c3} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator+=} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other)
+\item 
+\hypertarget{classskl_1_1_time_interval_a7a30ed02d174a90446b5788a674e0647}{}\label{classskl_1_1_time_interval_a7a30ed02d174a90446b5788a674e0647} 
+long long {\bfseries operator-\/} () const
+\item 
+\hypertarget{classskl_1_1_time_interval_a3361133892254c113d238ab4ae0060f3}{}\label{classskl_1_1_time_interval_a3361133892254c113d238ab4ae0060f3} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator\%=} (const \hyperlink{classskl_1_1_time_interval}{Time\+Interval} \&other)
+\item 
+\hypertarget{classskl_1_1_time_interval_aae7818a395cdf61c2672a80ddb73ae86}{}\label{classskl_1_1_time_interval_aae7818a395cdf61c2672a80ddb73ae86} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator/=} (long long factor)
+\item 
+\hypertarget{classskl_1_1_time_interval_aa627ad5802fd80fb78af4c98d6b6a867}{}\label{classskl_1_1_time_interval_aa627ad5802fd80fb78af4c98d6b6a867} 
+\hyperlink{classskl_1_1_time_interval}{Time\+Interval} \& {\bfseries operator$\ast$=} (long long factor)
+\item 
+\hypertarget{classskl_1_1_time_interval_ace5e1abd3590b0663a2d40ac6f4a0ff7}{}\label{classskl_1_1_time_interval_ace5e1abd3590b0663a2d40ac6f4a0ff7} 
+long \hyperlink{classskl_1_1_time_interval_ace5e1abd3590b0663a2d40ac6f4a0ff7}{\+\_\+buf\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em \+\_\+serializeで生成される予定のbufの長さを返す \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_ae2a439599345ef0c813c2a37278bc50d}{}\label{classskl_1_1_time_interval_ae2a439599345ef0c813c2a37278bc50d} 
+void \hyperlink{classskl_1_1_time_interval_ae2a439599345ef0c813c2a37278bc50d}{\+\_\+serialize} ()
+\begin{DoxyCompactList}\small\item\em クラスの中身を直列化してメンバ変数のbufに格納する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_time_interval_aabf6e35b9f1fe546f8b884cd7dc732fc}{}\label{classskl_1_1_time_interval_aabf6e35b9f1fe546f8b884cd7dc732fc} 
+void \hyperlink{classskl_1_1_time_interval_aabf6e35b9f1fe546f8b884cd7dc732fc}{\+\_\+deserialize} (const char $\ast$\hyperlink{classskl_1_1_serializable_a1d203d9f0049ce37183a0dcefbc6399a}{buf}, long \hyperlink{classskl_1_1_serializable_a087eb19fada917a42b8411bfecbac0f1}{buf\+\_\+size})
+\begin{DoxyCompactList}\small\item\em 直列化されたクラスの中身を読み込む \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_interval_a7992e2eaeba03bc07d341734d47f99d0}{}\label{classskl_1_1_time_interval_a7992e2eaeba03bc07d341734d47f99d0} 
+long long {\bfseries msec}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+時間間隔を表すクラス(最小単位\+:msec) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_time_interval_afa1dd3e11159f1f8886e83db1c11eb5a}{}\label{classskl_1_1_time_interval_afa1dd3e11159f1f8886e83db1c11eb5a} 
+\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}!get\+As\+Second@{get\+As\+Second}}
+\index{get\+As\+Second@{get\+As\+Second}!skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+\subsubsection{\texorpdfstring{get\+As\+Second()}{getAsSecond()}}
+{\footnotesize\ttfamily double skl\+::\+Time\+Interval\+::get\+As\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+millisecond以下を小数として、秒単位で取り出す 
+
+\begin{DoxyReturn}{Returns}
+sec(double) 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_time_interval_ae706d4ce4795c566ce481f96380a878f}{}\label{classskl_1_1_time_interval_ae706d4ce4795c566ce481f96380a878f} 
+\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+\subsubsection{\texorpdfstring{parse\+String()}{parseString()}}
+{\footnotesize\ttfamily void skl\+::\+Time\+Interval\+::parse\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+文字列から読み出す(本体はscanで定義) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & (\mbox{[}-\/\mbox{]}H\+H\+:\+MM\+:S\+S.\+mmm)という書式でかかれた文字列 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classskl_1_1_time_interval_a1605c779683229ccc9e714f651ab3b1d}{}\label{classskl_1_1_time_interval_a1605c779683229ccc9e714f651ab3b1d} 
+\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}!print@{print}}
+\index{print@{print}!skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Interval\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+文字列として書き出す 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em 時間情報の文字列(\mbox{[}-\/\mbox{]}\+H\+H\+:\+M\+M\+:\+S\+S.\+mmm)} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \hyperlink{classskl_1_1_printable}{skl\+::\+Printable$<$ Time\+Interval $>$}.
+
+\hypertarget{classskl_1_1_time_interval_ac2ad9a1a830ce70e6702969815ca7468}{}\label{classskl_1_1_time_interval_ac2ad9a1a830ce70e6702969815ca7468} 
+\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}!scan@{scan}}
+\index{scan@{scan}!skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+\subsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily bool skl\+::\+Time\+Interval\+::scan (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+文字列から読み出す 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & (\mbox{[}-\/\mbox{]}H\+H\+:\+MM\+:S\+S.\+mmm)という書式でかかれた文字列 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classskl_1_1_printable}{skl\+::\+Printable$<$ Time\+Interval $>$}.
+
+\hypertarget{classskl_1_1_time_interval_a371c857881c27d68bff36e169646126a}{}\label{classskl_1_1_time_interval_a371c857881c27d68bff36e169646126a} 
+\index{skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!skl\+::\+Time\+Interval@{skl\+::\+Time\+Interval}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Interval\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+文字列として書き出す(本体はprint()) 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em 時間情報の文字列(\mbox{[}-\/\mbox{]}\+H\+H\+:\+M\+M\+:\+S\+S.\+mmm)} & \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_time_interval_8h}{Time\+Interval.\+h}\item 
+Core/src/\hyperlink{_time_interval_8cpp}{Time\+Interval.\+cpp}\end{DoxyCompactItemize}

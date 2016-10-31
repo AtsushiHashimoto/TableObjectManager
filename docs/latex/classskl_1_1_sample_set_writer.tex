@@ -1,0 +1,62 @@
+\hypertarget{classskl_1_1_sample_set_writer}{}\section{skl\+:\+:Sample\+Set\+Writer Class Reference}
+\label{classskl_1_1_sample_set_writer}\index{skl\+::\+Sample\+Set\+Writer@{skl\+::\+Sample\+Set\+Writer}}
+
+
+学習用/評価用の特徴量サンプルセットの書き込みを行う  
+
+
+
+
+{\ttfamily \#include $<$Sample\+Set\+Writer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a2193c88247abcc0d7bc9b9d5154c9162}{}\label{classskl_1_1_sample_set_writer_a2193c88247abcc0d7bc9b9d5154c9162} 
+\hyperlink{classskl_1_1_sample_set_writer_a2193c88247abcc0d7bc9b9d5154c9162}{Sample\+Set\+Writer} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_sample_set_writer_ae8f6c309540896caca318ea94a420f62}{}\label{classskl_1_1_sample_set_writer_ae8f6c309540896caca318ea94a420f62} 
+virtual \hyperlink{classskl_1_1_sample_set_writer_ae8f6c309540896caca318ea94a420f62}{$\sim$\+Sample\+Set\+Writer} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a385f62f5d22e0a279400b82ee072ef14}{}\label{classskl_1_1_sample_set_writer_a385f62f5d22e0a279400b82ee072ef14} 
+static bool {\bfseries write} (const std\+::string \&filename, const cv\+::\+Mat $\ast$samples, const cv\+::\+Mat $\ast$responces=N\+U\+LL, const cv\+::\+Mat $\ast$likelihoods=N\+U\+LL, const std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ $\ast$timestamps=N\+U\+LL, const std\+::vector$<$ cv\+::\+Key\+Point $>$ $\ast$keypoints=N\+U\+LL)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a469a25833c78729f864b656c42a6defd}{}\label{classskl_1_1_sample_set_writer_a469a25833c78729f864b656c42a6defd} 
+static bool {\bfseries write} (std\+::ostream \&out, const cv\+::\+Mat $\ast$samples, const cv\+::\+Mat $\ast$responces=N\+U\+LL, const cv\+::\+Mat $\ast$likelihoods=N\+U\+LL, const std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ $\ast$timestamps=N\+U\+LL, const std\+::vector$<$ cv\+::\+Key\+Point $>$ $\ast$keypoints=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a8277a3d1956397b1ee82086bf34815ef}{}\label{classskl_1_1_sample_set_writer_a8277a3d1956397b1ee82086bf34815ef} 
+static bool {\bfseries \+\_\+write\+Header} (std\+::ostream \&out, size\+\_\+t sample\+\_\+num, size\+\_\+t sample\+\_\+dim, bool has\+\_\+responce, size\+\_\+t class\+\_\+num, bool has\+\_\+timestamp, bool has\+\_\+keypoint)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_ac279b2ff8782f4d03b72423a4dcaaf21}{}\label{classskl_1_1_sample_set_writer_ac279b2ff8782f4d03b72423a4dcaaf21} 
+{\footnotesize template$<$class Type , int C\+V\+\_\+\+D\+E\+P\+TH$>$ }\\static bool {\bfseries \+\_\+write\+Mat} (std\+::ostream \&out, const cv\+::\+Mat \&src)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_aef535ade4a6aed80a33f73717e134cfc}{}\label{classskl_1_1_sample_set_writer_aef535ade4a6aed80a33f73717e134cfc} 
+static bool {\bfseries \+\_\+write\+Samples} (std\+::ostream \&out, const cv\+::\+Mat \&src)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a0b0dea9b5c5e1eef872df19c33f5e048}{}\label{classskl_1_1_sample_set_writer_a0b0dea9b5c5e1eef872df19c33f5e048} 
+static bool {\bfseries \+\_\+write\+Responces} (std\+::ostream \&out, const cv\+::\+Mat \&src)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_aff2bb56a9d1c3b990e0a0f2ee5681054}{}\label{classskl_1_1_sample_set_writer_aff2bb56a9d1c3b990e0a0f2ee5681054} 
+static bool {\bfseries \+\_\+write\+Likelihoods} (std\+::ostream \&out, const cv\+::\+Mat \&src)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_a4ea8ae2783f27bed14a784df5d67d2de}{}\label{classskl_1_1_sample_set_writer_a4ea8ae2783f27bed14a784df5d67d2de} 
+static bool {\bfseries \+\_\+write\+Time\+Stamps} (std\+::ostream \&out, const std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ \&timestamps)
+\item 
+\hypertarget{classskl_1_1_sample_set_writer_ab34808ffb01f4dd084e3fba03a4aba7a}{}\label{classskl_1_1_sample_set_writer_ab34808ffb01f4dd084e3fba03a4aba7a} 
+static bool {\bfseries \+\_\+write\+Key\+Points} (std\+::ostream \&out, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+学習用/評価用の特徴量サンプルセットの書き込みを行う 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_sample_set_writer_8h}{Sample\+Set\+Writer.\+h}\item 
+Open\+C\+V/src/\hyperlink{_sample_set_writer_8cpp}{Sample\+Set\+Writer.\+cpp}\end{DoxyCompactItemize}

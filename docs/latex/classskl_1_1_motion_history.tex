@@ -1,0 +1,68 @@
+\hypertarget{classskl_1_1_motion_history}{}\section{skl\+:\+:Motion\+History Class Reference}
+\label{classskl_1_1_motion_history}\index{skl\+::\+Motion\+History@{skl\+::\+Motion\+History}}
+
+
+Motion\+History\+Imageを作る  
+
+
+
+
+{\ttfamily \#include $<$Motion\+History.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Motion\+History\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classskl_1_1_motion_history}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_motion_history_ac6a775109ea17ab2faef96b81fb6af7f}{}\label{classskl_1_1_motion_history_ac6a775109ea17ab2faef96b81fb6af7f} 
+\hyperlink{classskl_1_1_motion_history_ac6a775109ea17ab2faef96b81fb6af7f}{Motion\+History} (int history\+\_\+length=8)
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_motion_history_a96663c59d447b957a2119b88d19ba3ef}{}\label{classskl_1_1_motion_history_a96663c59d447b957a2119b88d19ba3ef} 
+virtual \hyperlink{classskl_1_1_motion_history_a96663c59d447b957a2119b88d19ba3ef}{$\sim$\+Motion\+History} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_motion_history_a989d3ca9c62b0e2f54049e2c80d9b812}{}\label{classskl_1_1_motion_history_a989d3ca9c62b0e2f54049e2c80d9b812} 
+void {\bfseries clear} ()
+\item 
+\hypertarget{classskl_1_1_motion_history_a1b4139e0548de8186a6d8ff5eb12ad2a}{}\label{classskl_1_1_motion_history_a1b4139e0548de8186a6d8ff5eb12ad2a} 
+void {\bfseries compute} (const cv\+::\+Mat \&mask)
+\item 
+\hypertarget{classskl_1_1_motion_history_af4e461272b6055e96a7577f320ae1c4b}{}\label{classskl_1_1_motion_history_af4e461272b6055e96a7577f320ae1c4b} 
+void {\bfseries compute} (const cv\+::\+Mat \&mask, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1_motion_history_a4f9e603fbd0b3f7eaf31b5dd6dbbf692}{}\label{classskl_1_1_motion_history_a4f9e603fbd0b3f7eaf31b5dd6dbbf692} 
+const cv\+::\+Mat \& {\bfseries motion\+\_\+history\+\_\+image} () const
+\item 
+\hypertarget{classskl_1_1_motion_history_a5fb7cb9051242af9a3c23515332c6733}{}\label{classskl_1_1_motion_history_a5fb7cb9051242af9a3c23515332c6733} 
+int {\bfseries history\+\_\+length} () const
+\item 
+\hypertarget{classskl_1_1_motion_history_a034de06af6715ba26cd7f9dd90ceaf6d}{}\label{classskl_1_1_motion_history_a034de06af6715ba26cd7f9dd90ceaf6d} 
+void {\bfseries history\+\_\+length} (int \+\_\+\+\_\+history\+\_\+length)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_motion_history_a81237db3cea6a809e9c1f2a64d43f900}{}\label{classskl_1_1_motion_history_a81237db3cea6a809e9c1f2a64d43f900} 
+int {\bfseries step}
+\item 
+\hypertarget{classskl_1_1_motion_history_a08d378704fe9fe7e2791519e36ea82b7}{}\label{classskl_1_1_motion_history_a08d378704fe9fe7e2791519e36ea82b7} 
+unsigned char {\bfseries offset}
+\item 
+\hypertarget{classskl_1_1_motion_history_a824a5cdfecf636cc6a7ff8ef53142575}{}\label{classskl_1_1_motion_history_a824a5cdfecf636cc6a7ff8ef53142575} 
+cv\+::\+Mat {\bfseries prev}
+\item 
+\hypertarget{classskl_1_1_motion_history_a74ca6f44b70d17ee8548e263b366e463}{}\label{classskl_1_1_motion_history_a74ca6f44b70d17ee8548e263b366e463} 
+cv\+::\+Size {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Motion\+History\+Imageを作る 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_motion_history_8h}{Motion\+History.\+h}\item 
+Open\+C\+V/src/\hyperlink{_motion_history_8cpp}{Motion\+History.\+cpp}\end{DoxyCompactItemize}

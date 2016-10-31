@@ -1,0 +1,113 @@
+\hypertarget{classskl_1_1_table_object_manager}{}\section{skl\+:\+:Table\+Object\+Manager Class Reference}
+\label{classskl_1_1_table_object_manager}\index{skl\+::\+Table\+Object\+Manager@{skl\+::\+Table\+Object\+Manager}}
+Inheritance diagram for skl\+:\+:Table\+Object\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.672131cm]{classskl_1_1_table_object_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a422d00c4412bfcaa566575392bf74a34}{}\label{classskl_1_1_table_object_manager_a422d00c4412bfcaa566575392bf74a34} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ size\+\_\+t $>$ {\bfseries Region\+Labeling\+Algorithm}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a67feba55350b7494b2fdd7c85542df26}{}\label{classskl_1_1_table_object_manager_a67feba55350b7494b2fdd7c85542df26} 
+typedef \hyperlink{classskl_1_1_filter_mat2_mat}{Filter\+Mat2\+Mat}$<$ std\+::list$<$ size\+\_\+t $>$ $>$ {\bfseries Human\+Detector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a2be8e2e0549d00e2294c7afcaf09925a}{}\label{classskl_1_1_table_object_manager_a2be8e2e0549d00e2294c7afcaf09925a} 
+{\bfseries Table\+Object\+Manager} (float \+\_\+\+\_\+learning\+\_\+rate=0.\+05, cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ bgs\+\_\+algo=new \hyperlink{classskl_1_1_tex_cut}{Tex\+Cut}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ region\+\_\+labeling\+\_\+algo=new \hyperlink{classskl_1_1_region_labeling_simple}{Region\+Labeling\+Simple}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ human\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_human_detector_workspace_end}{Human\+Detector\+Workspace\+End}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ static\+\_\+region\+\_\+detect\+\_\+algo=new \hyperlink{classskl_1_1_static_region_detector}{Static\+Region\+Detector}(), cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ patch\+\_\+model=new \hyperlink{classskl_1_1_patch_model}{Patch\+Model}())
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a523dae27c643a43c2e1cac927d468ded}{}\label{classskl_1_1_table_object_manager_a523dae27c643a43c2e1cac927d468ded} 
+void {\bfseries compute} (const cv\+::\+Mat \&src, cv\+::\+Mat \&human, std\+::vector$<$ size\+\_\+t $>$ \&put\+\_\+objects, std\+::vector$<$ size\+\_\+t $>$ \&taken\+\_\+objects)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_acc23bf35d4261ec51183024ee8369dcb}{}\label{classskl_1_1_table_object_manager_acc23bf35d4261ec51183024ee8369dcb} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ \& {\bfseries bgs\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a3f4b53cccceb62c45e20296b6ef82229}{}\label{classskl_1_1_table_object_manager_a3f4b53cccceb62c45e20296b6ef82229} 
+void {\bfseries bgs\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ \&\+\_\+\+\_\+bgs\+\_\+algo)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_aa7aedcaa74f150db8060dde5cb417d2c}{}\label{classskl_1_1_table_object_manager_aa7aedcaa74f150db8060dde5cb417d2c} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \& {\bfseries rl\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a6afd7621e5746ca96d810fb1f2f4d70d}{}\label{classskl_1_1_table_object_manager_a6afd7621e5746ca96d810fb1f2f4d70d} 
+void {\bfseries rl\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \&\+\_\+\+\_\+rl\+\_\+algo)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a71f8847e8689df23ae15e254f76ef6e6}{}\label{classskl_1_1_table_object_manager_a71f8847e8689df23ae15e254f76ef6e6} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ \& {\bfseries hd\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a4a94786bf6a85978dc03485721d380d6}{}\label{classskl_1_1_table_object_manager_a4a94786bf6a85978dc03485721d380d6} 
+void {\bfseries hd\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ \&\+\_\+\+\_\+hd\+\_\+algo)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a41e263a687e4430210ccb164f2570b7f}{}\label{classskl_1_1_table_object_manager_a41e263a687e4430210ccb164f2570b7f} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \& {\bfseries srd\+\_\+algo} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a647cc2a28a4dd946d4dec2ae2ffa2204}{}\label{classskl_1_1_table_object_manager_a647cc2a28a4dd946d4dec2ae2ffa2204} 
+void {\bfseries srd\+\_\+algo} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ \&\+\_\+\+\_\+srd\+\_\+algo)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_ad0d5797277e9765627b3cd101db3e921}{}\label{classskl_1_1_table_object_manager_ad0d5797277e9765627b3cd101db3e921} 
+const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ \& {\bfseries patch\+\_\+model} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_ad539b210b4ecf5ff114f85250fd1479e}{}\label{classskl_1_1_table_object_manager_ad539b210b4ecf5ff114f85250fd1479e} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ \& {\bfseries mutable\+\_\+patch\+\_\+model} ()
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a40257940163b4116584eea70a3310f59}{}\label{classskl_1_1_table_object_manager_a40257940163b4116584eea70a3310f59} 
+void {\bfseries patch\+\_\+model} (const cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ \&\+\_\+\+\_\+patch\+\_\+model)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a4340ee7786af706e3e16077a7c0b8779}{}\label{classskl_1_1_table_object_manager_a4340ee7786af706e3e16077a7c0b8779} 
+float {\bfseries learning\+\_\+rate} () const
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a55e36bd8d5138230bdf99c7726e8d786}{}\label{classskl_1_1_table_object_manager_a55e36bd8d5138230bdf99c7726e8d786} 
+void {\bfseries learning\+\_\+rate} (float \+\_\+\+\_\+learning\+\_\+rate)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a8317c0fdfe7a09b8ae9dcfc83f4bc51e}{}\label{classskl_1_1_table_object_manager_a8317c0fdfe7a09b8ae9dcfc83f4bc51e} 
+const cv\+::\+Mat \& {\bfseries bg} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a8a88ee3a319f012644ac373b50f4dd9a}{}\label{classskl_1_1_table_object_manager_a8a88ee3a319f012644ac373b50f4dd9a} 
+void {\bfseries bg\+\_\+subtract} (const cv\+::\+Mat \&src, cv\+::\+Mat \&dest)
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a473f00daa9e321ecc3f5b4c5540cb8b5}{}\label{classskl_1_1_table_object_manager_a473f00daa9e321ecc3f5b4c5540cb8b5} 
+void {\bfseries bg\+\_\+update} (const cv\+::\+Mat \&src, const cv\+::\+Mat \&non\+\_\+update\+\_\+mask)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_a25e29c75c08f42a3723a0621bbc4bff6}{}\label{classskl_1_1_table_object_manager_a25e29c75c08f42a3723a0621bbc4bff6} 
+static cv\+::\+Mat {\bfseries get\+Label\+Diff} (const cv\+::\+Mat \&label1, const cv\+::\+Mat \&label2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_acedbc1b5818e257b1f4636791996cf0b}{}\label{classskl_1_1_table_object_manager_acedbc1b5818e257b1f4636791996cf0b} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_background_subtract_algorithm}{Background\+Subtract\+Algorithm} $>$ {\bfseries \+\_\+bgs\+\_\+algo}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_add7ec611013512d6493627f8a2590598}{}\label{classskl_1_1_table_object_manager_add7ec611013512d6493627f8a2590598} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ {\bfseries \+\_\+rl\+\_\+algo}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_ac0f2d980f736bc5e74d2a97d3e128a64}{}\label{classskl_1_1_table_object_manager_ac0f2d980f736bc5e74d2a97d3e128a64} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Human\+Detector} $>$ {\bfseries \+\_\+hd\+\_\+algo}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_ada8d03176fe102f291c01b666cc92405}{}\label{classskl_1_1_table_object_manager_ada8d03176fe102f291c01b666cc92405} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_filter_mat2_mat}{Region\+Labeling\+Algorithm} $>$ {\bfseries \+\_\+srd\+\_\+algo}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_aac9573156ec290e338523dc9042eed4a}{}\label{classskl_1_1_table_object_manager_aac9573156ec290e338523dc9042eed4a} 
+cv\+::\+Ptr$<$ \hyperlink{classskl_1_1_patch_model}{Patch\+Model} $>$ {\bfseries \+\_\+patch\+\_\+model}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_af61405181c1019ff424a4cd677bb790b}{}\label{classskl_1_1_table_object_manager_af61405181c1019ff424a4cd677bb790b} 
+float {\bfseries \+\_\+learning\+\_\+rate}
+\item 
+\hypertarget{classskl_1_1_table_object_manager_abee4df4a50f79b45b4337acd775b1e43}{}\label{classskl_1_1_table_object_manager_abee4df4a50f79b45b4337acd775b1e43} 
+cv\+::\+Mat {\bfseries \+\_\+bg}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/Table\+Object\+Manager.\+h\item 
+Open\+C\+V/src/Table\+Object\+Manager.\+cpp\end{DoxyCompactItemize}

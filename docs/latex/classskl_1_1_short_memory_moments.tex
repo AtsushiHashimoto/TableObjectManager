@@ -1,0 +1,91 @@
+\hypertarget{classskl_1_1_short_memory_moments}{}\section{skl\+:\+:Short\+Memory\+Moments$<$ Sample, N $>$ Class Template Reference}
+\label{classskl_1_1_short_memory_moments}\index{skl\+::\+Short\+Memory\+Moments$<$ Sample, N $>$@{skl\+::\+Short\+Memory\+Moments$<$ Sample, N $>$}}
+
+
+一定区間の長さのn次モーメントを計算・保存するクラス  
+
+
+
+
+{\ttfamily \#include $<$Short\+Memory\+Moments.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_ae6ca957d4f287d189762b13cb723c24c}{}\label{classskl_1_1_short_memory_moments_ae6ca957d4f287d189762b13cb723c24c} 
+{\bfseries Short\+Memory\+Moments} (size\+\_\+t memory\+\_\+length=U\+I\+N\+T\+\_\+\+M\+AX)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a0310614e8dc620abf8c8f878d193a6f8}{}\label{classskl_1_1_short_memory_moments_a0310614e8dc620abf8c8f878d193a6f8} 
+void {\bfseries clear} ()
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_aa5a5cb03966c5b538e9ccabdac781b13}{}\label{classskl_1_1_short_memory_moments_aa5a5cb03966c5b538e9ccabdac781b13} 
+\hyperlink{classskl_1_1_short_memory_moments}{Short\+Memory\+Moments}$<$ Sample, N $>$ \& {\bfseries operator=} (const \hyperlink{classskl_1_1_short_memory_moments}{Short\+Memory\+Moments}$<$ Sample, N $>$ \&other)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a9dcd1b0da5df9ecb5a3f3ebc65c9c621}{}\label{classskl_1_1_short_memory_moments_a9dcd1b0da5df9ecb5a3f3ebc65c9c621} 
+void {\bfseries operator()} (const Sample \&sample)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_ab9b55dadd93668a196175116ed1080b4}{}\label{classskl_1_1_short_memory_moments_ab9b55dadd93668a196175116ed1080b4} 
+{\footnotesize template$<$typename Iter $>$ }\\void {\bfseries operator()} (Iter begin, Iter end)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_aec6d2eac7efa71ccf67f170e33da5830}{}\label{classskl_1_1_short_memory_moments_aec6d2eac7efa71ccf67f170e33da5830} 
+void {\bfseries push} (const Sample \&sample)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_ade602d5aa181bf3d5d200cf4a63bc386}{}\label{classskl_1_1_short_memory_moments_ade602d5aa181bf3d5d200cf4a63bc386} 
+Sample {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a39099e1827b907bd909e8fe1f5b2c60a}{}\label{classskl_1_1_short_memory_moments_a39099e1827b907bd909e8fe1f5b2c60a} 
+Sample {\bfseries sum} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a5d0707bc160c2651e1dbabe2b7175477}{}\label{classskl_1_1_short_memory_moments_a5d0707bc160c2651e1dbabe2b7175477} 
+Sample {\bfseries mean} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a6e5c15f9794e48975eb3e73789413a14}{}\label{classskl_1_1_short_memory_moments_a6e5c15f9794e48975eb3e73789413a14} 
+Sample {\bfseries variance} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_aab5a76ac31752abf4bc0b2f98518bed0}{}\label{classskl_1_1_short_memory_moments_aab5a76ac31752abf4bc0b2f98518bed0} 
+Sample {\bfseries stddev} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a4002576cceb297b0a99754ce5154fc92}{}\label{classskl_1_1_short_memory_moments_a4002576cceb297b0a99754ce5154fc92} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a30182a68815880321af4ab3001711f62}{}\label{classskl_1_1_short_memory_moments_a30182a68815880321af4ab3001711f62} 
+void {\bfseries memory\+\_\+length} (size\+\_\+t \+\_\+\+\_\+memory\+\_\+length)
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a524b3def4dc523479423fd574d8c7c69}{}\label{classskl_1_1_short_memory_moments_a524b3def4dc523479423fd574d8c7c69} 
+size\+\_\+t {\bfseries memory\+\_\+length} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a68ce6b75f502bbe9cfa2cc61a3c2f533}{}\label{classskl_1_1_short_memory_moments_a68ce6b75f502bbe9cfa2cc61a3c2f533} 
+const std\+::list$<$ Sample $>$ \& {\bfseries short\+\_\+memory} () const
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_accb65fb4409f56d1a2d8849038ba700c}{}\label{classskl_1_1_short_memory_moments_accb65fb4409f56d1a2d8849038ba700c} 
+std\+::list$<$ Sample $>$ \& {\bfseries short\+\_\+memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a7ecfa55b2e215c8920c4ac3b5771ac6d}{}\label{classskl_1_1_short_memory_moments_a7ecfa55b2e215c8920c4ac3b5771ac6d} 
+void {\bfseries pop} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a665bdcc39d02f026a3d4004e9125320b}{}\label{classskl_1_1_short_memory_moments_a665bdcc39d02f026a3d4004e9125320b} 
+std\+::list$<$ Sample $>$ {\bfseries \+\_\+short\+\_\+memory}
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a3f30e699be2e68358aaad18a2cb02b10}{}\label{classskl_1_1_short_memory_moments_a3f30e699be2e68358aaad18a2cb02b10} 
+std\+::vector$<$ Sample $>$ {\bfseries \+\_\+moments}
+\item 
+\hypertarget{classskl_1_1_short_memory_moments_a86cf2e73d37620bf7dce0a26c8212324}{}\label{classskl_1_1_short_memory_moments_a86cf2e73d37620bf7dce0a26c8212324} 
+size\+\_\+t {\bfseries \+\_\+memory\+\_\+length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Sample = double, unsigned int N = 2$>$\newline
+class skl\+::\+Short\+Memory\+Moments$<$ Sample, N $>$}
+
+一定区間の長さのn次モーメントを計算・保存するクラス 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/Short\+Memory\+Moments.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SKLRoot>C:\table_object_manager_public\src</SKLRoot>
+    <OpenCVVersion>2411</OpenCVVersion>
+    <OpenCVDir>C:\opencv2411</OpenCVDir>
+    <CUDADir>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5</CUDADir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(SKLRoot)\include;$(BOOST_ROOT);$(IncludePath)</IncludePath>
+    <ReferencePath>$(SKLRoot)\lib\$(Platform)\$(Configuration)\$(PlatformToolset);$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>SKLCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SKLRoot">
+      <Value>$(SKLRoot)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OpenCVVersion">
+      <Value>$(OpenCVVersion)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OpenCVDir">
+      <Value>$(OpenCVDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CUDADir">
+      <Value>$(CUDADir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

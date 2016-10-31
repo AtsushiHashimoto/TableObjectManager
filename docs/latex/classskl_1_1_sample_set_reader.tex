@@ -1,0 +1,65 @@
+\hypertarget{classskl_1_1_sample_set_reader}{}\section{skl\+:\+:Sample\+Set\+Reader Class Reference}
+\label{classskl_1_1_sample_set_reader}\index{skl\+::\+Sample\+Set\+Reader@{skl\+::\+Sample\+Set\+Reader}}
+
+
+学習用/評価用の特徴量サンプルセットの読み込みを行う  
+
+
+
+
+{\ttfamily \#include $<$Sample\+Set\+Reader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_ad10ad73e03fc3ee176ec9d4ab036f45d}{}\label{classskl_1_1_sample_set_reader_ad10ad73e03fc3ee176ec9d4ab036f45d} 
+\hyperlink{classskl_1_1_sample_set_reader_ad10ad73e03fc3ee176ec9d4ab036f45d}{Sample\+Set\+Reader} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_sample_set_reader_ae051e482f383da2027f079caf4802127}{}\label{classskl_1_1_sample_set_reader_ae051e482f383da2027f079caf4802127} 
+virtual \hyperlink{classskl_1_1_sample_set_reader_ae051e482f383da2027f079caf4802127}{$\sim$\+Sample\+Set\+Reader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_af7e8e42693c480317893320efe1a97bf}{}\label{classskl_1_1_sample_set_reader_af7e8e42693c480317893320efe1a97bf} 
+static bool {\bfseries read} (const std\+::string \&filename, cv\+::\+Mat $\ast$samples=N\+U\+LL, cv\+::\+Mat $\ast$responces=N\+U\+LL, cv\+::\+Mat $\ast$likelihoods=N\+U\+LL, std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ $\ast$timestamps=N\+U\+LL, std\+::vector$<$ cv\+::\+Key\+Point $>$ $\ast$keypoints=N\+U\+LL)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_aed41b06745e807114ee61b93d9ffbb84}{}\label{classskl_1_1_sample_set_reader_aed41b06745e807114ee61b93d9ffbb84} 
+static bool {\bfseries read} (std\+::istream \&in, cv\+::\+Mat $\ast$samples=N\+U\+LL, cv\+::\+Mat $\ast$responces=N\+U\+LL, cv\+::\+Mat $\ast$likelihoods=N\+U\+LL, std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ $\ast$timestamps=N\+U\+LL, std\+::vector$<$ cv\+::\+Key\+Point $>$ $\ast$keypoints=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_ad0a976a1c6ef2958d4a67b4170b5beb4}{}\label{classskl_1_1_sample_set_reader_ad0a976a1c6ef2958d4a67b4170b5beb4} 
+static bool {\bfseries skip} (std\+::istream \&in, size\+\_\+t num)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_a4a074f7194e0f824741d412e0afeb8a9}{}\label{classskl_1_1_sample_set_reader_a4a074f7194e0f824741d412e0afeb8a9} 
+{\footnotesize template$<$class Type , size\+\_\+t C\+V\+\_\+\+D\+E\+P\+TH$>$ }\\static bool {\bfseries \+\_\+read\+Matrix} (std\+::istream \&in, size\+\_\+t cols, size\+\_\+t rows, cv\+::\+Mat \&dist)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_ae3fc1347c59fde0c745df2556b14dea0}{}\label{classskl_1_1_sample_set_reader_ae3fc1347c59fde0c745df2556b14dea0} 
+static bool {\bfseries \+\_\+read\+Header} (std\+::istream \&in, size\+\_\+t \&sample\+\_\+num, size\+\_\+t \&sample\+\_\+dim, bool \&has\+\_\+responce, size\+\_\+t \&class\+\_\+num, bool \&has\+\_\+timestamp, bool \&has\+\_\+keypoint)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_ab2f7b9adc5ae92faaacdae5feb70e3d9}{}\label{classskl_1_1_sample_set_reader_ab2f7b9adc5ae92faaacdae5feb70e3d9} 
+static bool {\bfseries \+\_\+read\+Samples} (std\+::istream \&in, size\+\_\+t sample\+\_\+num, size\+\_\+t sample\+\_\+dim, cv\+::\+Mat \&dist)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_ac11cc10fb6b555d2c42ad04f33e44e3b}{}\label{classskl_1_1_sample_set_reader_ac11cc10fb6b555d2c42ad04f33e44e3b} 
+static bool {\bfseries \+\_\+read\+Responces} (std\+::istream \&in, size\+\_\+t sample\+\_\+num, cv\+::\+Mat \&dist)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_a3a425080b0d924db60395c8f12e2b1d9}{}\label{classskl_1_1_sample_set_reader_a3a425080b0d924db60395c8f12e2b1d9} 
+static bool {\bfseries \+\_\+read\+Likelihoods} (std\+::istream \&in, size\+\_\+t sample\+\_\+num, size\+\_\+t class\+\_\+num, cv\+::\+Mat \&dist)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_a8b2d035748ce4f07b670be3f1ef615d5}{}\label{classskl_1_1_sample_set_reader_a8b2d035748ce4f07b670be3f1ef615d5} 
+static bool {\bfseries \+\_\+read\+Timestamps} (std\+::istream \&in, size\+\_\+t sample\+\_\+num, std\+::vector$<$ \hyperlink{classskl_1_1_time}{skl\+::\+Time} $>$ \&dist)
+\item 
+\hypertarget{classskl_1_1_sample_set_reader_a079d6f3707a991c7778491fbda7ceac1}{}\label{classskl_1_1_sample_set_reader_a079d6f3707a991c7778491fbda7ceac1} 
+static bool {\bfseries \+\_\+read\+Key\+Points} (std\+::istream \&in, size\+\_\+t sample\+\_\+num, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&dist)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+学習用/評価用の特徴量サンプルセットの読み込みを行う 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+C\+V/include/\hyperlink{_sample_set_reader_8h}{Sample\+Set\+Reader.\+h}\item 
+Open\+C\+V/src/\hyperlink{_sample_set_reader_8cpp}{Sample\+Set\+Reader.\+cpp}\end{DoxyCompactItemize}

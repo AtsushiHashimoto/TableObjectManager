@@ -1,0 +1,49 @@
+\hypertarget{classskl_1_1_sensor_module_base}{}\section{skl\+:\+:Sensor\+Module\+Base$<$ Sensor\+Output, Sensor\+Identifier $>$ Class Template Reference}
+\label{classskl_1_1_sensor_module_base}\index{skl\+::\+Sensor\+Module\+Base$<$ Sensor\+Output, Sensor\+Identifier $>$@{skl\+::\+Sensor\+Module\+Base$<$ Sensor\+Output, Sensor\+Identifier $>$}}
+
+
+センサ情報の取得を行うモジュールが継承すべき既定クラス  
+
+
+
+
+{\ttfamily \#include $<$Sensor\+Module\+Base.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_sensor_module_base_a8213e3bf9ad18d02f3c337778c0efcc9}{}\label{classskl_1_1_sensor_module_base_a8213e3bf9ad18d02f3c337778c0efcc9} 
+\hyperlink{classskl_1_1_sensor_module_base_a8213e3bf9ad18d02f3c337778c0efcc9}{Sensor\+Module\+Base} ()
+\begin{DoxyCompactList}\small\item\em デフォルトコンストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_sensor_module_base_a4428b6576cf9a39602e7c39a426e3d4d}{}\label{classskl_1_1_sensor_module_base_a4428b6576cf9a39602e7c39a426e3d4d} 
+virtual \hyperlink{classskl_1_1_sensor_module_base_a4428b6576cf9a39602e7c39a426e3d4d}{$\sim$\+Sensor\+Module\+Base} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_sensor_module_base_a3223343241ddd34b1f8907f42b2a0d6a}{}\label{classskl_1_1_sensor_module_base_a3223343241ddd34b1f8907f42b2a0d6a} 
+virtual bool {\bfseries open} (const Sensor\+Identifier \&sensor\+\_\+identity)=0
+\item 
+\hypertarget{classskl_1_1_sensor_module_base_a805c5f64e8ae55d8c527721375743d85}{}\label{classskl_1_1_sensor_module_base_a805c5f64e8ae55d8c527721375743d85} 
+virtual void \hyperlink{classskl_1_1_sensor_module_base_a805c5f64e8ae55d8c527721375743d85}{release} ()=0
+\begin{DoxyCompactList}\small\item\em センサを特定する情報を入力する \end{DoxyCompactList}\item 
+\hypertarget{classskl_1_1_sensor_module_base_a6a4cecc0f591af492330813426f12628}{}\label{classskl_1_1_sensor_module_base_a6a4cecc0f591af492330813426f12628} 
+virtual bool {\bfseries is\+Opened} () const =0
+\item 
+\hypertarget{classskl_1_1_sensor_module_base_a3dee53d8543854395b2edee7cd68e758}{}\label{classskl_1_1_sensor_module_base_a3dee53d8543854395b2edee7cd68e758} 
+virtual bool {\bfseries grab} ()=0
+\item 
+\hypertarget{classskl_1_1_sensor_module_base_a84068667782c55d332bd3ef66074cd28}{}\label{classskl_1_1_sensor_module_base_a84068667782c55d332bd3ef66074cd28} 
+virtual bool {\bfseries retrieve} (Sensor\+Output \&block, int channel=0)=0
+\item 
+\hypertarget{classskl_1_1_sensor_module_base_a5f28cf35150919e40fda9a4b2f6e7523}{}\label{classskl_1_1_sensor_module_base_a5f28cf35150919e40fda9a4b2f6e7523} 
+virtual size\+\_\+t {\bfseries size} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Sensor\+Output, class Sensor\+Identifier = std\+::string$>$\newline
+class skl\+::\+Sensor\+Module\+Base$<$ Sensor\+Output, Sensor\+Identifier $>$}
+
+センサ情報の取得を行うモジュールが継承すべき既定クラス 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_sensor_module_base_8h}{Sensor\+Module\+Base.\+h}\end{DoxyCompactItemize}

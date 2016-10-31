@@ -1,0 +1,102 @@
+\hypertarget{classskl_1_1_time_format_exception}{}\section{skl\+:\+:Time\+Format\+Exception Class Reference}
+\label{classskl_1_1_time_format_exception}\index{skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}}
+
+
+\hyperlink{classskl_1_1_time_format_exception}{Time\+Format\+Exception}.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Format\+Exception.\+h$>$}
+
+Inheritance diagram for skl\+:\+:Time\+Format\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classskl_1_1_time_format_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classskl_1_1_time_format_exception_a5704eda6974105a00e17437ca3b2fa0d}{}\label{classskl_1_1_time_format_exception_a5704eda6974105a00e17437ca3b2fa0d} 
+virtual \hyperlink{classskl_1_1_time_format_exception_a5704eda6974105a00e17437ca3b2fa0d}{$\sim$\+Time\+Format\+Exception} ()  throw ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\hyperlink{classskl_1_1_time_format_exception_ae2d980f18722c3b6e209f0abd36a427f}{Time\+Format\+Exception} (const std\+::string \&s\+Error, const std\+::string \&formatter)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_format_exception_af94af572753b869b0056ea1aae3ae7b1}{get\+Err\+Message} () const
+\begin{DoxyCompactList}\small\item\em エラーメッセージを返す関数 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_format_exception_adbc030198a2811494d377c89779d4aa3}{get\+String} () const
+\begin{DoxyCompactList}\small\item\em パースしていた文字列を返す \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classskl_1_1_time_format_exception_a1b6c5b3b707be88e33fe1d2f39482b76}{get\+Formatter\+Name} () const
+\begin{DoxyCompactList}\small\item\em Time\+Formatterの名前を返す \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classskl_1_1_time_format_exception}{Time\+Format\+Exception}. 
+
+時間←→の変換ができないときの例外クラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classskl_1_1_time_format_exception_ae2d980f18722c3b6e209f0abd36a427f}{}\label{classskl_1_1_time_format_exception_ae2d980f18722c3b6e209f0abd36a427f} 
+\index{skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}!Time\+Format\+Exception@{Time\+Format\+Exception}}
+\index{Time\+Format\+Exception@{Time\+Format\+Exception}!skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}}
+\subsubsection{\texorpdfstring{Time\+Format\+Exception()}{TimeFormatException()}}
+{\footnotesize\ttfamily skl\+::\+Time\+Format\+Exception\+::\+Time\+Format\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s\+Error,  }\item[{const std\+::string \&}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s\+Error} & エラーメッセージ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classskl_1_1_time_format_exception_af94af572753b869b0056ea1aae3ae7b1}{}\label{classskl_1_1_time_format_exception_af94af572753b869b0056ea1aae3ae7b1} 
+\index{skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}!get\+Err\+Message@{get\+Err\+Message}}
+\index{get\+Err\+Message@{get\+Err\+Message}!skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}}
+\subsubsection{\texorpdfstring{get\+Err\+Message()}{getErrMessage()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Format\+Exception\+::get\+Err\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+エラーメッセージを返す関数 
+
+\begin{DoxyReturn}{Returns}
+エラーメッセージ 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_time_format_exception_a1b6c5b3b707be88e33fe1d2f39482b76}{}\label{classskl_1_1_time_format_exception_a1b6c5b3b707be88e33fe1d2f39482b76} 
+\index{skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}!get\+Formatter\+Name@{get\+Formatter\+Name}}
+\index{get\+Formatter\+Name@{get\+Formatter\+Name}!skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}}
+\subsubsection{\texorpdfstring{get\+Formatter\+Name()}{getFormatterName()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Format\+Exception\+::get\+Formatter\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Time\+Formatterの名前を返す 
+
+\begin{DoxyReturn}{Returns}
+例外を生じさせた\+Time\+Formatterの名前 
+\end{DoxyReturn}
+\hypertarget{classskl_1_1_time_format_exception_adbc030198a2811494d377c89779d4aa3}{}\label{classskl_1_1_time_format_exception_adbc030198a2811494d377c89779d4aa3} 
+\index{skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!skl\+::\+Time\+Format\+Exception@{skl\+::\+Time\+Format\+Exception}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}}
+{\footnotesize\ttfamily std\+::string skl\+::\+Time\+Format\+Exception\+::get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+パースしていた文字列を返す 
+
+\begin{DoxyReturn}{Returns}
+例外を生じさせた\+String 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/\hyperlink{_time_format_exception_8h}{Time\+Format\+Exception.\+h}\item 
+Core/src/Time\+Format\+Exception.\+cpp\end{DoxyCompactItemize}
