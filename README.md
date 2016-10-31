@@ -5,6 +5,8 @@ This program detects put/taken objects on a workspace while detecting human regi
 
 https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 
+- /src/modules/OpenCV/include/Labeling.h is provided by IMURA Masataka under the BSD 2-Clause License.
+
 # Prerequisites
 - boost(>=1.54)
 - opencv2 (>=2.4.9)
@@ -14,6 +16,9 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
  1. put block.h, graph.h, instances.inc into src/modules/Core/include
  2. put graph.cpp maxflow.cpp into src/modules/Core/src
  3. add #include "instances.inc" in the last line of graph.cpp
+ 
+    The above graph cut implementation is excluded from our repository because it is distributed under the GNU license.
+    Please do put above files in the appropriate directory as directed.
 
 # Compile Library
 ## on Windows
