@@ -20,7 +20,7 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
     The above graph cut implementation is excluded from our repository because it is distributed under the GNU license.
     Please do put above files in the appropriate directory as directed.
 
-# Compile Library
+# How to compile Library
 ## on Windows
 - open /src/modules/VisualStudioBuild/skl_modules_vs2012.sln
 - edit property sheet
@@ -35,10 +35,21 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
  2. save and close the editor.
 - open skl_modules_with_cuda_vs2012.sln and compile
 
-# Compile Examples
+# Examples
+## How to compile Examples
 - open /examples/path/to/target/*.sln and compile.
 
-# How to use
+## TableObjectManager
+A program that record human's access to objects. It automatically assign ID to each detected foreground region. You can get regional images by ID until it is removed from patch_model. In each frame, the program provides following state of objects by IDs of vector.
+
+- put objects: objects put on the table. (ID is assinged to the region at this frame).
+- taken objects: objects taken from the table (Once detected as taken, ID is removed in the next frame. After that, you cannot access to this object region.)
+- human body region: the region that is judged as human body part.
+- hidden objects: objects hidden by the human body part. 
+- newly_hidden_objects: hidden objects that was not hidden in the previous frame.
+- reappeared_objects: objects that was hidden in the previous frame but not in the current frame.
+
+# How to run the compiled example.
 - From command line prompt, execute .exe file with --help or -h.
 
 # Citing Table Object Manager
