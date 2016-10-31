@@ -36,6 +36,9 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 # How to use
 - From command line prompt, execute .exe file with --help or -h.
 
+# More Documents for Custormize
+- Check Doxygen files: http://username.github.io/repository
+
 # Citing Table Object Manager
 The algorithm of this program consists of following papers. Please refer any of them when you use this algorithm.
 
