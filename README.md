@@ -23,17 +23,21 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 # How to compile Library
 ## on Windows
 - open /src/modules/VisualStudioBuild/skl_modules_vs2012.sln
-- edit property sheet
+- edit property manager (if you don't find property manager in your window, see http://stackoverflow.com/questions/10179201/cannot-find-property-manager-option-in-visual-studio-not-express-version )
  1. open property manager > SKLCore2012 > Debug > skl2_meta
  2. open 'user macro'.
  3. modify paths along with your computer's setting.
   - SKLRoot: the location of /src
   - OpenCVVersion / OpenCVDir: version and location of opencv2.X
   - BoostDir: location of boost
-- compile it, then open skl_modules_with_cuda_vs2012.sln WITH TEXT EDITOR!
- 1. replace CUDA7.5 to your version (e.g. CUDA8.0)
- 2. save and close the editor.
+- install NVIDIA Nsight Visual Studio Edition
+ http://www.nvidia.co.jp/object/nsight.html 
+- compile it, then compile GPU project
+ 1. open /src/modules/OpenCVGPU/VisualStudioProject/SKLOpenCVGPU_vs2012.vcxproj WITH TEXT EDITOR! 
+ 2. replace "CUDA 7.5" to your version (e.g. "CUDA 8.0")
+ 3. save and close the editor.
 - open skl_modules_with_cuda_vs2012.sln and compile
+ - If cuda 8.0.props or other files are not found and cannot open SKLOpenCVGPU.vcxproj in the solution file, it is highly expected that you failed to install the cuda toolkit properly. Check "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\visual_studio_integration\MSBuildExtensions" (v8.0 should be replaced to your version) and copy files to proper directories.
 
 # Examples
 ## How to compile Examples

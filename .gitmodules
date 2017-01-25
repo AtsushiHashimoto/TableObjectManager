@@ -1,0 +1,4 @@
+[submodule "docs"]
+	path = docs
+	url = https://AtsushiHashimoto@github.com/AtsushiHashimoto/TableObjectManager.git
+	branch = gh-pages
