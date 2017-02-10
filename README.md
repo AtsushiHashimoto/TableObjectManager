@@ -10,7 +10,7 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 # Prerequisites
 - boost(>=1.54)
 - opencv2 (>=2.4.9)
- 1. For use with GPU, compile on local computer (otherwise you can use precompiled opencv). Recommended setting is 'x64'. ('Win32' is not carefully maintained.) 
+ 1. **For use with GPU, COMPILE opencv2 ON YOUR COMPUTER with the "WITH_CUDA"** option (do not use .exe pre-compiled kit). Recommended setting is 'x64'. ('Win32' is not carefully maintained.) 
 - CUDA (>=6)
 - Vradimir's graph cut implementation (MaxFlow >3.04) http://pub.ist.ac.at/~vnk/software.html
  1. put block.h, graph.h, instances.inc into src/modules/Core/include
