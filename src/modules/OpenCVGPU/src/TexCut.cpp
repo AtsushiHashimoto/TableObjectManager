@@ -524,16 +524,18 @@ bool gpu::TexCut::compute(const cv::gpu::GpuMat& _src, cv::gpu::GpuMat& dest,cv:
 
 	// do graphcut
 	st = cv::getTickCount();
-#if 1
+
 #if 0
 	_imwrite("/data/terminals.csv",cv::Mat(terminals));
 	_imwrite("/data/leftTransp.csv",cv::Mat(leftTransp));
 	_imwrite("/data/rightTransp.csv",cv::Mat(rightTransp));
 	_imwrite("/data/top.csv",cv::Mat(top));
 	_imwrite("/data/bottom.csv",cv::Mat(bottom));
-#endif
+#endif	
+#if CUDART_VERSION < 8000
 	cv::gpu::graphcut(terminals,leftTransp,rightTransp,top,bottom,dest,buf_graphcut,stream_external);
 #else
+	// cv::gpu::graphcut is no more supported in CUDART version 8.0 or later.
 	cv::Mat _dest;
 	gc_algo.compute(cv::Mat(terminals),
 			cv::Mat(leftTransp),cv::Mat(rightTransp),
