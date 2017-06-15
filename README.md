@@ -6,6 +6,17 @@ This program detects put/taken objects on a workspace while detecting human regi
 https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 
 - /src/modules/OpenCV/include/Labeling.h is provided by IMURA Masataka under the BSD 2-Clause License.
+# Quick Start by Nvidia-Docker
+- install&run docker and nvidia-docker
+- pull docker image
+    docker pull atsushihashimoto/table-object-manager
+- run the image 
+    cd directory/where/video/files/are
+    nvidia-docker run -ti -v ./:/root/data atsushihashimoto/table-object-manager /bin/bash
+- edit & execute sample script
+    # vim sample.sh
+    # sh sample.sh video.mpeg
+- check results
 
 # Prerequisites
 - boost(>=1.54)
