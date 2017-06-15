@@ -18,8 +18,8 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 
 - edit & execute sample script
     ```
-    % sudo vim sample.sh
-    % sudo sh sample.sh video.mpeg
+    # vim sample.sh
+    # sh sample.sh data/video.mpeg
     ```
 - check results
 
