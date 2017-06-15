@@ -9,7 +9,9 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 # Quick Start (with Nvidia-Docker)
 - install&run docker and nvidia-docker
 - pull docker image
-    docker pull atsushihashimoto/table-object-manager
+    ```
+    % sudo docker pull atsushihashimoto/table-object-manager
+    ```
 - run the image
     ```
     % cd directory/where/video/files/are
