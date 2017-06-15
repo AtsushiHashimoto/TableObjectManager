@@ -14,8 +14,8 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
     cd directory/where/video/files/are
     nvidia-docker run -ti -v ./:/root/data atsushihashimoto/table-object-manager /bin/bash
 - edit & execute sample script
-    # vim sample.sh
-    # sh sample.sh video.mpeg
+    \# vim sample.sh
+    \# sh sample.sh video.mpeg
 - check results
 
 # Prerequisites
