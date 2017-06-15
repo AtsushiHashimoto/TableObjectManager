@@ -10,12 +10,16 @@ https://github.com/AtsushiHashimoto/TableObjectManager/blob/master/LICENSE
 - install&run docker and nvidia-docker
 - pull docker image
     docker pull atsushihashimoto/table-object-manager
-- run the image 
-    cd directory/where/video/files/are
-    nvidia-docker run -ti -v ./:/root/data atsushihashimoto/table-object-manager /bin/bash
+- run the image
+
+    % cd directory/where/video/files/are
+    % sudo nvidia-docker run -ti -v ./:/root/data atsushihashimoto/table-object-manager /bin/bash
+
 - edit & execute sample script
-    \# vim sample.sh
-    \# sh sample.sh video.mpeg
+
+    % sudo vim sample.sh
+    % sudo sh sample.sh video.mpeg
+
 - check results
 
 # Prerequisites
